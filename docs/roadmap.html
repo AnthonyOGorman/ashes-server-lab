@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Development roadmap — Ashes Server Lab</title>
+<meta name="description" content="Research priorities for exploration stability, world fidelity and maintainable server emulation; no promised delivery schedule.">
+<link rel="canonical" href="https://anthonyogorman.github.io/ashes-server-lab/roadmap.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ashes Server Lab">
+<meta property="og:title" content="Development roadmap — Ashes Server Lab">
+<meta property="og:description" content="Research priorities for exploration stability, world fidelity and maintainable server emulation; no promised delivery schedule.">
+<meta property="og:url" content="https://anthonyogorman.github.io/ashes-server-lab/roadmap.html">
+<meta property="og:image" content="https://anthonyogorman.github.io/ashes-server-lab/social-preview.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="Ashes Server Lab — experimental Ashes of Creation server emulation">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Development roadmap — Ashes Server Lab">
+<meta name="twitter:description" content="Research priorities for exploration stability, world fidelity and maintainable server emulation; no promised delivery schedule.">
+<meta name="twitter:image" content="https://anthonyogorman.github.io/ashes-server-lab/social-preview.png">
+<meta name="twitter:image:alt" content="Ashes Server Lab — experimental Ashes of Creation server emulation">
+<link rel="stylesheet" href="site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="./">Ashes Server Lab</a><a href="getting-started.html#get-started">Get started</a><a href="faq.html">FAQ</a><a href="architecture.html">Architecture</a><a href="roadmap.html">Roadmap</a><a href="https://github.com/AnthonyOGorman/ashes-server-lab">GitHub repository</a></nav></header>
+<main id="main">
+<h1 id="ashes-server-lab-roadmap">Ashes Server Lab roadmap</h1>
+<p>These are research and implementation priorities for Ashes Server Lab, the experimental Ashes of Creation server-emulation project. This is an ordered list of useful directions, not a delivery schedule.</p>
+<h2 id="stabilize-exploration">Stabilize exploration</h2>
+<ol>
+<li>Measure walking prediction differences using matched input/time/position traces. Resolve correction pushback without hiding large genuine errors.</li>
+<li>Decode the period-key walk toggle and Shift/sprint state. Match speed, acceleration, braking and movement-mode transitions to the client.</li>
+<li>Make live settings readback and initialization failures easier to diagnose and recover.</li>
+<li>Cover longer sessions, timestamp wraparound, reconnects, lower frame rates and multiple local clients.</li>
+</ol>
+<h2 id="improve-world-fidelity">Improve world fidelity</h2>
+<ol>
+<li>Implement reliable static-prop extraction and transforms, including collision channels/responses, complex/simple selection and unsupported shape admission.</li>
+<li>Study water, swimming, movement bases, slopes, step-up behavior and streaming boundaries.</li>
+<li>Add explicit separate-map selection and collision admission before attempting travel.</li>
+</ol>
+<h2 id="make-the-foundation-maintainable">Make the foundation maintainable</h2>
+<ol>
+<li>Refactor dense generated code into documented stages and protocol types.</li>
+<li>Add a build-profile layer for offsets, schemas and evidence. New profiles need actual native verification.</li>
+<li>Add CI for source-only synthetic checks and offline format fixtures that contain no game assets.</li>
+<li>Improve deterministic replay and sanitized bug-report export.</li>
+</ol>
+<h2 id="only-then-expand-gameplay">Only then expand gameplay</h2>
+<p>NPCs, combat, inventory, abilities, quests, progression, persistence, social systems and safe public hosting require substantial research and implementation. Nothing in the current demo establishes those systems. Start with a small, verified vertical slice.</p>
+<p class="source"><a href="https://github.com/AnthonyOGorman/ashes-server-lab/blob/main/docs/ROADMAP.md">Edit this page's Markdown source on GitHub</a></p>
+</main>
+<footer><p>Independent, unofficial and experimental. Not affiliated with, supported by, or endorsed by Intrepid Studios. No client or proprietary game assets are distributed. Original code: <a href="https://github.com/AnthonyOGorman/ashes-server-lab/blob/main/LICENSE">MIT</a>; <a href="third-party.html">third-party notices</a>.</p><p><a href="verification.html">Verification and limitations</a> · <a href="contributing.html">Contribute</a> · <a href="llms.txt">Curated project guide</a></p></footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ashes of Creation private server FAQ — Ashes Server Lab</title>
+<meta name="description" content="Factual answers about offline Verra exploration, client compatibility, multiplayer, missing gameplay and this unofficial experimental server emulator.">
+<link rel="canonical" href="https://anthonyogorman.github.io/ashes-server-lab/faq.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ashes Server Lab">
+<meta property="og:title" content="Ashes of Creation private server FAQ — Ashes Server Lab">
+<meta property="og:description" content="Factual answers about offline Verra exploration, client compatibility, multiplayer, missing gameplay and this unofficial experimental server emulator.">
+<meta property="og:url" content="https://anthonyogorman.github.io/ashes-server-lab/faq.html">
+<meta property="og:image" content="https://anthonyogorman.github.io/ashes-server-lab/social-preview.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="Ashes Server Lab — experimental Ashes of Creation server emulation">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ashes of Creation private server FAQ — Ashes Server Lab">
+<meta name="twitter:description" content="Factual answers about offline Verra exploration, client compatibility, multiplayer, missing gameplay and this unofficial experimental server emulator.">
+<meta name="twitter:image" content="https://anthonyogorman.github.io/ashes-server-lab/social-preview.png">
+<meta name="twitter:image:alt" content="Ashes Server Lab — experimental Ashes of Creation server emulation">
+<link rel="stylesheet" href="site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="./">Ashes Server Lab</a><a href="getting-started.html#get-started">Get started</a><a href="faq.html">FAQ</a><a href="architecture.html">Architecture</a><a href="roadmap.html">Roadmap</a><a href="https://github.com/AnthonyOGorman/ashes-server-lab">GitHub repository</a></nav></header>
+<main id="main">
+<h1 id="ashes-server-lab-faq">Ashes Server Lab FAQ</h1>
+<p>Ashes Server Lab is an independent, experimental open-source C++20 server-emulation project for Ashes of Creation. These answers describe the repository's current evidence and limitations, not a complete MMORPG service.</p>
+<h2 id="is-there-an-ashes-of-creation-private-server">Is there an Ashes of Creation private server?</h2>
+<p>Ashes Server Lab provides experimental private-server research code that has connected one matching client to a local exploration server. It is a buggy prototype, not a complete or production-ready private server. No public multiplayer service is provided here.</p>
+<h2 id="what-is-ashes-server-lab">What is Ashes Server Lab?</h2>
+<p>It is a native C++20 exploration server, local EOS compatibility shim, and browser dashboard developed through interoperability and reverse-engineering work against one exact client build. The initial prototype was AI-generated and then iteratively debugged. Original lab code is open source under MIT; third-party components retain their own licenses.</p>
+<h2 id="can-i-play-ashes-of-creation-offline-with-this">Can I play Ashes of Creation offline with this?</h2>
+<p>You can run a local exploration session after supplying and preparing the supported client, building the server, and generating terrain from your own installation. This does not recreate the full game: combat, quests, NPCs and MMORPG progression are not implemented. Initial setup needs downloads for build tools, dependencies and parser packages; a fully disconnected setup has not been separately verified.</p>
+<h2 id="can-i-explore-verra-locally">Can I explore Verra locally?</h2>
+<p>Yes, local movement, jumping and flight have been observed in the matching client. The lab supports terrain collision and live browser inspection. Walking pushback/jitter, the period-key walk toggle, initialization failures and incomplete scenery collision remain known issues. Archive coverage does not guarantee every area streams or is reachable.</p>
+<h2 id="is-this-a-complete-ashes-of-creation-server-emulator">Is this a complete Ashes of Creation server emulator?</h2>
+<p>No. This is a starting point for server emulation and protocol research. The implementation covers a local connection, character initialization, exploration and developer tools. It does not implement the complete protocol, gameplay, world systems or production operations.</p>
+<h2 id="does-it-support-multiplayer">Does it support multiplayer?</h2>
+<p>Production multiplayer is not validated. Current session evidence is one locally connected player and one local account. Services bind to loopback; testing multiple local clients and safe public hosting remain future work.</p>
+<h2 id="does-it-support-combat-quests-or-npcs">Does it support combat, quests, or NPCs?</h2>
+<p>No. Combat, quests, NPCs, abilities, inventory and progression need substantial research and implementation. Client scenery and animation in demonstrations are not evidence of those server systems.</p>
+<h2 id="does-this-repository-include-the-ashes-of-creation-client">Does this repository include the Ashes of Creation client?</h2>
+<p>No. Supply your own matching Windows x64 client installation. The repository provides no client download and rejects a different executable hash. It also excludes Epic's EOS SDK and Oodle. The local compatibility shim is built from the included lab source.</p>
+<h2 id="does-it-include-game-assets">Does it include game assets?</h2>
+<p>No game archives, extracted terrain, proprietary libraries or complete Unreal SDK dumps are distributed. Terrain is generated privately from your own archives. The demonstration GIFs show a separately installed client; that imagery remains the property of its respective owners and is not licensed as MIT code. See <a href="third-party.html">third-party notices</a>.</p>
+<h2 id="which-client-versionbuild-is-supported">Which client version/build is supported?</h2>
+<p>The repository's recorded verification on 2026-10-07 used Steam App ID <strong>4124950</strong>, Steam Build ID <strong>21564631</strong>, executable <strong>AOC-CL-438018</strong>, and Unreal Engine <strong>5.6.0-438018</strong>. The executable SHA-256 is <code>4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43</code>. Compatibility is pinned to that identity, not whichever Steam build is newest. See <a href="getting-started.html#supported-client">the supported-client section</a> and <code>CPP/config/supported-client.json</code>.</p>
+<h2 id="is-this-affiliated-with-intrepid-studios">Is this affiliated with Intrepid Studios?</h2>
+<p>No. It is an independent community experiment, with no affiliation with, support from, or endorsement by Intrepid Studios. Ashes of Creation and its game content belong to their respective owners.</p>
+<h2 id="what-is-required-to-run-it">What is required to run it?</h2>
+<p>Windows x64, Visual Studio 2022 with the C++ workload, Windows SDK and CMake tools; MSYS2 MINGW64 dependency DLLs; Python 3.10+ and NumPy; .NET 10 SDK; your matching client; and a compatible Oodle library you are entitled to use. Build the source, prepare your client with the locally built EOS shim, generate terrain, then launch the lab. See <a href="getting-started.html#get-started">getting started</a> for the commands and restoration instructions. A source-only build does not require client files or terrain.</p>
+<h2 id="can-developers-contribute-to-the-server-emulator">Can developers contribute to the server emulator?</h2>
+<p>Yes. Reproducible movement/prediction fixes, walk/sprint decoding, initialization reliability, protocol documentation and synthetic tests are useful first contributions. AI-assisted changes are welcome when their verification and assumptions are explicit. Read <a href="contributing.html">CONTRIBUTING</a>, <a href="architecture.html">architecture</a>, <a href="roadmap.html">roadmap</a> and <a href="verification.html">verification notes</a>. Do not contribute proprietary assets, client binaries, credentials or live account data.</p>
+<p class="source"><a href="https://github.com/AnthonyOGorman/ashes-server-lab/blob/main/docs/FAQ.md">Edit this page's Markdown source on GitHub</a></p>
+</main>
+<footer><p>Independent, unofficial and experimental. Not affiliated with, supported by, or endorsed by Intrepid Studios. No client or proprietary game assets are distributed. Original code: <a href="https://github.com/AnthonyOGorman/ashes-server-lab/blob/main/LICENSE">MIT</a>; <a href="third-party.html">third-party notices</a>.</p><p><a href="verification.html">Verification and limitations</a> · <a href="contributing.html">Contribute</a> · <a href="llms.txt">Curated project guide</a></p></footer>
+</body>
+</html>

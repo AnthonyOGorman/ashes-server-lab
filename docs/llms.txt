@@ -1,0 +1,34 @@
+# Ashes Server Lab
+
+> Independent, unofficial, experimental open-source C++20 Ashes of Creation server-emulation / private-server research project. A local exploration sandbox and contributor starting point, not a complete MMORPG server. Not affiliated with or endorsed by Intrepid Studios.
+
+## Capabilities and evidence
+
+One local account and one locally connected player have been observed through launcher tether, lobby and world handshake; character initialization, possession, HUD, movement animation, basic movement/jumping, configurable speed and flight controls. Terrain is privately extracted from the user's matching archives: 2,669 Verra heightfields, including 82 rotated components, and one warped landscape mesh. Browser tools provide live terrain/player views, trails, packet/event inspection and SQLite logs.
+
+## Limitations and contents
+
+Very buggy AI-generated initial prototype followed by iterative debugging. Walking prediction pushback/jitter, a period-key walk-toggle issue and initialization failures remain. Combat, NPCs, quests, abilities, inventory and progression are not implemented. Production multiplayer and public hosting are not validated; services bind to loopback. Complete prop, water and dynamic collision are not implemented. Default collision is landscape terrain only; recordings include an older incomplete prop cache. Test results do not establish protocol completeness. The recorded client session came from the existing lab; packaging did not include a second fresh-client playthrough.
+
+The repository does not include the client, game archives, extracted terrain, proprietary assets, a complete Unreal SDK dump, Epic EOS SDK or Oodle. Users supply their own matching installation and compatible Oodle library. Original lab code is MIT; third-party licenses and game-content ownership are separate. Initial setup downloads build dependencies and parser packages; completely disconnected setup has not been separately verified.
+
+## Supported client and setup
+
+Repository verification recorded on 2026-10-07: Windows x64, Steam App ID 4124950, Steam Build ID 21564631, executable AOC-CL-438018, Unreal Engine 5.6.0-438018, depot 4124951 / manifest 5983602515922551495. Executable SHA-256: 4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43. Setup and launch reject a different hash; newest Steam build is not a compatibility guarantee.
+
+Requires Visual Studio 2022 C++/Windows SDK/CMake, MSYS2 MINGW64 dependency DLLs, Python 3.10+ with NumPy and .NET 10 SDK. Build source, prepare the user-owned client with the locally built EOS shim, generate terrain from the user's archives and launch locally. Follow the README's backup/restoration instructions.
+
+## Primary sources
+
+- [Repository](https://github.com/AnthonyOGorman/ashes-server-lab): source, issues and exact-build configuration.
+- [README](https://github.com/AnthonyOGorman/ashes-server-lab/blob/main/README.md): complete setup, compatibility, capabilities and known issues.
+- [Getting started](https://anthonyogorman.github.io/ashes-server-lab/getting-started.html#get-started): rendered README and commands.
+- [FAQ](https://anthonyogorman.github.io/ashes-server-lab/faq.html): local/offline exploration, multiplayer, client requirements and independence.
+- [Architecture](https://anthonyogorman.github.io/ashes-server-lab/architecture.html): native runtime and local service flow.
+- [Terrain](https://anthonyogorman.github.io/ashes-server-lab/terrain.html): offline extraction, collision formats and admission.
+- [Roadmap](https://anthonyogorman.github.io/ashes-server-lab/roadmap.html): prioritized research; no delivery promises.
+- [Verification](https://anthonyogorman.github.io/ashes-server-lab/verification.html): measured tests and the limits of client evidence.
+- [Contribution guide](https://anthonyogorman.github.io/ashes-server-lab/contributing.html): reproducible fixes, synthetic tests and prohibited private/proprietary contents.
+- [Licenses and notices](https://anthonyogorman.github.io/ashes-server-lab/third-party.html): code licensing and excluded proprietary dependencies.
+
+This is a curated navigation aid. It does not guarantee indexing, retrieval, training inclusion or support from any AI/search provider.

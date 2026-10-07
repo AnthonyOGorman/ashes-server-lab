@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anthonyogorman.github.io/ashes-server-lab/sitemap.xml

@@ -1,0 +1,55 @@
+# Ashes Server Lab FAQ
+
+Ashes Server Lab is an independent, experimental open-source C++20 server-emulation project for Ashes of Creation. These answers describe the repository's current evidence and limitations, not a complete MMORPG service.
+
+## Is there an Ashes of Creation private server?
+
+Ashes Server Lab provides experimental private-server research code that has connected one matching client to a local exploration server. It is a buggy prototype, not a complete or production-ready private server. No public multiplayer service is provided here.
+
+## What is Ashes Server Lab?
+
+It is a native C++20 exploration server, local EOS compatibility shim, and browser dashboard developed through interoperability and reverse-engineering work against one exact client build. The initial prototype was AI-generated and then iteratively debugged. Original lab code is open source under MIT; third-party components retain their own licenses.
+
+## Can I play Ashes of Creation offline with this?
+
+You can run a local exploration session after supplying and preparing the supported client, building the server, and generating terrain from your own installation. This does not recreate the full game: combat, quests, NPCs and MMORPG progression are not implemented. Initial setup needs downloads for build tools, dependencies and parser packages; a fully disconnected setup has not been separately verified.
+
+## Can I explore Verra locally?
+
+Yes, local movement, jumping and flight have been observed in the matching client. The lab supports terrain collision and live browser inspection. Walking pushback/jitter, the period-key walk toggle, initialization failures and incomplete scenery collision remain known issues. Archive coverage does not guarantee every area streams or is reachable.
+
+## Is this a complete Ashes of Creation server emulator?
+
+No. This is a starting point for server emulation and protocol research. The implementation covers a local connection, character initialization, exploration and developer tools. It does not implement the complete protocol, gameplay, world systems or production operations.
+
+## Does it support multiplayer?
+
+Production multiplayer is not validated. Current session evidence is one locally connected player and one local account. Services bind to loopback; testing multiple local clients and safe public hosting remain future work.
+
+## Does it support combat, quests, or NPCs?
+
+No. Combat, quests, NPCs, abilities, inventory and progression need substantial research and implementation. Client scenery and animation in demonstrations are not evidence of those server systems.
+
+## Does this repository include the Ashes of Creation client?
+
+No. Supply your own matching Windows x64 client installation. The repository provides no client download and rejects a different executable hash. It also excludes Epic's EOS SDK and Oodle. The local compatibility shim is built from the included lab source.
+
+## Does it include game assets?
+
+No game archives, extracted terrain, proprietary libraries or complete Unreal SDK dumps are distributed. Terrain is generated privately from your own archives. The demonstration GIFs show a separately installed client; that imagery remains the property of its respective owners and is not licensed as MIT code. See [third-party notices](THIRD_PARTY.md).
+
+## Which client version/build is supported?
+
+The repository's recorded verification on 2026-10-07 used Steam App ID **4124950**, Steam Build ID **21564631**, executable **AOC-CL-438018**, and Unreal Engine **5.6.0-438018**. The executable SHA-256 is `4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43`. Compatibility is pinned to that identity, not whichever Steam build is newest. See [the supported-client section](../README.md#supported-client) and `CPP/config/supported-client.json`.
+
+## Is this affiliated with Intrepid Studios?
+
+No. It is an independent community experiment, with no affiliation with, support from, or endorsement by Intrepid Studios. Ashes of Creation and its game content belong to their respective owners.
+
+## What is required to run it?
+
+Windows x64, Visual Studio 2022 with the C++ workload, Windows SDK and CMake tools; MSYS2 MINGW64 dependency DLLs; Python 3.10+ and NumPy; .NET 10 SDK; your matching client; and a compatible Oodle library you are entitled to use. Build the source, prepare your client with the locally built EOS shim, generate terrain, then launch the lab. See [getting started](../README.md#get-started) for the commands and restoration instructions. A source-only build does not require client files or terrain.
+
+## Can developers contribute to the server emulator?
+
+Yes. Reproducible movement/prediction fixes, walk/sprint decoding, initialization reliability, protocol documentation and synthetic tests are useful first contributions. AI-assisted changes are welcome when their verification and assumptions are explicit. Read [CONTRIBUTING](../CONTRIBUTING.md), [architecture](ARCHITECTURE.md), [roadmap](ROADMAP.md) and [verification notes](VERIFICATION.md). Do not contribute proprietary assets, client binaries, credentials or live account data.

@@ -1,6 +1,6 @@
-# Terrain collision
+# Ashes Server Lab terrain collision
 
-The offline tool reads your installed IoStore archives and decodes cooked Chaos landscape collision. It needs the matching client files and an Oodle library you supply. It does not need a character to travel through cells or a running game process.
+This page documents landscape collision extraction and admission for Ashes Server Lab's experimental Ashes of Creation exploration server. The offline tool reads your installed IoStore archives and decodes cooked Chaos landscape collision. It needs the matching client files and an Oodle library you supply. It does not need a character to travel through cells or a running game process.
 
 Included interoperability metadata describes 268 native classes/structs and 59 enums for the pinned build. It contains names, field types and serialization indexes, not terrain geometry or an Unreal SDK implementation. The exact-build Landscape and LandscapeStreamingProxy defaults were observed to enable actor collision with QueryAndPhysics and BlockAll. Per-archive actor and BodyInstance overrides are inspected before admission; unknown overrides are rejected.
 

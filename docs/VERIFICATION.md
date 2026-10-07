@@ -1,4 +1,6 @@
-# Verification
+# Ashes Server Lab verification
+
+This page records tests and observed client behavior for the experimental Ashes of Creation exploration server. Results distinguish synthetic source checks, privately generated terrain and real-client observations; none establish a complete server emulator.
 
 Verified locally on 2026-10-07, Windows x64, Visual Studio 2022 / MSVC 19.44, .NET SDK 10.0.401, against the executable identity in `CPP/config/supported-client.json`.
 

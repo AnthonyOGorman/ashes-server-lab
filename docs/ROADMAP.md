@@ -1,6 +1,6 @@
-# Roadmap
+# Ashes Server Lab roadmap
 
-This is an ordered list of useful directions, not a delivery schedule.
+These are research and implementation priorities for Ashes Server Lab, the experimental Ashes of Creation server-emulation project. This is an ordered list of useful directions, not a delivery schedule.
 
 ## Stabilize exploration
 

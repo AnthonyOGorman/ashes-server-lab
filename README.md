@@ -4,15 +4,15 @@
 
 **A small beginning for a very big world.**
 
-An experimental C++ server emulation lab for Ashes of Creation.
-Walk through Verra, fly above it, and watch the server's terrain and player movement live in your browser.
+Ashes Server Lab is an experimental open-source **Ashes of Creation private server / server emulator** written in **C++20**.
+It supports local Verra exploration, movement, flight and live browser tools, with substantial bugs and missing systems. This independent server-emulation and reverse-engineering lab is a contributor starting point, not a complete MMORPG server.
 
 ![C++20](https://img.shields.io/badge/C%2B%2B-20-00599C?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Windows%20x64-0078D4?style=flat-square)
 ![Status](https://img.shields.io/badge/status-very%20experimental-orange?style=flat-square)
 ![License](https://img.shields.io/badge/code%20license-MIT-green?style=flat-square)
 
-**[Get started](#get-started)** · **[Live demo](#see-it-running)** · **[What works](#what-works-today)** · **[Help build it](CONTRIBUTING.md)**
+**[Project website](https://anthonyogorman.github.io/ashes-server-lab/)** · **[Get started](#get-started)** · **[FAQ](docs/FAQ.md)** · **[Live demo](#see-it-running)** · **[What works](#what-works-today)** · **[Help build it](CONTRIBUTING.md)**
 
 </div>
 

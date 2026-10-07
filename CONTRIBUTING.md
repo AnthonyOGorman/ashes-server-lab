@@ -1,6 +1,6 @@
-# Contributing
+# Contributing to Ashes Server Lab
 
-This is a small, very experimental exploration server. Contributions that turn observations into reliable behavior are welcome. AI-assisted work is fine; describe what you verified and where you still depend on an assumption.
+Ashes Server Lab is a small, very experimental C++20 exploration server for Ashes of Creation. Contributions that turn observations into reliable behavior are welcome. AI-assisted work is fine; describe what you verified and where you still depend on an assumption.
 
 ## Start small
 

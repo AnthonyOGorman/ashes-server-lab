@@ -1,6 +1,6 @@
-# Architecture
+# Ashes Server Lab architecture
 
-The runtime is native C++20. Python and C# prepare local artifacts offline; they are not alternate servers.
+Ashes Server Lab is an experimental Ashes of Creation exploration server built through interoperability and protocol research. This page describes its local service flow and native entry points. The runtime is native C++20. Python and C# prepare local artifacts offline; they are not alternate servers.
 
 ```mermaid
 flowchart LR

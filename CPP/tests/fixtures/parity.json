@@ -1,0 +1,237 @@
+{
+  "bits": [
+    {
+      "name": "ack",
+      "hex": "d28d50150a00401404",
+      "bits": 68
+    },
+    {
+      "name": "correction",
+      "hex": "e61a8c241a3c3300004014040000000068c424c10000000090cf1841b81e85ebb16bc8400000000000806b4000000000000000000000000000208c403800",
+      "bits": 494
+    },
+    {
+      "name": "role",
+      "hex": "a3801000",
+      "bits": 30
+    },
+    {
+      "name": "begin",
+      "hex": "93500900",
+      "bits": 28
+    },
+    {
+      "name": "controller_state",
+      "hex": "8f0830716f5e85c4b3a29108000000d80300000000",
+      "bits": 163
+    },
+    {
+      "name": "pawn_state",
+      "hex": "8f0850716f5e85c4b3a29108000000d80300000000",
+      "bits": 163
+    },
+    {
+      "name": "gravity",
+      "hex": "b837af42e259d14804000000ec0100006c21300304030000000000000000000000020000000200000030007ec8d0cb53a80000007e00",
+      "bits": 425
+    },
+    {
+      "name": "speed",
+      "hex": "b837af42e259d14804000000ec0100006c213003040500000002000000000000000200000004000000f2ac3481afc60000c2f5a87f00",
+      "bits": 425
+    },
+    {
+      "name": "stats_export",
+      "hex": "02000000dc9b5721f1ac682402000000f60000000edc9b5721f1ac68040200000090030000041e000000a6e8c2e8e686dedae0dedccadce800a47192e001",
+      "bits": 489
+    },
+    {
+      "name": "info_export",
+      "hex": "02000000dc9b5721f1ac682402000000f60000000edc9b5721f1ac68040200000090030000042400000084c2e6ca86d0c2e4c2c6e8cae492dcccde00dee8f25f01",
+      "bits": 513
+    },
+    {
+      "name": "name",
+      "hex": "b937af42e259d14804000000ec0100001c1100c1000000c01426568407c7f6265726070000",
+      "bits": 292
+    },
+    {
+      "name": "character_id",
+      "hex": "b937af42e259d14804000000ec0100009c1260700300008070030000a070030000c0000000000000",
+      "bits": 316
+    }
+  ],
+  "packets": [
+    {
+      "hex": "96760c5049cc000040000000009e158d0400000000008009803dfe0b608f801900008097a3b0b6b217a632bb32b6b917ab3239b9b0afab373936b2afa6b039ba32b917ab3239b9b0afab373936b2afa6b039ba3239801d00008097a3b0b6b297a3b0b63221b6ba3238b93437bab997a0b7a1a3b0b6b2a637b232a1b0b932212897a0b7a1a3b0b6b2a637b232a1b0b93221a8af21000000008001",
+      "decoded": {
+        "protocol": "aoc_unreal_udp",
+        "session_id": 1,
+        "client_id": 2,
+        "handshake": false,
+        "wire_bytes": 154,
+        "sequence": 0,
+        "ack": 51,
+        "ack_history": [
+          1,
+          305419896
+        ],
+        "custom_header_opaque": 0,
+        "custom_header_evidence": "capture_verified_48_bits_schema_unresolved",
+        "has_packet_info": false,
+        "packet_info_opaque": 0,
+        "bunches": [
+          {
+            "start_bit": 183,
+            "channel": 0,
+            "open": true,
+            "close": false,
+            "reliable": true,
+            "paused": false,
+            "reliable_sequence": 123,
+            "channel_name": 255,
+            "exports": false,
+            "must_map": false,
+            "partial": false,
+            "partial_flags": [],
+            "payload_bits": 984,
+            "payload_hex": "01330000002f47616d652f4c6576656c732f56657272615f576f726c645f4d61737465722f56657272615f576f726c645f4d6173746572003b0000002f47616d652f47616d65426c75657072696e74732f416f4347616d654d6f64654261736542502e416f4347616d654d6f64654261736542505f430000000000",
+            "payload_length_field_bits": 13,
+            "messages": [
+              {
+                "id": 1,
+                "name": "Welcome",
+                "map": "/Game/Levels/Verra_World_Master/Verra_World_Master",
+                "game_mode": "/Game/GameBlueprints/AoCGameModeBaseBP.AoCGameModeBaseBP_C",
+                "redirect": ""
+              }
+            ]
+          }
+        ],
+        "payload_length_max": 8224,
+        "payload_length_evidence": "source_verified_SerializeInt_capture_inferred_maximum",
+        "kind": "control.Welcome",
+        "evidence": "capture_verified_transport"
+      }
+    },
+    {
+      "hex": "96760c5049cc000140000000009e158d0400000000008009803dfe0b608f801900008097a3b0b6b217a632bb32b6b917ab3239b9b0afab373936b2afa6b039ba32b917ab3239b9b0afab373936b2afa6b039ba3239801d00008097a3b0b6b297a3b0b63221b6ba3238b93437bab997a0b7a1a3b0b6b2a637b232a1b0b932212897a0b7a1a3b0b6b2a637b232a1b0b93221a8af21000000008001",
+      "decoded": {
+        "protocol": "aoc_unreal_udp",
+        "session_id": 1,
+        "client_id": 2,
+        "handshake": false,
+        "wire_bytes": 154,
+        "sequence": 1,
+        "ack": 51,
+        "ack_history": [
+          1,
+          305419896
+        ],
+        "custom_header_opaque": 0,
+        "custom_header_evidence": "capture_verified_48_bits_schema_unresolved",
+        "has_packet_info": false,
+        "packet_info_opaque": 0,
+        "bunches": [
+          {
+            "start_bit": 183,
+            "channel": 0,
+            "open": true,
+            "close": false,
+            "reliable": true,
+            "paused": false,
+            "reliable_sequence": 123,
+            "channel_name": 255,
+            "exports": false,
+            "must_map": false,
+            "partial": false,
+            "partial_flags": [],
+            "payload_bits": 984,
+            "payload_hex": "01330000002f47616d652f4c6576656c732f56657272615f576f726c645f4d61737465722f56657272615f576f726c645f4d6173746572003b0000002f47616d652f47616d65426c75657072696e74732f416f4347616d654d6f64654261736542502e416f4347616d654d6f64654261736542505f430000000000",
+            "payload_length_field_bits": 13,
+            "messages": [
+              {
+                "id": 1,
+                "name": "Welcome",
+                "map": "/Game/Levels/Verra_World_Master/Verra_World_Master",
+                "game_mode": "/Game/GameBlueprints/AoCGameModeBaseBP.AoCGameModeBaseBP_C",
+                "redirect": ""
+              }
+            ]
+          }
+        ],
+        "payload_length_max": 8224,
+        "payload_length_evidence": "source_verified_SerializeInt_capture_inferred_maximum",
+        "kind": "control.Welcome",
+        "evidence": "capture_verified_transport"
+      }
+    },
+    {
+      "hex": "96760c5049cc00ff7f000000009e158d0400000000008009803dfe0b608f801900008097a3b0b6b217a632bb32b6b917ab3239b9b0afab373936b2afa6b039ba32b917ab3239b9b0afab373936b2afa6b039ba3239801d00008097a3b0b6b297a3b0b63221b6ba3238b93437bab997a0b7a1a3b0b6b2a637b232a1b0b932212897a0b7a1a3b0b6b2a637b232a1b0b93221a8af21000000008001",
+      "decoded": {
+        "protocol": "aoc_unreal_udp",
+        "session_id": 1,
+        "client_id": 2,
+        "handshake": false,
+        "wire_bytes": 154,
+        "sequence": 16383,
+        "ack": 51,
+        "ack_history": [
+          1,
+          305419896
+        ],
+        "custom_header_opaque": 0,
+        "custom_header_evidence": "capture_verified_48_bits_schema_unresolved",
+        "has_packet_info": false,
+        "packet_info_opaque": 0,
+        "bunches": [
+          {
+            "start_bit": 183,
+            "channel": 0,
+            "open": true,
+            "close": false,
+            "reliable": true,
+            "paused": false,
+            "reliable_sequence": 123,
+            "channel_name": 255,
+            "exports": false,
+            "must_map": false,
+            "partial": false,
+            "partial_flags": [],
+            "payload_bits": 984,
+            "payload_hex": "01330000002f47616d652f4c6576656c732f56657272615f576f726c645f4d61737465722f56657272615f576f726c645f4d6173746572003b0000002f47616d652f47616d65426c75657072696e74732f416f4347616d654d6f64654261736542502e416f4347616d654d6f64654261736542505f430000000000",
+            "payload_length_field_bits": 13,
+            "messages": [
+              {
+                "id": 1,
+                "name": "Welcome",
+                "map": "/Game/Levels/Verra_World_Master/Verra_World_Master",
+                "game_mode": "/Game/GameBlueprints/AoCGameModeBaseBP.AoCGameModeBaseBP_C",
+                "redirect": ""
+              }
+            ]
+          }
+        ],
+        "payload_length_max": 8224,
+        "payload_length_evidence": "source_verified_SerializeInt_capture_inferred_maximum",
+        "kind": "control.Welcome",
+        "evidence": "capture_verified_transport"
+      }
+    }
+  ],
+  "guid": {
+    "object_id": "0x1234567890abcdee",
+    "server_id": 1,
+    "randomizer": 123
+  },
+  "pawn": {
+    "object_id": "0x0234567890abcdee",
+    "server_id": 1,
+    "randomizer": 456
+  },
+  "movement_spawn": [
+    -680500.0,
+    406500.0,
+    12501.01446828034
+  ]
+}

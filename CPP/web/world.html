@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ashes · Live server world</title>
+<link rel="stylesheet" href="/world.css"><script src="/world.js" defer></script></head>
+<body><header><a href="/">← Protocol lab</a><strong>LIVE SERVER WORLD</strong><span id="connection">Connecting…</span></header>
+<main><aside><h1>Collision & movement</h1><p class="muted">Authoritative server positions and admitted geometry. Client scenery can exist outside this coverage.</p>
+<label>Track player<select id="player" aria-label="Track player"></select></label>
+<label>Detail radius<select id="radius"><option value="5000">50 m</option><option value="15000" selected>150 m</option><option value="30000">300 m</option><option value="100000">1 km</option></select></label>
+<label>Terrain grid<select id="stride"><option value="1">Every native cell</option><option value="4" selected>Every 4 cells</option><option value="8">Every 8 cells</option><option value="16">Every 16 cells</option></select></label>
+<label>Collision detail<select id="detail"><option value="light" selected>Lightweight · sampled edges</option><option value="bounds">Bounds only · fastest</option><option value="full">Full physics wireframe</option></select></label>
+<div class="layers"><label><input id="terrain" type="checkbox" checked> <i class="cyan"></i>Terrain grid</label><label><input id="collision" type="checkbox" checked> <i class="amber"></i>Collision edges</label><label><input id="bounds" type="checkbox"> <i class="purple"></i>All cached bounds</label><label><input id="trails" type="checkbox" checked>Movement trails</label><label><input id="follow" type="checkbox" checked>Follow selected player</label></div>
+<button id="recenter">Centre on player</button><button id="reload">Refresh geometry</button>
+<dl id="stats"></dl><p id="coverage" class="muted"></p><p id="error" role="alert"></p></aside>
+<section class="viewport"><canvas id="scene" aria-label="Interactive 3D server collision view"></canvas><div class="help">Drag to orbit · Right-drag to pan · Scroll to zoom<br>X/Y: horizontal world axes · Z: height · Coordinates in cm</div><div id="empty">Waiting for a player with server collision data</div><div id="players"></div></section></main>
+</body></html>

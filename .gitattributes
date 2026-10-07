@@ -1,0 +1,7 @@
+* text=auto
+CPP/vendor/** linguist-vendored
+CPP/config/terrain-mappings/** linguist-generated
+*.png binary
+*.gif binary
+*.mp4 binary
+*.webm binary

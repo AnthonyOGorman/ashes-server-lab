@@ -1,0 +1,12 @@
+{
+  "game": "Ashes of Creation",
+  "steam_app_id": 4124950,
+  "steam_build_id": 21564631,
+  "steam_depot_id": 4124951,
+  "steam_depot_manifest": "5983602515922551495",
+  "executable_version": "AOC-CL-438018",
+  "engine_version": "5.6.0-438018",
+  "exe_sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+  "original_eos_sha256": "47261706ef55eca3df8ff2fef22937c77c7e1cc8e98f3171a8562c47005d781b",
+  "verified_date": "2026-10-07"
+}

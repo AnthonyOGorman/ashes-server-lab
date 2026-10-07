@@ -1,0 +1,29 @@
+{
+  "EOSSDK-Win64-Shipping.dll": [
+    "EOS_Platform_GetConnectInterface",
+    "EOS_ProductUserId_IsValid",
+    "EOS_ProductUserId_ToString",
+    "EOS_Initialize",
+    "EOS_Shutdown",
+    "EOS_Platform_Create",
+    "EOS_Platform_Release",
+    "EOS_Connect_Login",
+    "EOS_Connect_CreateUser",
+    "EOS_Connect_AddNotifyAuthExpiration",
+    "EOS_Platform_Tick",
+    "EOS_EResult_ToString",
+    "EOS_Platform_GetAntiCheatClientInterface",
+    "EOS_Platform_SetApplicationStatus",
+    "EOS_Platform_SetNetworkStatus",
+    "EOS_AntiCheatClient_AddNotifyMessageToServer",
+    "EOS_AntiCheatClient_RemoveNotifyMessageToServer",
+    "EOS_AntiCheatClient_AddNotifyClientIntegrityViolated",
+    "EOS_AntiCheatClient_RemoveNotifyClientIntegrityViolated",
+    "EOS_AntiCheatClient_BeginSession",
+    "EOS_AntiCheatClient_EndSession",
+    "EOS_AntiCheatClient_ReceiveMessageFromServer",
+    "EOS_Logging_SetCallback",
+    "EOS_Logging_SetLogLevel",
+    "EOS_GetVersion"
+  ]
+}

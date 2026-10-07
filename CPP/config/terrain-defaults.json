@@ -1,0 +1,20 @@
+{
+  "proof": {
+    "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43"
+  },
+  "records": [
+    {
+      "class": "Landscape",
+      "actor_enabled": true,
+      "collision_enabled_value": 3,
+      "collision_profile": "BlockAll"
+    },
+    {
+      "class": "LandscapeStreamingProxy",
+      "actor_enabled": true,
+      "collision_enabled_value": 3,
+      "collision_profile": "BlockAll"
+    }
+  ],
+  "method": "Observed native class defaults for the pinned executable; archive overrides are checked during extraction"
+}

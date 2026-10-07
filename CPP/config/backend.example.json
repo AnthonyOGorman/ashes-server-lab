@@ -1,0 +1,19 @@
+{
+  "dashboard_port": 8865,
+  "lobby_port": 16051,
+  "world_port": 18089,
+  "tether_port": 18090,
+  "terrain_manifest": "data/terrain-offline/decoded/manifest.json",
+  "collision_cache": "config/empty-collision.json",
+  "spawn": [
+    -680500.0,
+    406500.0,
+    12503.156049995745
+  ],
+  "client_exe": "",
+  "client_sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+  "sdk_path": "",
+  "sdk_sha256": "",
+  "auto_bootstrap": false,
+  "terrain_mesh_manifest": "data/terrain-offline/decoded-mesh/manifest.json"
+}

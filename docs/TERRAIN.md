@@ -19,6 +19,16 @@ The decoder retains uint16 height samples, material bytes, quantization, transfo
 
 The scan inspects all applicable world packages, including cells you have never visited. Archive presence does not prove a cell is reachable or that the client streams everything successfully.
 
+## Winstead settlement platform — latest local work
+
+The configured lab automatically sends Winstead platform metadata through the native settlement replication path. Before enabling movement, it verifies the current accepted actor, actual streamed package, loaded/visible level and placement, then admits **256 locally extracted platform heightfields** into a private collision world for that player. With the **2,669 base Verra tiles**, that world contains **2,925 tiles**. Other players without verified platform acceptance retain the base world.
+
+A controlled three-pulse route crossed the previously failing floor seam over about **36.18 metres**. All 43 sampled native poses remained grounded, platform contact was tied to the admitted loaded level, and the three server trace windows had 106 acknowledged updates with zero corrections. This establishes the sampled platform crossing, not every slope, building or route.
+
+The clean release still uses base Verra terrain and an empty prop cache by default. The private platform manifest/buffers are excluded from Git, and the standard `Export-Terrain.ps1` does not generate or configure that extra candidate. The saved native platform admission is build-specific; do not assume a visible settlement alone means the server has matching collision.
+
+Live settlement tier controls and transitions across **0–6 (Metropolis)** remain unfinished. Saved Winstead service selection produced empty filtered groups at tiers 5 and 6; changing tier metadata alone is not a populated city. See the [checkpoint handoff](PAUSED_DEVELOPMENT.md) for the remaining work.
+
 ## Outputs
 
 All outputs are ignored and generated under `CPP/data/terrain-offline/`:

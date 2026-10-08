@@ -33,19 +33,28 @@
 <p>Build the source-only targets first, then configure your own matching client and generate terrain. The README has the exact sequence. Keep a separate client copy or the original EOS backup if you need to restore the game installation.</p>
 <p>Useful first contributions include:</p>
 <ul>
-<li>Capture a minimal walking pushback reproduction with timestamps, inputs and server/client positions.</li>
-<li>Identify the period-key walk toggle and Shift/sprint flags; extend decoding and speed handling with real evidence.</li>
+<li>Extend the verified stationary jump case to moving jumps, air control, slopes and landing; capture remaining walking jitter with matched timestamps, inputs and positions.</li>
+<li>Verify live Shift/sprint activation and owner-scoped stamina consumption; fixture key handling is not sprint proof. Resolve the period-key walk toggle.</li>
+<li>Extend the verified Winstead platform to real settlement tier transitions and matching collision/readiness.</li>
 <li>Improve initialization retry/error reporting without weakening executable identity or actor lifetime checks.</li>
 <li>Split the dense C++ implementation into readable, documented components.</li>
 <li>Add meaningful synthetic tests for unsupported shapes or timing edge cases.</li>
 </ul>
 <p>See <a href="roadmap.html">the roadmap</a> for larger work.</p>
+<p>Gameplay development is paused at the 2026-10-08 checkpoint. Review <a href="https://github.com/AnthonyOGorman/ashes-server-lab/blob/main/docs/PAUSED_DEVELOPMENT.md">the handoff</a> and <a href="verification.html">verification</a> before resuming research. Historical process identities, native pointers and input leases must not be reused as current evidence.</p>
 <h2 id="reviewable-changes">Reviewable changes</h2>
 <p>Describe the trigger, prior behavior and resulting behavior. Include the client build, build/test command, and whether you verified against a real client or only synthetic fixtures. Protocol or native-offset changes should include enough sanitized evidence to explain the mapping.</p>
 <p>Run <code>CPP/tools/Build-CPP.ps1 -Configuration Release</code>. With locally generated terrain, also run <code>CPP/build/msvc/Release/ashes_terrain_tests.exe CPP</code>. Reconnect a matching client for initialization or movement changes and check the dashboard's readback evidence. Do not call transport ACKs proof that native state was accepted.</p>
 <h2 id="keep-private-files-private">Keep private files private</h2>
 <p>Do not commit game archives, collision buffers, executable fragments, downloaded proprietary DLLs, complete Unreal SDK dumps, live logs, saved profiles, session tokens, Steam account identifiers or machine-specific paths. <code>CPP/data/</code>, <code>CPP/config/backend.json</code>, profiles and builds are ignored. Screenshots should contain only the app/game being demonstrated.</p>
 <p>Submit source, small synthetic fixtures, documentation and sanitized compatibility definitions. Update the known-issues list when behavior changes; keep demonstrations honest about coverage.</p>
+<h2 id="documentation-site">Documentation site</h2>
+<p>The static site is generated from the README and documentation Markdown. After editing a published source, regenerate and validate it before committing:</p>
+<pre><code class="language-powershell">python -m pip install -r tools/site/requirements.txt
+python tools/site/build.py
+python tools/site/build.py --check
+</code></pre>
+<p>Commit the updated Markdown and generated <code>docs/</code> outputs together. The documentation workflow rejects stale generated pages.</p>
 <p class="source"><a href="https://github.com/AnthonyOGorman/ashes-server-lab/blob/main/CONTRIBUTING.md">Edit this page's Markdown source on GitHub</a></p>
 </main>
 <footer><p>Independent, unofficial and experimental. Not affiliated with, supported by, or endorsed by Intrepid Studios. No client or proprietary game assets are distributed. Original code: <a href="https://github.com/AnthonyOGorman/ashes-server-lab/blob/main/LICENSE">MIT</a>; <a href="third-party.html">third-party notices</a>.</p><p><a href="verification.html">Verification and limitations</a> · <a href="contributing.html">Contribute</a> · <a href="llms.txt">Curated project guide</a></p></footer>

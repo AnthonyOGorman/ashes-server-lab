@@ -14,3 +14,5 @@ The previews use seconds 4–12 of their recordings. Timing is preserved; frame 
 The game preview shows the supplied client's scenery and movement. The Web UI preview shows real server positions, terrain, movement state and collision wireframes. The recording lab has an earlier incomplete static-prop cache, whose geometry is not distributed. The clean repository defaults to terrain-only collision. Rendered scenery and amber wireframes do not imply full prop collision or gameplay support.
 
 The earlier assistant-captured screenshots and GIF have been removed from the published tree. The player-provided source recordings remain outside this repository.
+
+These recordings predate the 2026-10-08 loading gates, automatic Winstead platform/collision setup and stationary jump/gravity fix. The later controlled trials are documented separately in [verification](../VERIFICATION.md); the GIFs are not evidence of those changes or a jitter-free session.

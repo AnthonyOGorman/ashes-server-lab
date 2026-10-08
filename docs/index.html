@@ -35,15 +35,18 @@
 <h2 id="what-currently-works">What currently works</h2>
 <ul>
 <li>A local launcher tether, lobby, world handshake and one local account.</li>
-<li>Character initialization, possession, HUD and movement animation observed in the supported client.</li>
-<li>Basic movement and jumping, configurable speed, collision/gravity toggles and flight altitude controls.</li>
+<li>Selected character name, possession, HUD and verified health/mana/stamina bars from local-test values.</li>
+<li>Improved controlled walking and a verified stationary jump/gravity fix, plus configurable speed and flight controls. Some movement jitter remains.</li>
 <li>Offline extraction from your own archives: 2,669 Verra heightfields, including 82 rotated components, and one warped landscape collision mesh.</li>
+<li>Automatic Winstead platform streaming and matching collision in the configured lab, including a verified floor-seam crossing; private platform data is not bundled with the clean terrain setup.</li>
+<li>Loading input gates through native character/floor/collision and gameplay presentation readiness, plus reviewed DLL login/Play/movement automation in the configured testing workspace.</li>
 <li>A browser dashboard, live 3D terrain view, player trails, packet/event inspection and SQLite logs.</li>
 </ul>
 <p>These are measured capabilities of an exploration sandbox. Read <a href="verification.html">verification notes</a> for the distinction between source-only tests, packaged setup checks and the recorded client session.</p>
 <h2 id="what-does-not-work-yet">What does not work yet</h2>
 <p>Combat, NPCs, quests, inventory, abilities and progression are not implemented. Production multiplayer is not validated; current evidence is one locally connected player. Services bind to loopback.</p>
-<p>Walking correction pushback/jitter persists. The period-key walk toggle can stop movement handling, sprint needs investigation, and initialization may fail or time out. Complete building, rock, foliage, water and dynamic-object collision is not implemented. The default cache contains landscape terrain only.</p>
+<p>Some walking jitter persists. Moving jumps, air control, slopes and landing still need work. The period-key walk toggle, live sprint/stamina use and initialization recovery remain unresolved; the client's 22-second loading-screen hold remains. Complete building, rock, foliage, water and dynamic-object collision is not implemented. The default cache contains base landscape terrain only. Winstead platform support does not establish a full city, and live settlement tier controls/transitions remain unfinished.</p>
+<p><strong>Development paused, 2026-10-08.</strong> The latest source and unfinished work are saved. The <a href="https://github.com/AnthonyOGorman/ashes-server-lab/blob/main/docs/PAUSED_DEVELOPMENT.md">pause handoff</a> and <a href="verification.html">verification</a> separate accepted short trials from remaining work; the exported checkpoint has not been rebuilt or given a fresh-install playthrough.</p>
 <h2 id="see-the-local-lab">See the local lab</h2>
 <details>
 <summary>Load the exploration demonstration (approximately 9 MB)</summary>

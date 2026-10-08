@@ -11,9 +11,11 @@ It is an independent interoperability and reverse-engineering lab built around o
 ## What currently works
 
 - A local launcher tether, lobby, world handshake and one local account.
-- Character initialization, possession, HUD and movement animation observed in the supported client.
-- Basic movement and jumping, configurable speed, collision/gravity toggles and flight altitude controls.
+- Selected character name, possession, HUD and verified health/mana/stamina bars from local-test values.
+- Improved controlled walking and a verified stationary jump/gravity fix, plus configurable speed and flight controls. Some movement jitter remains.
 - Offline extraction from your own archives: 2,669 Verra heightfields, including 82 rotated components, and one warped landscape collision mesh.
+- Automatic Winstead platform streaming and matching collision in the configured lab, including a verified floor-seam crossing; private platform data is not bundled with the clean terrain setup.
+- Loading input gates through native character/floor/collision and gameplay presentation readiness, plus reviewed DLL login/Play/movement automation in the configured testing workspace.
 - A browser dashboard, live 3D terrain view, player trails, packet/event inspection and SQLite logs.
 
 These are measured capabilities of an exploration sandbox. Read [verification notes](../../docs/VERIFICATION.md) for the distinction between source-only tests, packaged setup checks and the recorded client session.
@@ -22,7 +24,9 @@ These are measured capabilities of an exploration sandbox. Read [verification no
 
 Combat, NPCs, quests, inventory, abilities and progression are not implemented. Production multiplayer is not validated; current evidence is one locally connected player. Services bind to loopback.
 
-Walking correction pushback/jitter persists. The period-key walk toggle can stop movement handling, sprint needs investigation, and initialization may fail or time out. Complete building, rock, foliage, water and dynamic-object collision is not implemented. The default cache contains landscape terrain only.
+Some walking jitter persists. Moving jumps, air control, slopes and landing still need work. The period-key walk toggle, live sprint/stamina use and initialization recovery remain unresolved; the client's 22-second loading-screen hold remains. Complete building, rock, foliage, water and dynamic-object collision is not implemented. The default cache contains base landscape terrain only. Winstead platform support does not establish a full city, and live settlement tier controls/transitions remain unfinished.
+
+**Development paused, 2026-10-08.** The latest source and unfinished work are saved. The [pause handoff](../../docs/PAUSED_DEVELOPMENT.md) and [verification](../../docs/VERIFICATION.md) separate accepted short trials from remaining work; the exported checkpoint has not been rebuilt or given a fresh-install playthrough.
 
 ## See the local lab
 

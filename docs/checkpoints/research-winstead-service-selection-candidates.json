@@ -1,0 +1,143 @@
+{
+  "build_sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+  "source": {
+    "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\winstead-tier-recipes.json",
+    "sha256": "8cec68115fd069d78877b08173e910c5df0074a70bcd9db86ce0d433476318d7"
+  },
+  "profile": {
+    "culture": 0,
+    "season": 1,
+    "gameplay_tags": [],
+    "maximum_defined_tier": 6,
+    "level_names": [
+      "Wilderness",
+      "Crossroads",
+      "Encampment",
+      "Village",
+      "Town",
+      "City",
+      "Metropolis"
+    ]
+  },
+  "node_id": "0x62d024b45678",
+  "node_type": 3,
+  "biome": 14,
+  "tiers": [
+    {
+      "level": 0,
+      "name": "Wilderness",
+      "starting_candidate_availability": {
+        "none": 0,
+        "one": 0,
+        "multiple": 0
+      },
+      "operational_candidate_availability": {
+        "none": 0,
+        "one": 0,
+        "multiple": 0
+      },
+      "plot_count": 0
+    },
+    {
+      "level": 1,
+      "name": "Crossroads",
+      "starting_candidate_availability": {
+        "none": 0,
+        "one": 4,
+        "multiple": 0
+      },
+      "operational_candidate_availability": {
+        "none": 0,
+        "one": 4,
+        "multiple": 0
+      },
+      "plot_count": 4
+    },
+    {
+      "level": 2,
+      "name": "Encampment",
+      "starting_candidate_availability": {
+        "none": 1,
+        "one": 7,
+        "multiple": 0
+      },
+      "operational_candidate_availability": {
+        "none": 1,
+        "one": 7,
+        "multiple": 0
+      },
+      "plot_count": 8
+    },
+    {
+      "level": 3,
+      "name": "Village",
+      "starting_candidate_availability": {
+        "none": 2,
+        "one": 16,
+        "multiple": 6
+      },
+      "operational_candidate_availability": {
+        "none": 2,
+        "one": 16,
+        "multiple": 6
+      },
+      "plot_count": 24
+    },
+    {
+      "level": 4,
+      "name": "Town",
+      "starting_candidate_availability": {
+        "none": 2,
+        "one": 17,
+        "multiple": 12
+      },
+      "operational_candidate_availability": {
+        "none": 1,
+        "one": 18,
+        "multiple": 12
+      },
+      "plot_count": 31
+    },
+    {
+      "level": 5,
+      "name": "City",
+      "starting_candidate_availability": {
+        "none": 30,
+        "one": 0,
+        "multiple": 0
+      },
+      "operational_candidate_availability": {
+        "none": 30,
+        "one": 0,
+        "multiple": 0
+      },
+      "plot_count": 30
+    },
+    {
+      "level": 6,
+      "name": "Metropolis",
+      "starting_candidate_availability": {
+        "none": 24,
+        "one": 0,
+        "multiple": 0
+      },
+      "operational_candidate_availability": {
+        "none": 24,
+        "one": 0,
+        "multiple": 0
+      },
+      "plot_count": 24
+    }
+  ],
+  "limits": [
+    "Saved definition/profile filtering only; nonempty selected groups are not proof of rendered or collidable building contents.",
+    "One available candidate is not an authoritative active-building choice; state/progression/ownership are separate.",
+    "StartingState is a definition default, not current server state. SecondaryId2 must not be equated with Operational state2.",
+    "No packets, CPP edits, process access, native calls or input."
+  ],
+  "receipt_scope": "Condensed availability summary; full generated plot definitions remain in the original workspace.",
+  "original_artifact": {
+    "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\winstead-service-selection-candidates.json",
+    "sha256": "626a889776bfb03ce343ff3c8dbaab88714000bb50f00863735351beea3ace4c"
+  }
+}

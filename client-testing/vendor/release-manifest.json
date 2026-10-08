@@ -1,0 +1,10 @@
+{
+  "source_digest": "sha256:938dc9901e6452cad3120280681c93a00ae12df2b259668815a150e221a35563",
+  "tag": "experimental-latest",
+  "asset": "UE4SS_v3.0.1-1161-g6eb3d9bc.zip",
+  "size": 8731703,
+  "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental-latest/UE4SS_v3.0.1-1161-g6eb3d9bc.zip",
+  "sha256": "938dc9901e6452cad3120280681c93a00ae12df2b259668815a150e221a35563",
+  "fetched_at": 1791382546,
+  "installed_in_game": false
+}

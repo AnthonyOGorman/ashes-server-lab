@@ -1,0 +1,12 @@
+vendor/
+index/*.sqlite
+index/*.sqlite-*
+index/*.jsonl
+ghidra-project/
+ghidra-user/
+__pycache__/
+scripts/asset-index/bin/
+scripts/asset-index/obj/
+tools/ilspy/
+tools/dotnet-home/
+tools/nuget-packages/

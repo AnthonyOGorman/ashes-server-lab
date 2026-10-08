@@ -1,0 +1,5 @@
+[mcp_servers.ashes-client-testing]
+command = "C:\\Tools\\Python310\\python.exe"
+args = ["E:\\Ashes Of Creation GPT\\client-testing\\cli.py", "--mode", "mcp"]
+startup_timeout_sec = 20
+tool_timeout_sec = 30

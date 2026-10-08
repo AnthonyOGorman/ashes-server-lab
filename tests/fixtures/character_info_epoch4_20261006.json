@@ -1,0 +1,1301 @@
+{
+  "actors": {
+    "errors": [],
+    "network_guid_actor_matches": [
+      {
+        "actor": {
+          "address": "0x18ee7df0040",
+          "object_index": 72632,
+          "name": "PlayerPawn_C_2147466186",
+          "class": "PlayerPawn_C",
+          "ancestors": [
+            "PlayerPawn_C",
+            "PlayerCharacter",
+            "BaseCharacter",
+            "Character",
+            "Pawn",
+            "Actor",
+            "Object"
+          ],
+          "outer_address": "0x18c48074060",
+          "network_roles": {
+            "Role": 1,
+            "RemoteRole": 4,
+            "evidence": "reflected Actor names/type/size/exactoffset; no role inferred from possession"
+          },
+          "controller": null,
+          "player_state": null,
+          "root_component": {
+            "address": "0x18f9c560c90",
+            "object_index": 72631,
+            "name": "CollisionCylinder",
+            "class": "CapsuleComponent",
+            "ancestors": [
+              "CapsuleComponent",
+              "ShapeComponent",
+              "PrimitiveComponent",
+              "SceneComponent",
+              "ActorComponent",
+              "Object"
+            ],
+            "outer_address": "0x18ee7df0040",
+            "attach_parent": null,
+            "relative_location": [
+              -660384.0,
+              389360.30000000005,
+              13622.900000000001
+            ],
+            "coordinate_evidence": "reflected RelativeLocation; ComponentToWorld not read",
+            "unattached_location": [
+              -660384.0,
+              389360.30000000005,
+              13622.900000000001
+            ]
+          }
+        },
+        "guid": {
+          "object_id": "0x18f0451cdb964788",
+          "server_id": 1,
+          "randomizer": 3392585225
+        },
+        "guid_hex": "884796db1c45f0180100000009be36ca",
+        "weak_object_index": 72632,
+        "weak_object_serial": 343390,
+        "guid_cache": "0x18f705f12d0",
+        "evidence": "current_binary_map_layout_and_live_GObjects_pointer_index_serial_agreement"
+      }
+    ]
+  },
+  "appearance": {
+    "errors": [],
+    "pawn": {
+      "identity": {
+        "address": "0x18ee7df0040",
+        "object_index": 72632,
+        "name": "PlayerPawn_C_2147466186",
+        "class": "PlayerPawn_C",
+        "ancestors": [
+          "PlayerPawn_C",
+          "PlayerCharacter",
+          "BaseCharacter",
+          "Character",
+          "Pawn",
+          "Actor",
+          "Object"
+        ],
+        "outer_address": "0x18c48074060"
+      }
+    },
+    "character_information": {
+      "identity": {
+        "address": "0x18fd7ad8940",
+        "object_index": 72624,
+        "name": "BaseCharacterInfo",
+        "class": "PlayerInfo",
+        "ancestors": [
+          "PlayerInfo",
+          "CharacterInfo",
+          "IntrepidRepKeyComponent",
+          "ActorComponent",
+          "Object"
+        ],
+        "outer_address": "0x18ee7df0040"
+      },
+      "fields": {
+        "CharacterGuid": {
+          "status": "read_struct",
+          "metadata": {
+            "name": "CharacterGuid",
+            "address": "0x18ce6f6bb80",
+            "type": "StructProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 280,
+            "array_dim": 1,
+            "element_size": 16,
+            "flags": "0x4018001140002234",
+            "flag_names": [
+              "Net",
+              "RepNotify"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "02000000",
+            "referenced_type": "Guid",
+            "owner_class": "CharacterInfo"
+          },
+          "struct": "Guid",
+          "fields": {
+            "A": {
+              "status": "read",
+              "metadata": {
+                "name": "A",
+                "address": "0x18c4497dbb0",
+                "type": "IntProperty",
+                "owner_pointer_tagged": "0x7ff4ad104071",
+                "offset_in_object": 0,
+                "array_dim": 1,
+                "element_size": 4,
+                "flags": "0x18001041000201",
+                "flag_names": [],
+                "rep_index": null,
+                "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+                "uninterpreted_sdk_padding_0x40": "00000000"
+              },
+              "value": 0
+            },
+            "B": {
+              "status": "read",
+              "metadata": {
+                "name": "B",
+                "address": "0x18c4497db40",
+                "type": "IntProperty",
+                "owner_pointer_tagged": "0x7ff4ad104071",
+                "offset_in_object": 4,
+                "array_dim": 1,
+                "element_size": 4,
+                "flags": "0x18001041000201",
+                "flag_names": [],
+                "rep_index": null,
+                "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+                "uninterpreted_sdk_padding_0x40": "00000000"
+              },
+              "value": 0
+            },
+            "C": {
+              "status": "read",
+              "metadata": {
+                "name": "C",
+                "address": "0x18c4497dad0",
+                "type": "IntProperty",
+                "owner_pointer_tagged": "0x7ff4ad104071",
+                "offset_in_object": 8,
+                "array_dim": 1,
+                "element_size": 4,
+                "flags": "0x18001041000201",
+                "flag_names": [],
+                "rep_index": null,
+                "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+                "uninterpreted_sdk_padding_0x40": "00000000"
+              },
+              "value": 0
+            },
+            "D": {
+              "status": "read",
+              "metadata": {
+                "name": "D",
+                "address": "0x18c4497da60",
+                "type": "IntProperty",
+                "owner_pointer_tagged": "0x7ff4ad104071",
+                "offset_in_object": 12,
+                "array_dim": 1,
+                "element_size": 4,
+                "flags": "0x18001041000201",
+                "flag_names": [],
+                "rep_index": null,
+                "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+                "uninterpreted_sdk_padding_0x40": "00000000"
+              },
+              "value": 0
+            }
+          }
+        },
+        "CharacterName": {
+          "status": "read",
+          "metadata": {
+            "name": "CharacterName",
+            "address": "0x18ce6f48ac0",
+            "type": "StrProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 304,
+            "array_dim": 1,
+            "element_size": 16,
+            "flags": "0x4018000100010221",
+            "flag_names": [
+              "Net",
+              "RepNotify"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "04000000",
+            "owner_class": "CharacterInfo"
+          },
+          "value": "Player"
+        },
+        "CharacterType": {
+          "status": "read",
+          "metadata": {
+            "name": "CharacterType",
+            "address": "0x18ce6f6bc80",
+            "type": "EnumProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 296,
+            "array_dim": 1,
+            "element_size": 1,
+            "flags": "0x4018001140010235",
+            "flag_names": [
+              "Net",
+              "RepNotify"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "03000000",
+            "owner_class": "CharacterInfo"
+          },
+          "value": 2
+        },
+        "Race": {
+          "status": "read",
+          "metadata": {
+            "name": "Race",
+            "address": "0x18ce6f6bd80",
+            "type": "EnumProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 336,
+            "array_dim": 1,
+            "element_size": 1,
+            "flags": "0x4018001140010235",
+            "flag_names": [
+              "Net",
+              "RepNotify"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "06000000",
+            "owner_class": "CharacterInfo"
+          },
+          "value": 0
+        },
+        "Gender": {
+          "status": "read",
+          "metadata": {
+            "name": "Gender",
+            "address": "0x18ce6f6be80",
+            "type": "EnumProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 337,
+            "array_dim": 1,
+            "element_size": 1,
+            "flags": "0x4018001140010235",
+            "flag_names": [
+              "Net",
+              "RepNotify"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "07000000",
+            "owner_class": "CharacterInfo"
+          },
+          "value": 0
+        },
+        "ServerId": {
+          "status": "read",
+          "metadata": {
+            "name": "ServerId",
+            "address": "0x18ce6f48ba0",
+            "type": "IntProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 340,
+            "array_dim": 1,
+            "element_size": 4,
+            "flags": "0x18001140002220",
+            "flag_names": [
+              "Net",
+              "RepNotify"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "08000000",
+            "owner_class": "CharacterInfo"
+          },
+          "value": 0
+        },
+        "Level": {
+          "status": "read",
+          "metadata": {
+            "name": "Level",
+            "address": "0x18ce6f48c10",
+            "type": "IntProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 344,
+            "array_dim": 1,
+            "element_size": 4,
+            "flags": "0x4018001140000235",
+            "flag_names": [
+              "Net",
+              "RepNotify"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "09000000",
+            "owner_class": "CharacterInfo"
+          },
+          "value": 1
+        },
+        "ComponentOwnerPrivate": {
+          "status": "read",
+          "metadata": {
+            "name": "ComponentOwnerPrivate",
+            "address": "0x18bd1baa380",
+            "type": "ObjectProperty",
+            "owner_pointer_tagged": "0x7ff4acbf2439",
+            "offset_in_object": 224,
+            "array_dim": 1,
+            "element_size": 8,
+            "flags": "0x14c001000080208",
+            "flag_names": [],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "00000000",
+            "referenced_type": "ActorComponent",
+            "owner_class": "ActorComponent"
+          },
+          "value": null
+        },
+        "bReplicates": {
+          "status": "read",
+          "metadata": {
+            "name": "bReplicates",
+            "address": "0x18bd1ba9f00",
+            "type": "BoolProperty",
+            "owner_pointer_tagged": "0x7ff4acbf2439",
+            "offset_in_object": 180,
+            "array_dim": 1,
+            "element_size": 1,
+            "flags": "0x4048001100010035",
+            "flag_names": [
+              "Net",
+              "RepNotify"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "00000000",
+            "bool_layout": {
+              "field_size": 1,
+              "byte_offset": 0,
+              "byte_mask": 128,
+              "field_mask": 128
+            },
+            "owner_class": "ActorComponent"
+          },
+          "value": true,
+          "raw_byte": 129
+        },
+        "bIsPhasedOut": {
+          "status": "read",
+          "metadata": {
+            "name": "bIsPhasedOut",
+            "address": "0x18ce6f6c100",
+            "type": "BoolProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 356,
+            "array_dim": 1,
+            "element_size": 1,
+            "flags": "0x4018001140002220",
+            "flag_names": [
+              "Net",
+              "RepNotify"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "0f000000",
+            "bool_layout": {
+              "field_size": 1,
+              "byte_offset": 0,
+              "byte_mask": 1,
+              "field_mask": 255
+            },
+            "owner_class": "CharacterInfo"
+          },
+          "value": false,
+          "raw_byte": 0
+        },
+        "bClientIsReadyToPhaseIn": {
+          "status": "read",
+          "metadata": {
+            "name": "bClientIsReadyToPhaseIn",
+            "address": "0x18ce6f6c180",
+            "type": "BoolProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 357,
+            "array_dim": 1,
+            "element_size": 1,
+            "flags": "0x8018001040002220",
+            "flag_names": [
+              "Net"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "10000000",
+            "bool_layout": {
+              "field_size": 1,
+              "byte_offset": 0,
+              "byte_mask": 1,
+              "field_mask": 255
+            },
+            "owner_class": "CharacterInfo"
+          },
+          "value": true,
+          "raw_byte": 1
+        },
+        "bHasBeenPossessed": {
+          "status": "read",
+          "metadata": {
+            "name": "bHasBeenPossessed",
+            "address": "0x18ce6fa0c80",
+            "type": "BoolProperty",
+            "owner_pointer_tagged": "0x7ff4acea56f9",
+            "offset_in_object": 465,
+            "array_dim": 1,
+            "element_size": 1,
+            "flags": "0x18001000002020",
+            "flag_names": [
+              "Net"
+            ],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "12000000",
+            "bool_layout": {
+              "field_size": 1,
+              "byte_offset": 0,
+              "byte_mask": 1,
+              "field_mask": 1
+            },
+            "owner_class": "PlayerInfo"
+          },
+          "value": false,
+          "raw_byte": 0
+        },
+        "PhasedOutStartTime": {
+          "status": "read",
+          "metadata": {
+            "name": "PhasedOutStartTime",
+            "address": "0x18ce6f48cf0",
+            "type": "DoubleProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 360,
+            "array_dim": 1,
+            "element_size": 8,
+            "flags": "0x8018001040002200",
+            "flag_names": [],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "00000000",
+            "owner_class": "CharacterInfo"
+          },
+          "value": 0.0
+        },
+        "TeleportState": {
+          "status": "read",
+          "metadata": {
+            "name": "TeleportState",
+            "address": "0x18ce6f6c300",
+            "type": "EnumProperty",
+            "owner_pointer_tagged": "0x7ff4acea3bf9",
+            "offset_in_object": 369,
+            "array_dim": 1,
+            "element_size": 1,
+            "flags": "0x8018001040002214",
+            "flag_names": [],
+            "rep_index": null,
+            "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+            "uninterpreted_sdk_padding_0x40": "00000000",
+            "owner_class": "CharacterInfo"
+          },
+          "value": 0
+        }
+      }
+    }
+  },
+  "receiver": {
+    "pid": 56180,
+    "client_proof": {
+      "pid": 56180,
+      "exe": "E:\\Games\\Steam Library\\steamapps\\common\\Ashes of Creation\\Game\\AOC\\Binaries\\Win64\\AOCClient-Win64-Shipping.exe",
+      "process_created_filetime": 134357565206923014,
+      "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+      "observed_at": 1791289367.1162026
+    },
+    "functions_invoked": false,
+    "component": {
+      "address": "0x18fd7ad8940",
+      "object_index": 72624,
+      "name": "BaseCharacterInfo",
+      "class": "PlayerInfo",
+      "ancestors": [
+        "PlayerInfo",
+        "CharacterInfo",
+        "IntrepidRepKeyComponent",
+        "ActorComponent",
+        "Object"
+      ],
+      "outer_address": "0x18ee7df0040"
+    },
+    "virtual_targets": {
+      "0x2a8": {
+        "rva": "0x131c2f0",
+        "bytes": "c20000cccccccccccccccccccccccccc4883ec28488b01ff503084c00f94c048"
+      },
+      "0x2b0": {
+        "rva": "0x15f4670",
+        "bytes": "e97b7cd2ffcccccccccccccccccccccc48895c24084889742410574883ec2048",
+        "jump_target_rva": "0x131c2f0",
+        "jump_target_bytes": "c20000"
+      }
+    },
+    "completed_client_proof": {
+      "pid": 56180,
+      "exe": "E:\\Games\\Steam Library\\steamapps\\common\\Ashes of Creation\\Game\\AOC\\Binaries\\Win64\\AOCClient-Win64-Shipping.exe",
+      "process_created_filetime": 134357565206923014,
+      "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+      "observed_at": 1791289367.1167023
+    }
+  },
+  "mapping": {
+    "pid": 56180,
+    "client_proof": {
+      "pid": 56180,
+      "exe": "E:\\Games\\Steam Library\\steamapps\\common\\Ashes of Creation\\Game\\AOC\\Binaries\\Win64\\AOCClient-Win64-Shipping.exe",
+      "process_created_filetime": 134357565206923014,
+      "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+      "observed_at": 1791289668.570443
+    },
+    "functions_invoked": false,
+    "component": {
+      "address": "0x18fd7ad8940",
+      "object_index": 72624,
+      "name": "BaseCharacterInfo",
+      "class": "PlayerInfo",
+      "ancestors": [
+        "PlayerInfo",
+        "CharacterInfo",
+        "IntrepidRepKeyComponent",
+        "ActorComponent",
+        "Object"
+      ],
+      "outer_address": "0x18ee7df0040"
+    },
+    "network_guid_component_matches": [
+      {
+        "guid": {
+          "object_id": "0x2e7522ab5b72e750",
+          "server_id": 1,
+          "randomizer": 3922224476
+        },
+        "guid_cache": "0x18f705f12d0",
+        "weak_object_index": 72624,
+        "weak_object_serial": 344311,
+        "component": {
+          "address": "0x18fd7ad8940",
+          "object_index": 72624,
+          "name": "BaseCharacterInfo",
+          "class": "PlayerInfo",
+          "ancestors": [
+            "PlayerInfo",
+            "CharacterInfo",
+            "IntrepidRepKeyComponent",
+            "ActorComponent",
+            "Object"
+          ],
+          "outer_address": "0x18ee7df0040"
+        },
+        "pawn_guid": {
+          "object_id": "0x18f0451cdb964788",
+          "server_id": 1,
+          "randomizer": 3392585225
+        }
+      }
+    ],
+    "properties": {
+      "CharacterGuid": {
+        "property": {
+          "name": "CharacterGuid",
+          "address": "0x18ce6f6bb80",
+          "type": "StructProperty",
+          "owner_pointer_tagged": "0x7ff4acea3bf9",
+          "offset_in_object": 280,
+          "array_dim": 1,
+          "element_size": 16,
+          "flags": "0x4018001140002234",
+          "flag_names": [
+            "Net",
+            "RepNotify"
+          ],
+          "rep_index": null,
+          "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+          "uninterpreted_sdk_padding_0x40": "02000000",
+          "referenced_type": "Guid",
+          "owner_class": "CharacterInfo"
+        },
+        "serializer_rva": "0x1732040"
+      },
+      "CharacterName": {
+        "property": {
+          "name": "CharacterName",
+          "address": "0x18ce6f48ac0",
+          "type": "StrProperty",
+          "owner_pointer_tagged": "0x7ff4acea3bf9",
+          "offset_in_object": 304,
+          "array_dim": 1,
+          "element_size": 16,
+          "flags": "0x4018000100010221",
+          "flag_names": [
+            "Net",
+            "RepNotify"
+          ],
+          "rep_index": null,
+          "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+          "uninterpreted_sdk_padding_0x40": "04000000",
+          "owner_class": "CharacterInfo"
+        },
+        "serializer_rva": "0x16de940",
+        "serialize_item_rva": "0x1610120"
+      },
+      "Race": {
+        "property": {
+          "name": "Race",
+          "address": "0x18ce6f6bd80",
+          "type": "EnumProperty",
+          "owner_pointer_tagged": "0x7ff4acea3bf9",
+          "offset_in_object": 336,
+          "array_dim": 1,
+          "element_size": 1,
+          "flags": "0x4018001140010235",
+          "flag_names": [
+            "Net",
+            "RepNotify"
+          ],
+          "rep_index": null,
+          "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+          "uninterpreted_sdk_padding_0x40": "06000000",
+          "owner_class": "CharacterInfo"
+        },
+        "serializer_rva": "0x163fc90"
+      },
+      "Gender": {
+        "property": {
+          "name": "Gender",
+          "address": "0x18ce6f6be80",
+          "type": "EnumProperty",
+          "owner_pointer_tagged": "0x7ff4acea3bf9",
+          "offset_in_object": 337,
+          "array_dim": 1,
+          "element_size": 1,
+          "flags": "0x4018001140010235",
+          "flag_names": [
+            "Net",
+            "RepNotify"
+          ],
+          "rep_index": null,
+          "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+          "uninterpreted_sdk_padding_0x40": "07000000",
+          "owner_class": "CharacterInfo"
+        },
+        "serializer_rva": "0x163fc90"
+      },
+      "ServerId": {
+        "property": {
+          "name": "ServerId",
+          "address": "0x18ce6f48ba0",
+          "type": "IntProperty",
+          "owner_pointer_tagged": "0x7ff4acea3bf9",
+          "offset_in_object": 340,
+          "array_dim": 1,
+          "element_size": 4,
+          "flags": "0x18001140002220",
+          "flag_names": [
+            "Net",
+            "RepNotify"
+          ],
+          "rep_index": null,
+          "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+          "uninterpreted_sdk_padding_0x40": "08000000",
+          "owner_class": "CharacterInfo"
+        },
+        "serializer_rva": "0x16de940",
+        "serialize_item_rva": "0x16100a0"
+      },
+      "Level": {
+        "property": {
+          "name": "Level",
+          "address": "0x18ce6f48c10",
+          "type": "IntProperty",
+          "owner_pointer_tagged": "0x7ff4acea3bf9",
+          "offset_in_object": 344,
+          "array_dim": 1,
+          "element_size": 4,
+          "flags": "0x4018001140000235",
+          "flag_names": [
+            "Net",
+            "RepNotify"
+          ],
+          "rep_index": null,
+          "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+          "uninterpreted_sdk_padding_0x40": "09000000",
+          "owner_class": "CharacterInfo"
+        },
+        "serializer_rva": "0x16de940",
+        "serialize_item_rva": "0x16100a0"
+      }
+    },
+    "notification_functions": [
+      {
+        "name": "OnRep_SportFishingData",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e089a0"
+      },
+      {
+        "name": "OnRep_ShowGMTag",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e08920"
+      },
+      {
+        "name": "OnRep_HomeAttunementLastUsed",
+        "owner": "PlayerInfo",
+        "native_rva": "0x501b1a0"
+      },
+      {
+        "name": "OnRep_HomeAttunement",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e07be0"
+      },
+      {
+        "name": "OnRep_HeldItems",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e08000"
+      },
+      {
+        "name": "OnRep_GroundMountCosmeticItemGuid",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e07fe0"
+      },
+      {
+        "name": "OnRep_FoliageData",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e07ca0"
+      },
+      {
+        "name": "OnRep_FlyingMountCosmeticItemGuid",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e07c80"
+      },
+      {
+        "name": "OnRep_FastTravelData",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e07c60"
+      },
+      {
+        "name": "OnRep_bIsBreathing",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e08b80"
+      },
+      {
+        "name": "OnRep_Attunements",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e07be0"
+      },
+      {
+        "name": "OnRep_AquaticMountCosmeticItemGuid",
+        "owner": "PlayerInfo",
+        "native_rva": "0x5e07bc0"
+      },
+      {
+        "name": "OnRep_ServerId",
+        "owner": "CharacterInfo",
+        "native_rva": "0x5d817d0"
+      },
+      {
+        "name": "OnRep_Race",
+        "owner": "CharacterInfo",
+        "native_rva": "0x5aea900"
+      },
+      {
+        "name": "OnRep_Level",
+        "owner": "CharacterInfo",
+        "native_rva": "0x5d81730"
+      },
+      {
+        "name": "OnRep_HideNameplate",
+        "owner": "CharacterInfo",
+        "native_rva": "0x58a6480"
+      },
+      {
+        "name": "OnRep_Gender",
+        "owner": "CharacterInfo",
+        "native_rva": "0x501bb00"
+      },
+      {
+        "name": "OnRep_CreatureOwnerName",
+        "owner": "CharacterInfo",
+        "native_rva": "0x3e6cea0"
+      },
+      {
+        "name": "OnRep_CharacterType",
+        "owner": "CharacterInfo",
+        "native_rva": "0x43f3940"
+      },
+      {
+        "name": "OnRep_CharacterName",
+        "owner": "CharacterInfo",
+        "native_rva": "0x5d81500"
+      },
+      {
+        "name": "OnRep_CharacterGuid",
+        "owner": "CharacterInfo",
+        "native_rva": "0x5d81460"
+      },
+      {
+        "name": "OnRep_bIsPhasedOut",
+        "owner": "CharacterInfo",
+        "native_rva": "0x5d81890"
+      },
+      {
+        "name": "OnRep_bGmNoClip",
+        "owner": "CharacterInfo",
+        "native_rva": "0x4dcd520"
+      },
+      {
+        "name": "OnRep_bGmHidden",
+        "owner": "CharacterInfo",
+        "native_rva": "0x5d81850"
+      },
+      {
+        "name": "OnRep_Replicates",
+        "owner": "ActorComponent",
+        "native_rva": "0x3e13120"
+      },
+      {
+        "name": "OnRep_IsActive",
+        "owner": "ActorComponent",
+        "native_rva": "0x3a6c9d0"
+      }
+    ],
+    "notification_virtuals": {
+      "0x560": "0x6c2b0c0",
+      "0x570": "0x6c2b150",
+      "0x5a8": "0x6b55f00"
+    },
+    "cached_actor_owner": {
+      "address": "0x18ee7df0040",
+      "object_index": 72632,
+      "name": "PlayerPawn_C_2147466186",
+      "class": "PlayerPawn_C",
+      "ancestors": [
+        "PlayerPawn_C",
+        "PlayerCharacter",
+        "BaseCharacter",
+        "Character",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "outer_address": "0x18c48074060"
+    },
+    "completed_client_proof": {
+      "pid": 56180,
+      "exe": "E:\\Games\\Steam Library\\steamapps\\common\\Ashes of Creation\\Game\\AOC\\Binaries\\Win64\\AOCClient-Win64-Shipping.exe",
+      "process_created_filetime": 134357565206923014,
+      "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+      "observed_at": 1791289668.570443
+    },
+    "guid_fields": {
+      "A": {
+        "property": {
+          "name": "A",
+          "address": "0x18c4497dbb0",
+          "type": "IntProperty",
+          "owner_pointer_tagged": "0x7ff4ad104071",
+          "offset_in_object": 0,
+          "array_dim": 1,
+          "element_size": 4,
+          "flags": "0x18001041000201",
+          "flag_names": [],
+          "rep_index": null,
+          "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+          "uninterpreted_sdk_padding_0x40": "00000000"
+        },
+        "serializer_rva": "0x16de940",
+        "serialize_item_rva": "0x16100a0"
+      },
+      "B": {
+        "property": {
+          "name": "B",
+          "address": "0x18c4497db40",
+          "type": "IntProperty",
+          "owner_pointer_tagged": "0x7ff4ad104071",
+          "offset_in_object": 4,
+          "array_dim": 1,
+          "element_size": 4,
+          "flags": "0x18001041000201",
+          "flag_names": [],
+          "rep_index": null,
+          "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+          "uninterpreted_sdk_padding_0x40": "00000000"
+        },
+        "serializer_rva": "0x16de940",
+        "serialize_item_rva": "0x16100a0"
+      },
+      "C": {
+        "property": {
+          "name": "C",
+          "address": "0x18c4497dad0",
+          "type": "IntProperty",
+          "owner_pointer_tagged": "0x7ff4ad104071",
+          "offset_in_object": 8,
+          "array_dim": 1,
+          "element_size": 4,
+          "flags": "0x18001041000201",
+          "flag_names": [],
+          "rep_index": null,
+          "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+          "uninterpreted_sdk_padding_0x40": "00000000"
+        },
+        "serializer_rva": "0x16de940",
+        "serialize_item_rva": "0x16100a0"
+      },
+      "D": {
+        "property": {
+          "name": "D",
+          "address": "0x18c4497da60",
+          "type": "IntProperty",
+          "owner_pointer_tagged": "0x7ff4ad104071",
+          "offset_in_object": 12,
+          "array_dim": 1,
+          "element_size": 4,
+          "flags": "0x18001041000201",
+          "flag_names": [],
+          "rep_index": null,
+          "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+          "uninterpreted_sdk_padding_0x40": "00000000"
+        },
+        "serializer_rva": "0x16de940",
+        "serialize_item_rva": "0x16100a0"
+      }
+    }
+  },
+  "layouts": {
+    "errors": [],
+    "layouts": [
+      {
+        "class": "PlayerInfo",
+        "class_index": 5263,
+        "class_serial": 344307,
+        "driver": "0x18fea0255c0",
+        "layout": "0x18fa5c8a180",
+        "header_hex": "c09c503cf77f0000000100000000000080a1c8a58f010000a0f55c1c8f01000008bbf6e6b8030000b00edc488c0100002600000027000000405d587a8f010000550000005d0000000000000000000000",
+        "parent_count": 38,
+        "command_count": 85,
+        "parents": [
+          {
+            "parent_index": 0,
+            "property": {
+              "name": "bReplicates",
+              "address": "0x18bd1ba9f00",
+              "type": "BoolProperty",
+              "owner_pointer_tagged": "0x7ff4acbf2439",
+              "offset_in_object": 180,
+              "array_dim": 1,
+              "element_size": 1,
+              "flags": "0x4048001100010035",
+              "flag_names": [
+                "Net",
+                "RepNotify"
+              ],
+              "rep_index": null,
+              "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+              "uninterpreted_sdk_padding_0x40": "00000000",
+              "bool_layout": {
+                "field_size": 1,
+                "byte_offset": 0,
+                "byte_mask": 128,
+                "field_mask": 128
+              },
+              "owner_class": "ActorComponent"
+            },
+            "record_hex": "009fbad18b0100005ca887000000000000000000b4000000000000000000010000000000000000000100000001000000"
+          },
+          {
+            "parent_index": 1,
+            "property": {
+              "name": "bIsActive",
+              "address": "0x18bd1baa080",
+              "type": "BoolProperty",
+              "owner_pointer_tagged": "0x7ff4acbf2439",
+              "offset_in_object": 189,
+              "array_dim": 1,
+              "element_size": 1,
+              "flags": "0x48001100002020",
+              "flag_names": [
+                "Net",
+                "RepNotify"
+              ],
+              "rep_index": null,
+              "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+              "uninterpreted_sdk_padding_0x40": "01000000",
+              "bool_layout": {
+                "field_size": 1,
+                "byte_offset": 0,
+                "byte_mask": 16,
+                "field_mask": 16
+              },
+              "owner_class": "ActorComponent"
+            },
+            "record_hex": "80a0bad18b01000002a887000000000000000000bd000000010000000100020000000000000000000000000001000000"
+          },
+          {
+            "parent_index": 2,
+            "property": {
+              "name": "CharacterGuid",
+              "address": "0x18ce6f6bb80",
+              "type": "StructProperty",
+              "owner_pointer_tagged": "0x7ff4acea3bf9",
+              "offset_in_object": 280,
+              "array_dim": 1,
+              "element_size": 16,
+              "flags": "0x4018001140002234",
+              "flag_names": [
+                "Net",
+                "RepNotify"
+              ],
+              "rep_index": null,
+              "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+              "uninterpreted_sdk_padding_0x40": "02000000",
+              "referenced_type": "Guid",
+              "owner_class": "CharacterInfo"
+            },
+            "record_hex": "80bbf6e68c0100000d5b8c00000000000000000018010000100000000200060000000000000000000100000061000000"
+          },
+          {
+            "parent_index": 3,
+            "property": {
+              "name": "CharacterType",
+              "address": "0x18ce6f6bc80",
+              "type": "EnumProperty",
+              "owner_pointer_tagged": "0x7ff4acea3bf9",
+              "offset_in_object": 296,
+              "array_dim": 1,
+              "element_size": 1,
+              "flags": "0x4018001140010235",
+              "flag_names": [
+                "Net",
+                "RepNotify"
+              ],
+              "rep_index": null,
+              "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+              "uninterpreted_sdk_padding_0x40": "03000000",
+              "owner_class": "CharacterInfo"
+            },
+            "record_hex": "80bcf6e68c010000052f8d00000000000000000028010000020000000600070000000000000000000000000041000000"
+          },
+          {
+            "parent_index": 4,
+            "property": {
+              "name": "CharacterName",
+              "address": "0x18ce6f48ac0",
+              "type": "StrProperty",
+              "owner_pointer_tagged": "0x7ff4acea3bf9",
+              "offset_in_object": 304,
+              "array_dim": 1,
+              "element_size": 16,
+              "flags": "0x4018000100010221",
+              "flag_names": [
+                "Net",
+                "RepNotify"
+              ],
+              "rep_index": null,
+              "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+              "uninterpreted_sdk_padding_0x40": "04000000",
+              "owner_class": "CharacterInfo"
+            },
+            "record_hex": "c08af4e68c010000055b8c00000000000000000030010000480000000700080000000000000000000100000041000000"
+          }
+        ],
+        "commands": [
+          {
+            "command_index": 0,
+            "property_address": "0x18bd1ba9f00",
+            "property": {
+              "name": "bReplicates",
+              "address": "0x18bd1ba9f00",
+              "type": "BoolProperty",
+              "owner_pointer_tagged": "0x7ff4acbf2439",
+              "offset_in_object": 180,
+              "array_dim": 1,
+              "element_size": 1,
+              "flags": "0x4048001100010035",
+              "flag_names": [
+                "Net",
+                "RepNotify"
+              ],
+              "rep_index": null,
+              "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+              "uninterpreted_sdk_padding_0x40": "00000000",
+              "bool_layout": {
+                "field_size": 1,
+                "byte_offset": 0,
+                "byte_mask": 128,
+                "field_mask": 128
+              },
+              "owner_class": "ActorComponent"
+            },
+            "record_hex": "009fbad18b01000000000100b400000000000000010000000000000003010000",
+            "offset_in_object": 180,
+            "parent_index": 0,
+            "command_type_byte": 3,
+            "uninterpreted_word_08": 0,
+            "uninterpreted_word_0a": 1,
+            "uninterpreted_word_14": 1,
+            "wire_handle": null
+          },
+          {
+            "command_index": 1,
+            "property_address": "0x18bd1baa080",
+            "property": {
+              "name": "bIsActive",
+              "address": "0x18bd1baa080",
+              "type": "BoolProperty",
+              "owner_pointer_tagged": "0x7ff4acbf2439",
+              "offset_in_object": 189,
+              "array_dim": 1,
+              "element_size": 1,
+              "flags": "0x48001100002020",
+              "flag_names": [
+                "Net",
+                "RepNotify"
+              ],
+              "rep_index": null,
+              "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+              "uninterpreted_sdk_padding_0x40": "01000000",
+              "bool_layout": {
+                "field_size": 1,
+                "byte_offset": 0,
+                "byte_mask": 16,
+                "field_mask": 16
+              },
+              "owner_class": "ActorComponent"
+            },
+            "record_hex": "80a0bad18b01000000000100bd00000001000000020001000000000003010000",
+            "offset_in_object": 189,
+            "parent_index": 1,
+            "command_type_byte": 3,
+            "uninterpreted_word_08": 0,
+            "uninterpreted_word_0a": 1,
+            "uninterpreted_word_14": 2,
+            "wire_handle": null
+          },
+          {
+            "command_index": 2,
+            "property_address": "0x18c4497dbb0",
+            "property": null,
+            "record_hex": "b0db97448c010000000004001801000010000000030002000000000005010000",
+            "offset_in_object": 280,
+            "parent_index": 2,
+            "command_type_byte": 5,
+            "uninterpreted_word_08": 0,
+            "uninterpreted_word_0a": 4,
+            "uninterpreted_word_14": 3,
+            "wire_handle": null
+          },
+          {
+            "command_index": 3,
+            "property_address": "0x18c4497db40",
+            "property": null,
+            "record_hex": "40db97448c010000000004001c01000014000000040002000000000005010000",
+            "offset_in_object": 284,
+            "parent_index": 2,
+            "command_type_byte": 5,
+            "uninterpreted_word_08": 0,
+            "uninterpreted_word_0a": 4,
+            "uninterpreted_word_14": 4,
+            "wire_handle": null
+          },
+          {
+            "command_index": 4,
+            "property_address": "0x18c4497dad0",
+            "property": null,
+            "record_hex": "d0da97448c010000000004002001000018000000050002000000000005010000",
+            "offset_in_object": 288,
+            "parent_index": 2,
+            "command_type_byte": 5,
+            "uninterpreted_word_08": 0,
+            "uninterpreted_word_0a": 4,
+            "uninterpreted_word_14": 5,
+            "wire_handle": null
+          },
+          {
+            "command_index": 5,
+            "property_address": "0x18c4497da60",
+            "property": null,
+            "record_hex": "60da97448c01000000000400240100001c000000060002000000000005010000",
+            "offset_in_object": 292,
+            "parent_index": 2,
+            "command_type_byte": 5,
+            "uninterpreted_word_08": 0,
+            "uninterpreted_word_0a": 4,
+            "uninterpreted_word_14": 6,
+            "wire_handle": null
+          },
+          {
+            "command_index": 6,
+            "property_address": "0x18ce6f6bc80",
+            "property": {
+              "name": "CharacterType",
+              "address": "0x18ce6f6bc80",
+              "type": "EnumProperty",
+              "owner_pointer_tagged": "0x7ff4acea3bf9",
+              "offset_in_object": 296,
+              "array_dim": 1,
+              "element_size": 1,
+              "flags": "0x4018001140010235",
+              "flag_names": [
+                "Net",
+                "RepNotify"
+              ],
+              "rep_index": null,
+              "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+              "uninterpreted_sdk_padding_0x40": "03000000",
+              "owner_class": "CharacterInfo"
+            },
+            "record_hex": "80bcf6e68c010000000001002801000002000000070003000000000006010000",
+            "offset_in_object": 296,
+            "parent_index": 3,
+            "command_type_byte": 6,
+            "uninterpreted_word_08": 0,
+            "uninterpreted_word_0a": 1,
+            "uninterpreted_word_14": 7,
+            "wire_handle": null
+          },
+          {
+            "command_index": 7,
+            "property_address": "0x18ce6f48ac0",
+            "property": {
+              "name": "CharacterName",
+              "address": "0x18ce6f48ac0",
+              "type": "StrProperty",
+              "owner_pointer_tagged": "0x7ff4acea3bf9",
+              "offset_in_object": 304,
+              "array_dim": 1,
+              "element_size": 16,
+              "flags": "0x4018000100010221",
+              "flag_names": [
+                "Net",
+                "RepNotify"
+              ],
+              "rep_index": null,
+              "rep_index_reason": "Not labeled in supplied SDK; field 0x40 is padding.",
+              "uninterpreted_sdk_padding_0x40": "04000000",
+              "owner_class": "CharacterInfo"
+            },
+            "record_hex": "c08af4e68c010000000010003001000048000000080004000000000013010000",
+            "offset_in_object": 304,
+            "parent_index": 4,
+            "command_type_byte": 19,
+            "uninterpreted_word_08": 0,
+            "uninterpreted_word_0a": 16,
+            "uninterpreted_word_14": 8,
+            "wire_handle": null
+          }
+        ]
+      }
+    ]
+  }
+}

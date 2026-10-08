@@ -1,4 +1,4 @@
-#include "ashes/collision.hpp"
+#include "ashes/movement.hpp"
 #include <iostream>
 #include <chrono>
 #include <algorithm>
@@ -59,6 +59,22 @@ int main(int argc,char** argv){try{
   check(hit&&hit->fraction>0&&hit->fraction<.5&&!hit->iteration_limit,"Warped terrain mesh capsule sweep");
  }
  auto spawn=read_json(root/"config/backend.json").at("spawn").get<Vec>();auto ground=world.ground(spawn[0],spawn[1],spawn[2],.7);check(ground.has_value(),"Full terrain cache supports configured spawn");
+ // Reproduce the first floor-loss from the DLL test. A capsule can stand on
+ // the solid side of this hole; requiring four side rays invents a fall.
+ auto shared_world=std::shared_ptr<const CollisionWorld>(&world,[](const CollisionWorld*){});
+ Movement edge(shared_world,spawn);edge.floor_clearance=2.15;edge.position={-677963.7692651711,406500.,12491.03};
+ check(!edge.floor(edge.position[0],edge.position[1]),"Historical four-ray fixture rejects the partially supported edge");
+ edge.native_locomotion=true;auto edge_floor=edge.floor(edge.position[0],edge.position[1]);
+ check(edge_floor&&std::abs(*edge_floor-12491.03)<.05,"Native capsule sweep finds the independently observed supported edge height");
+ check(!world.ground(-677963.7692651711,406478.,1e10,edge.floor_z),"Regression edge retains the genuine adjacent terrain hole");
+ edge.position={-678008.4286889993,406500.,12495.78222607955};edge.configure({600,true,true});edge.velocity={600,0,0};
+ edge.advance({{"timestamp",1.},{"acceleration",Vec{8192,0,0}},{"compressed_flags",0},{"custom_axis_sign_bits",{1,0,0,0}}},1.);
+ auto crossed=edge.advance({{"timestamp",1.074432373046875},{"acceleration",Vec{8192,0,0}},{"compressed_flags",0},{"custom_axis_sign_bits",{1,0,0,0}}},1.074432373046875);
+ check(crossed&&edge.mode==1&&std::abs(edge.position[1]-406500.)<1e-6&&std::abs(edge.position[2]-12491.03)<.05,"Recorded W interval stays supported without a falling correction or lateral slide");
+ edge.position={-580538.,406498.,-32226684.};edge.velocity={600,0,-4000};auto clock=edge.timestamp;edge.recover_spawn(spawn);
+ check(edge.mode==1&&edge.velocity==Vec{}&&edge.timestamp==clock&&std::abs(edge.position[0]-spawn[0])<1e-6,"Supported recovery restores position and stops velocity while preserving the move clock");
+ auto recovered=edge.position;bool unsafe_recovery=false;try{edge.recover_spawn({1e9,1e9,0});}catch(const std::exception&){unsafe_recovery=true;}
+ check(unsafe_recovery&&edge.position==recovered,"Unsupported recovery cannot change authoritative state");
  // An upper overlapping landscape cannot hijack a floor query below its surface.
  auto top=world.tiles.front().point(3,3);check(!world.tiles.front().ground(top[0]+1e9,top[1]),"Far outside terrain query is empty");
  CollisionWorld layered;layered.tiles.push_back(world.tiles.front());check(!layered.ground(top[0],top[1],top[2]-1,.7),"Floor query excludes terrain above the requested ceiling");

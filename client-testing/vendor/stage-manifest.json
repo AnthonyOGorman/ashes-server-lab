@@ -1,0 +1,98 @@
+{
+  "archive_sha256": "938dc9901e6452cad3120280681c93a00ae12df2b259668815a150e221a35563",
+  "stage": "E:\\Ashes Of Creation GPT\\client-testing\\vendor\\trial-package",
+  "run_nonce": "a3eea3c5d50649ebb59a5162dd171415",
+  "mods_enabled": [],
+  "installed": false,
+  "compatibility": "untested",
+  "files": {
+    "dwmapi.dll": {
+      "size": 279552,
+      "sha256": "a29dd4f014dc47dc842de32b0a939d5faca7130d7399e5594e23ee4afbafbaca"
+    },
+    "ue4ss/LICENSE": {
+      "size": 1085,
+      "sha256": "99e1d8f8b7cb68e8b2313380ae3b0c8115e39dfbc443fcf21fd67ab74ce1d57e"
+    },
+    "ue4ss/UE4SS-settings.ini": {
+      "size": 9575,
+      "sha256": "35d8f37b1b6e8296ff8610725ff5b8fbdaedcfb456a9721f0a3bb83569325222"
+    },
+    "ue4ss/UE4SS.dll": {
+      "size": 20606976,
+      "sha256": "f176dc36fd2bc7b8211dde6ba54ade6f66da5c8f3a79e3017a85b45c215e8242"
+    },
+    "ue4ss/Mods/mods.json": {
+      "size": 663,
+      "sha256": "bd7ca3802e060e5a87e41fcc51b265447497a1641b8887b4c70a0c05e929cbd7"
+    },
+    "ue4ss/Mods/mods.txt": {
+      "size": 192,
+      "sha256": "3ef5b437cd64de19d8f9b36448b667c4d7efb3ebc86a0eca41733ba39ad09e89"
+    },
+    "ue4ss/Mods/AshesObserve/Scripts/binding.lua": {
+      "size": 216,
+      "sha256": "908cebedae9b9a3152178e8257c502fc109cd7cdd2d0d62c7e2a89afe67eb0fc"
+    },
+    "ue4ss/Mods/AshesObserve/Scripts/main.lua": {
+      "size": 2929,
+      "sha256": "8d463bd3848af4d2814ee28ad20b16a8efb92caab93a70c4bf44933546eaf4b8"
+    },
+    "ue4ss/Mods/BPML_GenericFunctions/Scripts/main.lua": {
+      "size": 2950,
+      "sha256": "df87c361cdfc231ac8017ff9b930c323fac09f436ca4c41d48e952ff4b38d38f"
+    },
+    "ue4ss/Mods/BPModLoaderMod/load_order.txt": {
+      "size": 265,
+      "sha256": "e260b9b0d8d472ee3ebab77204c838f3d2aad8a9d5f08b9b8cb6b42b7b5418b9"
+    },
+    "ue4ss/Mods/BPModLoaderMod/Scripts/main.lua": {
+      "size": 11254,
+      "sha256": "c4d6602dc57559029e0e709650e43f33354bcb23f1a5df2ebe84d4651ebd08a3"
+    },
+    "ue4ss/Mods/CheatManagerEnablerMod/Scripts/main.lua": {
+      "size": 1439,
+      "sha256": "15c7722168eb8966ed454e900e04de4b0ade42657905d8016c0e0660c119cd9e"
+    },
+    "ue4ss/Mods/ConsoleCommandsMod/Scripts/dump_object.lua": {
+      "size": 13093,
+      "sha256": "365b7e8a803f8ae917f54f6c852854c681e388227dd1f94b0ea3f6fb938b5086"
+    },
+    "ue4ss/Mods/ConsoleCommandsMod/Scripts/main.lua": {
+      "size": 297,
+      "sha256": "5bf33cd4ef9f6a155fe5f7842218a6486c2c227858ffd99806e75d81d0da9f27"
+    },
+    "ue4ss/Mods/ConsoleCommandsMod/Scripts/set.lua": {
+      "size": 2056,
+      "sha256": "876e7de49f0e30a4329c081472bc7d5e1948459c774b7abbb8be4b6323f16ec8"
+    },
+    "ue4ss/Mods/ConsoleCommandsMod/Scripts/summon_unloaded_assets.lua": {
+      "size": 489,
+      "sha256": "194b557404b6078767f8b57b836aa44d084cf6f3f2cbde71a6831857567f8103"
+    },
+    "ue4ss/Mods/ConsoleEnablerMod/Scripts/main.lua": {
+      "size": 3261,
+      "sha256": "2517ea80a074bc5e6f00c55263c1867bf8e74c6b8665a79217adb53fdbe04343"
+    },
+    "ue4ss/Mods/Keybinds/Scripts/main.lua": {
+      "size": 4190,
+      "sha256": "297dd6f7f560e1cebc15cd4509ad481495d9179f5758a8034be4c417a369803a"
+    },
+    "ue4ss/Mods/LineTraceMod/Scripts/main.lua": {
+      "size": 2721,
+      "sha256": "05c181a5cc3cb24e0bd7496d6bbc14a1111d0a1e731a2526203b41b07d972dae"
+    },
+    "ue4ss/Mods/shared/UEHelpers/UEHelpers.lua": {
+      "size": 10237,
+      "sha256": "7476f02eef0c87bfeab169f2ffe2e704363faeaae4bf9f1bda574b1e34f4a0e9"
+    },
+    "ue4ss/Mods/SplitScreenMod/Scripts/main.lua": {
+      "size": 4380,
+      "sha256": "05094ab61f016ebfcb651a0271a4c614884881b847090e6a74e6a51754e088db"
+    },
+    "ue4ss/UE4SS_SDK_Backends/UE4SS.json": {
+      "size": 8032,
+      "sha256": "6b8c1725ff59a318b812d5952f63107778b4ceb22b882b297a3666ee9e06c8ff"
+    }
+  }
+}

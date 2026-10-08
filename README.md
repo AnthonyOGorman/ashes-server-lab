@@ -18,6 +18,8 @@ It supports local Verra exploration, movement, flight and live browser tools, wi
 
 > **Bring your own client.** This repository contains lab source and interoperability definitions. It does not include the game, extracted terrain, an Unreal SDK dump, Epic's EOS SDK, or Oodle. The GIFs show a separately installed client.
 
+> **Development paused, 2026-10-08.** The latest server, client-testing bridge, research scripts and unfinished work are saved in this source checkpoint. See the [pause handoff](docs/PAUSED_DEVELOPMENT.md) for verified results, pending work and local evidence locations.
+
 ## Why this exists
 
 This is an **AI-generated “one-shot” prototype**, followed by iterative debugging and a lot of checking against one real client build. It is very buggy. The goal was to get a character into the world, moving over terrain, and leave a useful starting point for someone who wants to invest more time, skill, and tokens in developing a private server.

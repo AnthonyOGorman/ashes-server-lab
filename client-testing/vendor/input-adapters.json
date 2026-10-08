@@ -1,0 +1,24 @@
+[
+  {
+    "sha256": "b79bea66e150bd7a31b00e2fafb5eda398ed8ec42d358301d5427891fa69730a",
+    "size": 25088,
+    "path": "E:\\Ashes Of Creation GPT\\native\\input_adapter\\build\\ashes_input_adapter.dll",
+    "protocol_version": 1,
+    "build_id": 0
+  },
+  {
+    "sha256": "2b582aba70a23fce5f162469488807bbaf9b33e0edf6cc46deda0d547748a34c",
+    "size": 26112,
+    "path": "E:\\Ashes Of Creation GPT\\CPP\\build\\msvc\\Release\\ashes_input_adapter.dll",
+    "protocol_version": 2,
+    "build_id": 204647746
+  },
+  {
+    "path": "E:\\Ashes Of Creation GPT\\CPP\\runs\\loading-readiness-20261008\\shift-release-candidate-0c32ad42\\ashes_input_adapter.dll",
+    "sha256": "2b582aba70a23fce5f162469488807bbaf9b33e0edf6cc46deda0d547748a34c",
+    "size": 26112,
+    "protocol_version": 2,
+    "build_id": 204647746,
+    "manifest_sha256": "a257cdacda3d402e099cbd05e458e18c365bb03887666df4a58ac280679364b2"
+  }
+]

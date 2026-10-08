@@ -1,0 +1,73 @@
+{
+  "status": "saved_loading_positive_control_sources_verified",
+  "sources": [
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\postready-w-accepted-2af3d06b217849d0be9e8007b1f9d071.json",
+      "sha256": "aee358973068e44ddea54e3f7b79540a5922638f09de5ce877060e94f32864ae"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\traversal-43a8840690054860b7b9d5ca4cff3ca4.json",
+      "sha256": "5b3fbf9d980a2fe86ab9f09ddc3c9ab3368a83fb346d9bed3c8353adcb0ff0f9"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\CPP\\runs\\character-movement-followup-20261007\\loading-third-postready-w-trace.json",
+      "sha256": "853e2ee6cb34861915aea64cf2b52655eaf2f0a467bc55946198602f3c02aa09"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\loading-review-43cbbe4fb2b947a3b9582d80b7995795.json",
+      "sha256": "555e39a3016b6d831dab4b679a8ea7a820d394f1f65874da4f69fc126802da6c"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\capture-f669cc468bb04e289d8b4efafa15b710.json",
+      "sha256": "9586d5df952b46c6b033377797c5fee6411c909684949f30614216eecb915d1f"
+    }
+  ],
+  "client_proof": {
+    "pid": 723352,
+    "exe": "E:\\Games\\Steam Library\\steamapps\\common\\Ashes of Creation\\Game\\AOC\\Binaries\\Win64\\AOCClient-Win64-Shipping.exe",
+    "process_created_filetime": 134358967749612155,
+    "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+    "observed_at": 1791424645.1455061
+  },
+  "connection": "6301d0497bab84065ef96936",
+  "native_samples": 15,
+  "read_floor_samples": 14,
+  "unavailable_floor_samples": 1,
+  "horizontal_cm": 1200.2590036392212,
+  "server_trace": {
+    "connection_id": "6301d0497bab84065ef96936",
+    "moves": 114,
+    "new_moves": 113,
+    "discarded_intervals": 0,
+    "resolution_moves": 0,
+    "responses": {
+      "ack": 113,
+      "correction": 0,
+      "deferred": 0
+    },
+    "max_prediction_error_cm": 0.26964478657778174,
+    "errors_above_10cm": 0,
+    "moving_new_moves": 28,
+    "simulation_ms": {
+      "p50": 0.5389000289142132,
+      "p95": 0.6453001406043768,
+      "max": 1.6648001037538052
+    },
+    "packet_lock_wait_ms": {
+      "p50": 0.0010998919606208801,
+      "p95": 0.001500127837061882,
+      "max": 0.00200001522898674
+    },
+    "packet_processing_elapsed_ms": {
+      "p50": 1.4390998985618353,
+      "p95": 1.6270000487565994,
+      "max": 3.3921999856829643
+    }
+  },
+  "controls_released": true,
+  "limits": [
+    "Saved certificate/hash/trace review only; no live inspection or input.",
+    "One post-unlock W control, not proof of jitter-free movement, platform seam, jumping, sprint or persistent connectivity.",
+    "Later lobby travel invalidates old world pawn; cause of travel and desktop cursor change remains undetermined."
+  ]
+}

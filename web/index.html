@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Ashes · Protocol Lab</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="rail">
+    <a class="brand" href="#overview" aria-label="Protocol lab home"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 36 32H4L20 3Z"/><path d="m20 13 8 14H12l8-14Z"/></svg></a>
+    <a class="rail-link active" href="#overview" title="Live lab" aria-label="Live lab">◈</a>
+    <a class="rail-link" href="#packet-workspace" title="Packet explorer" aria-label="Packet explorer">≋</a>
+    <a class="rail-link" href="/world.html" title="Live 3D world" aria-label="Live 3D world">◇</a>
+    <a class="rail-link" href="#automation" title="Automation" aria-label="Automation">⌘</a>
+    <div class="rail-bottom"><span class="local-dot"></span><span>LOCAL</span></div>
+  </aside>
+
+  <main id="overview">
+    <header class="topbar">
+      <div class="breadcrumb">ASHES OF CREATION <span>/</span> <strong>PROTOCOL LAB</strong></div>
+      <div class="connection"><span id="connection-dot" class="status-dot"></span><span id="connection-label">Connecting</span><span class="endpoint">127.0.0.1:8765</span></div>
+    </header>
+
+    <div class="page-heading">
+      <div><div class="eyebrow">CLIENT ↔ LOCAL SERVER</div><h1>Ashes protocol lab.</h1><p>Observe the client. Test the handshake. Follow the evidence.</p></div>
+      <div class="heading-controls"><button id="refresh" class="button quiet">↻ Refresh</button><button id="start-services" class="button primary" data-action="start_services"><span>▶</span> Start services</button></div>
+    </div>
+
+    <div id="error-banner" class="error-banner" role="alert" hidden><span id="error-message"></span><button id="dismiss-error" aria-label="Dismiss error">×</button></div>
+    <div id="notice" class="notice" role="status" hidden></div>
+
+    <section class="summary-grid" aria-label="Lab status">
+      <article class="summary-card"><div class="card-label"><span class="icon">◉</span> SERVER SERVICES</div><div class="summary-value" id="service-count">—<span>online</span></div><div class="service-chips" id="service-chips"><span class="muted">Waiting for local server</span></div></article>
+      <article class="summary-card"><div class="card-label"><span class="icon">▧</span> GAME CLIENT</div><div class="summary-value small" id="client-status">Unknown</div><div class="card-foot" id="client-detail">Client state has not been observed</div></article>
+      <article class="summary-card"><div class="card-label"><span class="icon">⇄</span> CAPTURED PACKETS</div><div class="summary-value" id="packet-count">—</div><div class="card-foot" id="packet-foot">Local session evidence</div></article>
+      <article class="summary-card"><div class="card-label"><span class="icon">⌁</span> CURRENT TEST</div><div class="summary-value small" id="test-status">No active test</div><div class="card-foot" id="test-detail">Ready when the client is configured</div></article>
+    </section>
+
+    <section class="journey panel" aria-labelledby="journey-title">
+      <div class="panel-heading"><div><span class="eyebrow">PROGRESS IS EVIDENCE</span><h2 id="journey-title">Connection milestones</h2></div><span class="legend"><span class="legend-dot passed"></span> Verified <span class="legend-dot blocked"></span> Blocked <span class="legend-dot idle"></span> Not observed</span></div>
+      <div class="milestones" id="milestones"></div>
+      <div class="journey-note" id="journey-note">Each stage is evaluated independently. A running service does not confirm an in-game connection.</div>
+      <div class="journey-note" id="initialization-failure" role="status" hidden></div>
+    </section>
+
+    <div class="workspace-grid" id="packet-workspace">
+      <section class="packet-panel panel" aria-labelledby="packet-title">
+        <div class="panel-heading"><div><span class="eyebrow">WIRE EVIDENCE</span><h2 id="packet-title">Packet explorer <span id="visible-count" class="count-badge">0</span></h2></div><button id="follow" class="button compact active" aria-pressed="true">● Live</button></div>
+        <div class="packet-toolbar"><label class="search"><span>⌕</span><input id="packet-search" type="search" placeholder="Search loaded packets…" aria-label="Search packets"></label><select id="direction-filter" aria-label="Filter direction"><option value="">All directions</option><option value="inbound">Client → Server</option><option value="outbound">Server → Client</option></select><select id="channel-filter" aria-label="Filter channel"><option value="">All channels</option></select></div>
+        <div class="run-filter"><span>CAPTURE</span><select id="run-filter" aria-label="Filter test run"><option value="">All runs</option></select><button id="kind-filter" class="kind-filter" aria-label="Clear exact packet kind filter" hidden></button><span id="capture-note">Most recent 100 packets</span></div>
+        <div class="packet-table-wrap"><table class="packet-table"><thead><tr><th>ID / TIME</th><th>FLOW</th><th>CHANNEL</th><th>KIND</th><th class="align-right">BYTES</th></tr></thead><tbody id="packet-rows"></tbody></table><div id="packet-empty" class="empty-state"><div class="empty-symbol">⇄</div><strong>No packet evidence yet</strong><p>Start the services and launch a test, or import a capture.</p></div></div>
+        <div class="table-footer"><span id="packet-updated">Awaiting capture</span><span>Payloads preserved for inspection</span></div>
+      </section>
+
+      <section class="inspector panel" aria-labelledby="inspector-title">
+        <div class="panel-heading"><div><span class="eyebrow">INSPECT & ANNOTATE</span><h2 id="inspector-title">Packet detail</h2></div><span class="mono muted" id="selected-id">—</span></div>
+        <div id="detail-empty" class="detail-empty"><div class="empty-symbol">⌕</div><strong>Select a packet</strong><p>Read the payload and record what it tells you.</p></div>
+        <div id="detail-content" hidden>
+          <div class="detail-meta" id="detail-meta"></div>
+          <div class="detail-tabs" role="tablist" aria-label="Packet representation"><button class="detail-tab active" role="tab" aria-selected="true" data-tab="hex">Hex payload</button><button class="detail-tab" role="tab" aria-selected="false" data-tab="decoded">Decoded JSON</button><button id="copy-payload" class="copy-button" title="Copy displayed payload">Copy</button></div>
+          <pre id="payload" class="payload" tabindex="0"></pre>
+          <form id="annotation-form" class="annotation-form"><div class="field-heading"><label for="annotation-label">Packet label</label><span>EVIDENCE NOTE</span></div><input id="annotation-label" placeholder="e.g. lobby handshake response"><textarea id="annotation-note" rows="3" placeholder="What is observed? What remains uncertain?" aria-label="Evidence note"></textarea><div class="annotation-actions"><select id="annotation-confidence" aria-label="Evidence confidence"><option value="observed">Observed</option><option value="hypothesis">Hypothesis</option><option value="verified">Verified</option></select><button class="button secondary" type="submit">Save annotation</button></div></form>
+        </div>
+      </section>
+    </div>
+
+    <div class="lower-grid" id="automation">
+      <section class="control-panel panel" aria-labelledby="control-title">
+        <div class="panel-heading"><div><span class="eyebrow">CONTROL ROOM</span><h2 id="control-title">Client & test runner</h2></div><span class="pill">LOCAL ONLY</span></div>
+        <div class="control-section"><div class="field-heading"><strong>Game process</strong><span id="process-state">UNKNOWN</span></div><div class="button-row"><button class="button secondary" data-action="launch_client">↗ Launch client</button><button class="button quiet" data-action="stop_client">Stop client</button><button class="button quiet" data-action="stop_services">Stop services</button></div></div>
+        <div class="control-section"><div class="field-heading"><strong>Automated scenario</strong><span>INPUT + PACKET EVIDENCE</span></div><div class="driver-selection"><label for="test-driver">Tester input driver</label><select id="test-driver"><option value="foreground">Foreground input (verified)</option><option value="background">Background window messages (experimental)</option><option value="attached">Game process adapter (experimental)</option></select><div id="driver-description">Foreground input requires the exact game window to remain focused. Input stops when focus changes.</div></div><div class="scenario-choice"><label><input type="radio" name="scenario" value="login" checked><span><strong>Login sequence</strong><small>Stop at the lobby milestone</small></span></label><label><input type="radio" name="scenario" value="walk"><span><strong>Full configured scenario</strong><small>Run every saved scenario step</small></span></label></div><div class="button-row"><button id="run-test" class="button primary" data-action="run_test">▶ Run test</button><button class="button quiet" data-action="cancel_test">Cancel test</button></div><div class="step-result-legend">Sent records input delivery. Image and protocol gates report Passed after their evidence checks.</div><div id="active-test-detail" class="active-test-detail" hidden></div></div>
+        <div class="control-section experiment-section"><div class="field-heading"><strong>Replication experiments</strong><span class="experimental-label">EXPERIMENTAL</span></div><div class="button-row"><button id="controller-bootstrap" class="button experiment-button" data-action="controller_bootstrap">⌁ Experimental controller bootstrap</button><button id="scene-bootstrap" class="button experiment-button" data-action="scene_bootstrap">⌁ Experimental scene bootstrap</button><button id="reload-world-code" class="button experiment-button" data-action="reload_world_protocol">↻ Reload world code</button><button id="reload-tester" class="button experiment-button" data-action="reload_tester">↻ Reload tester</button></div><p>Controller bootstrap runs after Join. Scene bootstrap runs after the controller attempt and sends GameState, Pawn, and PlayerState. Possession is unimplemented; player spawn and movement require their own evidence.</p><p>Reload world code loads edited local serializers while retaining connection state; reconnect after channel layout changes. Reload tester loads edited tester code between runs and is unavailable during an active test.</p><div id="bootstrap-status" class="editor-status" role="status">Research actions · inspect the resulting packets to determine what the client accepts.</div></div>
+        <div class="control-section capture-import"><label for="capture-path">Import existing capture</label><div class="input-button"><input id="capture-path" placeholder="Absolute path to .pcap or .pcapng"><button id="import-capture" class="button secondary">Import</button></div><p>Captures remain on this computer. Imported traffic is evidence, not a confirmed implementation.</p></div>
+      </section>
+
+      <section class="history-panel panel" aria-labelledby="history-title"><div class="panel-heading"><div><span class="eyebrow">REPRODUCIBLE EXPERIMENTS</span><h2 id="history-title">Test history</h2></div><span id="run-count" class="count-badge">0</span></div><div id="run-list" class="run-list"><div class="empty-state"><strong>No test runs yet</strong><p>Every run gets its own evidence trail.</p></div></div></section>
+    </div>
+
+    <section class="catalog-panel panel" aria-labelledby="catalog-title"><div class="panel-heading"><div><span class="eyebrow">BUILD A SHARED UNDERSTANDING</span><h2 id="catalog-title">Protocol catalog</h2></div><span class="muted catalog-hint">Click a kind to load its packets</span></div><div id="catalog-list" class="catalog-list"><div class="empty-state"><strong>No packet kinds recorded</strong><p>Evidence accumulates as captures and tests run.</p></div></div></section>
+
+    <section class="calibration-panel panel" aria-labelledby="calibration-title">
+      <div class="panel-heading"><div><span class="eyebrow">AUTOMATION CONFIGURATION</span><h2 id="calibration-title">Scenarios & visual checkpoints</h2></div><div class="button-row"><button id="load-scenario" class="button quiet compact">Reload</button><button id="save-scenario" class="button secondary compact">Save scenario</button></div></div>
+      <div class="calibration-grid">
+        <div class="scenario-editor">
+          <div class="preset-row"><label for="scenario-preset">Scenario preset</label><div class="input-button"><select id="scenario-preset"><option value="">Loading presets…</option></select><button id="load-preset" class="button secondary compact" disabled>Load preset</button></div><div id="preset-description" class="editor-status">Presets define their required starting screen.</div></div>
+          <label for="scenario-json">Scenario JSON <span>Edit input steps and assertions supported by the local runner.</span></label>
+          <textarea id="scenario-json" spellcheck="false" placeholder="Loading scenario configuration…" aria-label="Scenario JSON"></textarea>
+          <div class="calibration-options"><label for="click-step">Image click updates <select id="click-step"><option value="">Coordinates only</option></select></label><label class="calibrated-label"><input id="scenario-calibrated" type="checkbox"> Click positions calibrated</label></div>
+          <div id="scenario-status" class="editor-status">Awaiting configuration</div>
+          <div class="saved-checkpoints"><div class="field-heading"><strong>Saved visual checkpoints</strong><button id="reload-templates" class="copy-button">Reload list</button></div><div class="input-button"><select id="template-select" aria-label="Saved visual checkpoint"><option value="">No checkpoints loaded</option></select><button id="append-template" class="button quiet compact" disabled>Add wait step</button></div><div id="template-list-status" class="editor-status">A visual match confirms a screen region, independently of packet milestones.</div></div>
+        </div>
+        <div class="screenshot-panel">
+          <div class="field-heading"><strong>Client screenshot</strong><div class="button-row"><button id="refresh-screenshot" class="copy-button">Load latest</button><button id="capture-screenshot" class="button quiet compact">Capture in 5s</button></div></div>
+          <div class="image-mode"><label><input type="radio" name="image-mode" value="click" checked>Click calibration</label><label><input type="radio" name="image-mode" value="checkpoint">Checkpoint region</label></div>
+          <div id="screenshot-box" class="screenshot-box"><img id="client-screenshot" alt="Current game client screenshot for coordinate calibration" hidden><div id="screenshot-placeholder"><span class="empty-symbol">▧</span><p>No screenshot loaded</p><small>Queue a capture using the selected tester driver.</small></div><span id="coordinate-marker" hidden></span><div id="checkpoint-region" hidden><span>CHECKPOINT</span></div></div>
+          <div id="screenshot-status" class="editor-status">Captures target only the launched game process.</div>
+          <div class="coordinate-footer"><span id="image-instructions">Click the image to calibrate the selected step.</span><output id="coordinates" class="mono">x — &nbsp; y —</output></div>
+          <div class="checkpoint-learner"><div class="field-heading"><strong>Learn a visual checkpoint</strong><button id="clear-region" class="copy-button">Clear region</button></div><div id="checkpoint-bbox" class="bbox-output mono">Choose region mode, then click two opposite corners.</div><div class="input-button"><input id="template-name" placeholder="Checkpoint name, e.g. realm-lobby.png" aria-label="Checkpoint name"><button id="learn-template" class="button secondary compact" disabled>Learn checkpoint</button></div><label class="append-checkpoint"><input id="append-checkpoint" type="checkbox" checked>Append wait_image step to scenario editor</label><div id="template-learn-status" class="editor-status">Learning stores the image crop. Added steps remain unsaved until Save scenario.</div></div>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer"><span><span class="local-dot"></span> Ashes protocol research workspace</span><span>Service availability ≠ playable world</span></footer>
+  </main>
+</body>
+</html>

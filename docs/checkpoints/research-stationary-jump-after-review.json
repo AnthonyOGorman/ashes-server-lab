@@ -1,0 +1,174 @@
+{
+  "status": "saved_stationary_jump_sources_and_runtime_trace_reviewed",
+  "sources": [
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\postfix-space-review-6878ffa2701e4a26b5ca2de9c5658b7c.json",
+      "sha256": "a880a96d38439c98ce9859574f82556bdb663b1310c5efe4184c2aee06f32932"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\stationary-space-39003a4a34ce40418dc68ebb0f959aa4.json",
+      "sha256": "dd37dc92c5926e55807768ab4dab131d326a7c45325932b6518815966f726880"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\CPP\\runs\\character-movement-followup-20261007\\stationary-space-gravity-after.json",
+      "sha256": "8ca25482a2693fc0b28d8247253c29773cdc095de32e446d72a04afcbb363d75"
+    }
+  ],
+  "client_proof": {
+    "pid": 658928,
+    "exe": "E:\\Games\\Steam Library\\steamapps\\common\\Ashes of Creation\\Game\\AOC\\Binaries\\Win64\\AOCClient-Win64-Shipping.exe",
+    "process_created_filetime": 134359014322564314,
+    "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+    "observed_at": 1791428181.113245
+  },
+  "backend_proof": {
+    "pid": 633760,
+    "process_created_filetime": 134359013996695814,
+    "exe": "E:\\Ashes Of Creation GPT\\CPP\\build\\msvc\\Release\\ashes_lab.exe"
+  },
+  "backend_sha256": "8a657da7c3fa57fbb4659291c931fb51c4090b44e95046551f9f6510161a7364",
+  "connection": "d5c8ce7da986b381834b6b63",
+  "native_samples": 44,
+  "native_falling_samples": 12,
+  "acknowledged_hold_seconds": 0.1156148910522461,
+  "sampled_apex": {
+    "ts": 1791428182.448167,
+    "rise_cm": 329.05273613287136,
+    "velocity_z": 50.35438537597656
+  },
+  "sample_interval_seconds_range": [
+    0.10659360885620117,
+    0.16767096519470215
+  ],
+  "first_falling_at": 1791428181.858577,
+  "first_landed_after_air_at": null,
+  "landed_position_delta_cm": [
+    0.0,
+    0.0,
+    0.0015554230158159044
+  ],
+  "server_summary": {
+    "connection_id": "d5c8ce7da986b381834b6b63",
+    "moves": 58,
+    "new_moves": 55,
+    "discarded_intervals": 0,
+    "resolution_moves": 0,
+    "responses": {
+      "ack": 55,
+      "correction": 0,
+      "deferred": 0
+    },
+    "max_prediction_error_cm": 0.0062487985069310525,
+    "errors_above_10cm": 0,
+    "moving_new_moves": 0,
+    "simulation_ms": {
+      "p50": 0.38439990021288395,
+      "p95": 0.5980001296848059,
+      "max": 0.6506000645458698
+    },
+    "packet_lock_wait_ms": {
+      "p50": 0.00100000761449337,
+      "p95": 0.001400010660290718,
+      "max": 1.824100036174059
+    },
+    "packet_processing_elapsed_ms": {
+      "p50": 1.2562999036163092,
+      "p95": 2.1081999875605106,
+      "max": 2.2938998881727457
+    }
+  },
+  "server_gravity_from_unobstructed_steps": [
+    {
+      "move_id": 207997,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 207998,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208000,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208001,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208002,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208003,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208004,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208005,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208006,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208007,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208008,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208009,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208010,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208011,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208012,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208013,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208014,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208015,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208016,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208017,
+      "derived_acceleration_cm_s2": -1225.0
+    },
+    {
+      "move_id": 208018,
+      "derived_acceleration_cm_s2": -1225.0
+    }
+  ],
+  "median_server_gravity_cm_s2": -1225.0,
+  "controls_released": true,
+  "limits": [
+    "Saved-only review, no live process access/input.",
+    "Sampled rise is not exact continuous apex; corrections alter the native trajectory.",
+    "Native/client HTTP samples are non-atomic; server gravity is derived separately from unobstructed server move rows.",
+    "One stationary jump on this route; no moving-jump, slopes, long fall, sprint or settlement-transition acceptance."
+  ]
+}

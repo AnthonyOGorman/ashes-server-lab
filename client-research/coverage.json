@@ -1,0 +1,1881 @@
+{
+  "updated_at": "2026-10-07T11:34:24.627560+00:00",
+  "counts": {
+    "native_ranges": 570754,
+    "strings": 302784,
+    "sdk_types": 15432,
+    "sdk_functions": 22235,
+    "sdk_properties": 72150,
+    "sdk_enums": 3123,
+    "sdk_enum_values": 20953,
+    "assets": 158012,
+    "archive_files": 182278,
+    "package_headers": 8093,
+    "package_exports": 264827,
+    "managed_methods": 14932,
+    "entry_blocks": 3455,
+    "source_path_refs": 5598,
+    "all_managed_methods": 486776,
+    "all_managed_modules": 640,
+    "module_native_ranges": 1361871,
+    "module_native_exports": 9514,
+    "native_unwind": 570754,
+    "blueprint_fields": 49915,
+    "blueprint_flow": 105592
+  },
+  "decompile_status": {
+    "chained_fragment_indexed": 105893,
+    "decompiled_fragment_unreviewed": 44,
+    "decompiled_unreviewed": 27101,
+    "decompiler_failed": 9,
+    "oversize_requires_review": 6,
+    "pending": 441156
+  },
+  "mapped_sdk_methods": 19632,
+  "blueprint_function_exports": 9380,
+  "blueprint_scripts": {
+    "functions": 9380,
+    "status": {
+      "decoded_script_candidate": 9380
+    },
+    "top_level_expressions": 114949,
+    "nested_expressions": 382342,
+    "call_references": 44875,
+    "calls_with_native_candidate": 32024,
+    "most_common_tokens": {
+      "EX_LocalVariable": 104028,
+      "EX_Let": 28728,
+      "EX_InstanceVariable": 24628,
+      "EX_CallMath": 21452,
+      "EX_Context": 14255,
+      "EX_IntConst": 12938,
+      "EX_LetBool": 12802,
+      "EX_FinalFunction": 10682,
+      "EX_Return": 9380,
+      "EX_EndOfScript": 9380,
+      "EX_Nothing": 9348,
+      "EX_StructMemberContext": 9097,
+      "EX_False": 7550,
+      "EX_FloatConst": 6758,
+      "EX_LocalFinalFunction": 6700,
+      "EX_PopExecutionFlow": 6389,
+      "EX_Jump": 6370,
+      "EX_StructConst": 5368,
+      "EX_JumpIfNot": 4949,
+      "EX_NameConst": 4885
+    },
+    "limits": [
+      "Game-specific parser and zero reflected Object/Field/Struct/Function property schemas were used only for UFunction exports.",
+      "EndOfScript and ascending statement offsets validate structural decoding, not runtime behavior or correctness of every operand/type.",
+      "Virtual calls and delegate dispatch require runtime/context resolution.",
+      "Native targets inherit static registration candidate confidence."
+    ]
+  },
+  "native_decode": {
+    "capstone": "5.0.6",
+    "ranges_total": 570754,
+    "ranges_scanned": 570754,
+    "decode_status": {
+      "complete_range_decode": 568345,
+      "partial_range_decode": 2409
+    },
+    "references": {
+      "direct_call": 2308594,
+      "direct_jmp": 561927,
+      "indirect_call": 449457,
+      "indirect_jmp": 8503,
+      "rip_relative": 1899997
+    },
+    "decoded_bytes": 154811570,
+    "instructions": 37738458
+  },
+  "native_unwind": {
+    "exception_records": 570754,
+    "header_status": {
+      "header_parsed": 570754
+    },
+    "chained_records": 105938,
+    "distinct_unwind_roots": 464816,
+    "max_chain_depth": 6,
+    "handler_records": 181245,
+    "limits": [
+      "A root groups compiler unwind fragments; it is not a full census of logical functions.",
+      "Leaf functions and inlined code remain omitted.",
+      "Unwind operations, language-handler scope tables and exception behavior are not decoded here."
+    ]
+  },
+  "decompiler_quality": {
+    "counts": {
+      "outputs": 27155,
+      "explicit_failures": 9,
+      "bad_data_halt_outputs": 2,
+      "control_flow_warning_outputs": 975,
+      "outputs_with_any_warning": 8090
+    },
+    "limits": [
+      "Completed decompilation can contain truncated or unsupported control flow.",
+      "A bad-data halt can reflect a decoding boundary or real trap code and needs instruction-level review.",
+      "Warnings about overlapping globals or removed unreachable blocks do not alone prove incorrect behavior.",
+      "Every output still requires semantic/type validation."
+    ]
+  },
+  "all_modules": {
+    "managed_modules": 640,
+    "managed_module_status": {
+      "metadata_parsed": 640
+    },
+    "managed_methods": 486776,
+    "managed_il_bodies": 450597,
+    "managed_body_errors": 0,
+    "native_exports": 9514,
+    "native_exception_records": 1361871,
+    "native_range_status": {
+      "executable_range": 1361871,
+      "non_amd64_range_parse_not_supported": 5
+    },
+    "limits": [
+      "Method definitions and IL fingerprints are not reconstructed C# or semantic review.",
+      "Assembly copies retain separate installed paths.",
+      "Exception ranges may be fragments and omit leaf or inlined functions.",
+      "The installed EOS module is a local replacement."
+    ]
+  },
+  "blueprint_flow": {
+    "functions": 9380,
+    "function_local_fields": 49915,
+    "partial_flow_edges": 105592,
+    "edge_target_status": {
+      "statement_boundary": 95499,
+      "unresolved_runtime_target": 10093
+    },
+    "limitations": [
+      "Computed jumps and flow-stack returns require execution-state analysis.",
+      "Fallthrough edges are structural candidates; latent actions and exceptions are not modeled.",
+      "Switch expressions and nested expression control flow are not expanded.",
+      "ChildProperties describe function parameters/locals, not general asset defaults."
+    ]
+  },
+  "blueprint_classes": {
+    "class_exports": 7440,
+    "class_status": {
+      "class_metadata_candidate": 624,
+      "partial_class_requires_schema": 6816
+    },
+    "class_kinds": {
+      "('BlueprintGeneratedClass', 'class_metadata_candidate')": 624,
+      "('AnimBlueprintGeneratedClass', 'partial_class_requires_schema')": 414,
+      "('BlueprintGeneratedClass', 'partial_class_requires_schema')": 5675,
+      "('WidgetBlueprintGeneratedClass', 'partial_class_requires_schema')": 727
+    },
+    "validated_candidate_fields": 452,
+    "validated_candidate_functions": 303,
+    "validated_candidate_interfaces": 2,
+    "limitations": [
+      "IoPackage can return a partial export after swallowing a parser exception; terminal UClass records are required for candidate coverage.",
+      "Empty metaclass schemas only suffice for exports without serialized property values.",
+      "General class defaults, component templates and incomplete classes still require correct type schemas.",
+      "Terminal records establish structural candidates, not complete payload/operand or runtime verification."
+    ]
+  },
+  "blueprint_schema_candidates": {
+    "source": "blueprint-class-schema-v3-consumption.jsonl",
+    "confidence": "inferred_schema_candidate",
+    "status": {
+      "inferred_schema_class_candidate": 7440
+    },
+    "class_kinds": {
+      "BlueprintGeneratedClass": 6299,
+      "AnimBlueprintGeneratedClass": 414,
+      "WidgetBlueprintGeneratedClass": 727
+    },
+    "structural_checks": {
+      "terminal_class_metadata_present": 7440,
+      "local_reference_matches_header": 16820,
+      "function_map_label_matches_target": 9380
+    },
+    "consumption": {
+      "exact_consumption": 7440
+    },
+    "fields": 98824,
+    "functions": 9380,
+    "serialized_property_entries": 15373,
+    "serialized_property_names": {
+      "BakedStateMachines": 205,
+      "TargetSkeleton[1]": 412,
+      "AnimNotifies[2]": 99,
+      "OrderedSavedPoseIndicesMap[3]": 167,
+      "SyncGroupNames[4]": 350,
+      "GraphAssetPlayerInformation[5]": 50,
+      "AnimNodeData[7]": 414,
+      "NodeTypeMap[8]": 414,
+      "UberGraphFunction[10]": 1910,
+      "SimpleConstructionScript[8]": 5462,
+      "DynamicBindingObjects[3]": 88,
+      "ComponentClassOverrides[6]": 8,
+      "InheritableComponentHandler[9]": 3701,
+      "Timelines[5]": 41,
+      "WidgetTree": 727,
+      "bClassRequiresNativeTick[2]": 660,
+      "CookedPropertyGuids[11]": 463,
+      "Animations[5]": 79,
+      "Bindings[4]": 9,
+      "NamedSlots[6]": 24,
+      "AvailableNamedSlots[7]": 14,
+      "InstanceNamedSlots[8]": 24,
+      "ComponentTemplates[4]": 31,
+      "NumReplicatedProperties": 21
+    },
+    "unresolved_references": [],
+    "limitations": [
+      "Saved SDK build provenance remains unverified.",
+      "SDK memory offsets/declaration order are an inferred serialization order.",
+      "Fatal serialization exceptions and independently visible replay cursors establish stronger structural checks, not semantic correctness of every property.",
+      "Replay uses the inspected UE5.3+ IoStore export-offset formula and the same parser; it is not an independent parser implementation.",
+      "These candidates do not replace the original empty-schema results."
+    ]
+  },
+  "blueprint_default_candidates": {
+    "source": "blueprint-defaults-v2.jsonl",
+    "confidence": "inferred_schema_default_candidate",
+    "status": {
+      "inferred_schema_default_candidate": 6907,
+      "failed": 277,
+      "default_requires_consumption_review": 256
+    },
+    "consumption": {
+      "exact_consumption": 6907,
+      "over_consumed_or_unmeasured": 16,
+      "under_consumed": 240
+    },
+    "serialized_property_entries": 81099,
+    "warning_counts": {
+      "unmapped_zero_property_warning_lines": 19
+    },
+    "failure_groups": {
+      "---> CUE4Parse.UE4.Exceptions.ParserException: InputScaleBias: Unknown property with value 2. Can't proceed with serialization (Serialized 2 properties until now)": 73,
+      "---> CUE4Parse.UE4.Exceptions.ParserException: InputScaleBias: Unknown property with value 5. Can't proceed with serialization (Serialized 0 properties until now)": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BotTargetDummy_Base_C named Default__BotTargetDummy_Base_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_CharacterCreator_C named Default__ABP_CharacterCreator_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_CharacterStable_C named Default__ABP_CharacterStable_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_MNT_Template_C named Default__ABP_MNT_Template_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_PC_MNT_Template_C named Default__ABP_PC_MNT_Template_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Ballista_AnimBP_C named Default__PC_Ballista_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Trebuchet_AnimBP_C named Default__PC_Trebuchet_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read SK_KAE_M_BaseCrate_Back_00_Skeleton_AnimBlueprint_C named Default__SK_KAE_M_BaseCrate_Back_00_Skeleton_AnimBlueprint_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read CommoditiesCrate_Back_00_Skeleton_AnimBlueprint_C named Default__CommoditiesCrate_Back_00_Skeleton_AnimBlueprint_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_Crate_Master_C named Default__ABP_Crate_Master_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read StoneCrate_Back_00_Skeleton_AnimBlueprint_C named Default__StoneCrate_Back_00_Skeleton_AnimBlueprint_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Ancient_Minion_AnimBP_C named Default__NPC_Ancient_Minion_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Ancient_Minion_Low_AnimBP_C named Default__NPC_Ancient_Minion_Low_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Bear_AnimBP_C named Default__MNT_Bear_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Bear_AnimBP_New_C named Default__MNT_Bear_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Bear_AnimBP_C named Default__NPC_Bear_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Beetle_AnimBP_C named Default__MNT_Beetle_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PET_BogBrute_AnimBP_C named Default__PET_BogBrute_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_CarmineChameleon_AnimBP_C named Default__MNT_CarmineChameleon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_CarmineChameleon_AnimBP_C named Default__NPC_CarmineChameleon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PET_CarmineChameleon_AnimBP_C named Default__PET_CarmineChameleon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Steer_AnimBP_C named Default__MNT_Steer_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Cow_AnimBP_C named Default__NPC_Cow_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Chicken_AnimBP_C named Default__NPC_Chicken_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_CursedCharger_AnimBP_New_C named Default__MNT_CursedCharger_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Dawnbreaker_AnimBP_C named Default__NPC_Dawnbreaker_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_DaystriderMule_AnimBP_New_C named Default__MNT_DaystriderMule_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Daystrider_Mule_AnimBP_C named Default__NPC_Daystrider_Mule_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_DecayingThrall_AnimBP_C named Default__NPC_DecayingThrall_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PET_DecayingThrall_AnimBP_C named Default__PET_DecayingThrall_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Deer_AnimBP_New_C named Default__MNT_Deer_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read DunewingFalcon_AnimBP_C named Default__DunewingFalcon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_DunewingFalcon_AnimBP_C named Default__NPC_DunewingFalcon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read FellbeakMacaw_AnimBP_C named Default__FellbeakMacaw_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Fellbeak_AnimBP_C named Default__NPC_Fellbeak_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Feybeast_AnimBP_C named Default__Feybeast_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_SportsFish_AnimBP_C named Default__NPC_SportsFish_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Fox_AnimBP_New_C named Default__MNT_Fox_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Fox_AnimBP_C named Default__NPC_Fox_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Cyclops_Tree_Weapon_AnimBP_C named Default__Cyclops_Tree_Weapon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_GlimmeringGeode_AnimBP_New_C named Default__MNT_GlimmeringGeode_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_GraveyardGolem_AnimBP_C named Default__MNT_GraveyardGolem_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Gryphon_AnimBP_C named Default__MNT_Gryphon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Gryphon_Lobby_AnimBP_C named Default__MNT_Gryphon_Lobby_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_MNT_Hippopotamus_C named Default__ABP_MNT_Hippopotamus_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Hippopotamus_AnimBP_New_C named Default__MNT_Hippopotamus_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Hoarder_AnimBP_C named Default__NPC_Hoarder_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Horse_AnimBP_C named Default__MNT_Horse_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Horse_AnimBP_New_C named Default__MNT_Horse_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_LandStrider_AnimBP_C named Default__NPC_LandStrider_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Leverit_AnimBP_New_C named Default__MNT_Leverit_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Leverit_AnimBP_C named Default__NPC_Leverit_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_LivingWave_AnimBP_C named Default__NPC_LivingWave_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PET_LivingWave_AnimBP_C named Default__PET_LivingWave_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read LizardBig_AnimBP_C named Default__LizardBig_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Lizard_AnimBp_New_C named Default__MNT_Lizard_AnimBp_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_Starcrawler_Lobby_C named Default__ABP_Starcrawler_Lobby_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read SK_Cyclops_Mushroom_AnimBP_C named Default__SK_Cyclops_Mushroom_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Pig_AnimBP_C named Default__NPC_Pig_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ServantoftheSoil_AnimBP_C named Default__ServantoftheSoil_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Toad_AnimBP_New_C named Default__MNT_Toad_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PET_PseudoDragon_AnimBP_C named Default__PET_PseudoDragon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Ramstrider_AnimBP_New_C named Default__MNT_Ramstrider_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Swiftclaw_AnimBP_New_C named Default__MNT_Swiftclaw_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Raven_AnimBP_C named Default__NPC_Raven_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Rhino_AnimBP_New_C named Default__MNT_Rhino_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PET_Seer_AnimBP_C named Default__PET_Seer_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Spider_AnimBP_C named Default__NPC_Spider_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Stingray_AnimBP_C named Default__NPC_Stingray_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_TideBreaker_AnimBP_New_C named Default__MNT_TideBreaker_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Tidesnapper_AnimBP_C named Default__MNT_Tidesnapper_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Tortoise_AnimBP_New_C named Default__MNT_Tortoise_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read TrollJoyus_AnimBP_C named Default__TrollJoyus_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Troll_AnimBP_C named Default__Troll_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_TruffleTrotter_AnimBP_C named Default__NPC_TruffleTrotter_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_VerdantVoyager_AnimBP_New_C named Default__MNT_VerdantVoyager_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PET_Watcher_AnimBP_C named Default__PET_Watcher_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Wings_AnimBP_C named Default__Wings_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_WispWhelk_AnimBP_C named Default__MNT_WispWhelk_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MNT_Wolf_AnimBP_New_C named Default__MNT_Wolf_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read WrathsHarbinger_AnimBP_New_C named Default__WrathsHarbinger_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Wyrmling_AnimBP_C named Default__NPC_Wyrmling_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Wyrmling_BOSS_AnimBP_C named Default__NPC_Wyrmling_BOSS_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read 1H_SWD_NPC_AnimBP_C named Default__1H_SWD_NPC_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read 1H_SWD_NPC_AnimBP_AABoss_C named Default__1H_SWD_NPC_AnimBP_AABoss_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read 2H_SWD_NPC_AnimBP_C named Default__2H_SWD_NPC_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ARMED_NodeNPC_AnimBP_C named Default__ARMED_NodeNPC_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BOW_NPC_AnimBP_C named Default__BOW_NPC_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read CASTER_NPC_AnimBP_C named Default__CASTER_NPC_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Cowering_NPC_AnimBP_C named Default__Cowering_NPC_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Dual_DGR_NPC_AnimBP_C named Default__Dual_DGR_NPC_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Master_Humanoid_NPC_AnimBP_C named Default__Master_Humanoid_NPC_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read UNARMED_NPC_AnimBP_C named Default__UNARMED_NPC_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read RNG_BOOK_2H_animBP_C named Default__RNG_BOOK_2H_animBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read RNG_Book_AnimBP_C named Default__RNG_Book_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Fishing_2H_AnimBP_C named Default__Fishing_2H_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read forge_AnimBP_C named Default__forge_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read HousingHarvestPlotComponentBP_C named Default__HousingHarvestPlotComponentBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read AB_Gate_SimpleInteractable_C named Default__AB_Gate_SimpleInteractable_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_AgriculturalSupply_C named Default__MapNPC_AgriculturalSupply_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_ArtisanshipCorner_C named Default__MapNPC_ArtisanshipCorner_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_Caravansary_C named Default__MapNPC_Caravansary_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_Cookhouse_C named Default__MapNPC_Cookhouse_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_EmptyPlot_C named Default__MapNPC_EmptyPlot_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_Hideworks_C named Default__MapNPC_Hideworks_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_HuntingLodge_C named Default__MapNPC_HuntingLodge_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_InConstruction_C named Default__MapNPC_InConstruction_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_Labratory_C named Default__MapNPC_Labratory_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_Market_C named Default__MapNPC_Market_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_Smithy_C named Default__MapNPC_Smithy_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_Stoneworks_C named Default__MapNPC_Stoneworks_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_TextileMill_C named Default__MapNPC_TextileMill_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_TownHall_C named Default__MapNPC_TownHall_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_Warehouse_C named Default__MapNPC_Warehouse_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read MapNPC_Woodshop_C named Default__MapNPC_Woodshop_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Sklarisha_MotherOfPain_C named Default__Sklarisha_MotherOfPain_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Minotaur_Summoner_Raven_C named Default__NPC_Minotaur_Summoner_Raven_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read AnimArmor_Knight_Patrol_Sweeper_C named Default__AnimArmor_Knight_Patrol_Sweeper_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BP_LingeringEffect_DustStorm_C named Default__BP_LingeringEffect_DustStorm_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Skeleton_C named Default__Skeleton_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read CultistMage_Base_C named Default__CultistMage_Base_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Event_Villager_M_C named Default__Event_Villager_M_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Node_NPC_Master_C named Default__Node_NPC_Master_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ServiceBuilding_Caravansary_CaravanMaster_C named Default__ServiceBuilding_Caravansary_CaravanMaster_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ServiceBuilding_Caravansary_CrateSalesman_C named Default__ServiceBuilding_Caravansary_CrateSalesman_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ServiceBuilding_Forge_Vendor_C named Default__ServiceBuilding_Forge_Vendor_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read General_Gear_Base_Vendor_C named Default__General_Gear_Base_Vendor_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read General_Test_Teleporter_C named Default__General_Test_Teleporter_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Node_BuyOrderManager_KAE_C named Default__Node_BuyOrderManager_KAE_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Node_Citizen_Vendor_C named Default__Node_Citizen_Vendor_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Node_ConstructionManager_KAE_C named Default__Node_ConstructionManager_KAE_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Node_Mayor_Vendor_C named Default__Node_Mayor_Vendor_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Node_MemorialSite_Priest_KAE_C named Default__Node_MemorialSite_Priest_KAE_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Node_TownHall_GuildManager_KAE_C named Default__Node_TownHall_GuildManager_KAE_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Node_Warehouse_GuildStorageClerk_KAE_C named Default__Node_Warehouse_GuildStorageClerk_KAE_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Node_Warehouse_StorageClerk_KAE_C named Default__Node_Warehouse_StorageClerk_KAE_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Quest_NPC_Master_C named Default__Quest_NPC_Master_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Dummy_FakePlayer_Idle_C named Default__Dummy_FakePlayer_Idle_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Event_RewardCache_Hoarder_C named Default__Event_RewardCache_Hoarder_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Event_RewardCache_Prop_C named Default__Event_RewardCache_Prop_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read SQ_SimpleInteractableBase_C named Default__SQ_SimpleInteractableBase_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPC_Testing_SpawnWizard_C named Default__NPC_Testing_SpawnWizard_C correctly": 1,
+      "---> CUE4Parse.UE4.Exceptions.ParserException: ActorTickFunction: Unknown property with value 153. Can't proceed with serialization (Serialized 0 properties until now)": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Attractor_Water_Drinking_C named Default__Attractor_Water_Drinking_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPCAttractorComponent_BP_C named Default__NPCAttractorComponent_BP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read NPCPropInteractionComponent_C named Default__NPCPropInteractionComponent_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BP_Banyan_hero01_Blueprint_C named Default__BP_Banyan_hero01_Blueprint_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BP_Banyan_hero02_Blueprint_C named Default__BP_Banyan_hero02_Blueprint_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BP_VolumetricFog_Gemspring_C named Default__BP_VolumetricFog_Gemspring_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_Occular_Tower_C named Default__ABP_Occular_Tower_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Reliquarie_01_AnimBP_C named Default__Reliquarie_01_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_PC_Ship_Harpoon_C named Default__ABP_PC_Ship_Harpoon_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_Ship_Harpoon_C named Default__ABP_Ship_Harpoon_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Radar_AnimBP_C named Default__PC_Radar_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Radar_AnimBP_C named Default__Radar_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Caravel_AnimBP_C named Default__Caravel_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Caravan01_AnimBP_C named Default__Caravan01_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PostProcess_internal_C named Default__PostProcess_internal_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_FastTravel_MountGryphon_AnimBP_C named Default__PC_FastTravel_MountGryphon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountBear_AnimBP_New_C named Default__PC_Master_MountBear_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountBeetle_AnimBP_C named Default__PC_Master_MountBeetle_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountChameleon_AnimBP_C named Default__PC_Master_MountChameleon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountCursedCharger_AnimBP_New_C named Default__PC_Master_MountCursedCharger_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountFox_AnimBP_New_C named Default__PC_Master_MountFox_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountGlimmeringGeode_AnimBP_New_C named Default__PC_Master_MountGlimmeringGeode_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountGraveyardGolem_AnimBP_C named Default__PC_Master_MountGraveyardGolem_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountGryphon_AnimBP_C named Default__PC_Master_MountGryphon_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountGryphon_AnimBP_New_C named Default__PC_Master_MountGryphon_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountHippopotamus_AnimBP_New_C named Default__PC_Master_MountHippopotamus_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountHorse_AnimBP_C named Default__PC_Master_MountHorse_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountHorse_AnimBP_New_C named Default__PC_Master_MountHorse_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountLeverit_AnimBP_New_C named Default__PC_Master_MountLeverit_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountLizard_AnimBP_New_C named Default__PC_Master_MountLizard_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountMule_AnimBP_New_C named Default__PC_Master_MountMule_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountRamstrider_AnimBP_New_C named Default__PC_Master_MountRamstrider_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountRhino_AnimBP_New_C named Default__PC_Master_MountRhino_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountSteer_AnimBP_C named Default__PC_Master_MountSteer_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountSwiftclaw_AnimBP_New_C named Default__PC_Master_MountSwiftclaw_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountTidebreaker_AnimBP_New_C named Default__PC_Master_MountTidebreaker_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountTidesnapper_AnimBP_C named Default__PC_Master_MountTidesnapper_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountToad_AnimBP_New_C named Default__PC_Master_MountToad_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountTortoise_AnimBP_New_C named Default__PC_Master_MountTortoise_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountVerdantVoyager_AnimBP_New_C named Default__PC_Master_MountVerdantVoyager_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountWispWhelk_AnimBP_C named Default__PC_Master_MountWispWhelk_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_MountWolf_AnimBP_New_C named Default__PC_Master_MountWolf_AnimBP_New_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Ballista_AnimBP_C named Default__Ballista_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read SimpleAnimInstance_C named Default__SimpleAnimInstance_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read SimpleWithWeaponsAnimInstance_C named Default__SimpleWithWeaponsAnimInstance_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Automation_TargetDummy_Base_C named Default__Automation_TargetDummy_Base_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BP_AOCHUD_C named Default__BP_AOCHUD_C correctly": 1,
+      "---> CUE4Parse.UE4.Exceptions.ParserException: WBP_SkillTree_C: Unknown property with value 7. Can't proceed with serialization (Serialized 1 properties until now)": 1,
+      "---> CUE4Parse.UE4.Exceptions.ParserException: WBP_TooltipWindow_C: Unknown property with value 30. Can't proceed with serialization (Serialized 0 properties until now)": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_PC_PotionLauncher_C named Default__ABP_PC_PotionLauncher_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_PotionLauncher_C named Default__ABP_PotionLauncher_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_Corsair_Sail_C named Default__ABP_Corsair_Sail_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_PC_Rowboat_C named Default__ABP_PC_Rowboat_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read Caravan_Raft_AnimBP_C named Default__Caravan_Raft_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read PC_Master_CaravanRaft_AnimBP_C named Default__PC_Master_CaravanRaft_AnimBP_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BP_NavalVehicleBase_C named Default__BP_NavalVehicleBase_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read ABP_PC_MNT_Caravel_C named Default__ABP_PC_MNT_Caravel_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BP_CaravelBase_C named Default__BP_CaravelBase_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BP_FishTankCaravel_C named Default__BP_FishTankCaravel_C correctly": 1,
+      "CUE4Parse.UE4.Exceptions.ParserException: Could not read BP_RadarCaravel_C named Default__BP_RadarCaravel_C correctly": 1
+    },
+    "limits": [
+      "Only selected Blueprint-package class default objects were attempted.",
+      "Values are serialized overrides; omitted/inherited/default-zero values require separate resolution.",
+      "Schemas are inferred from saved SDK declarations; semantic correctness remains unverified.",
+      "The parser can skip unknown zero-valued fields. Fatal exception mode does not eliminate these warnings. Warning lines can repeat during visible-cursor replay.",
+      "Failed and under-consumed objects remain explicit gaps.",
+      "Component-instance exports and referenced assets are not established as parsed by a successful class/default parse."
+    ]
+  },
+  "native_virtual_dispatch": {
+    "exe_sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+    "class_accessor_rva": "0x5cce8c0",
+    "class_callback_rva": "0x5cd0500",
+    "constructor_rva": "0x6b8cd00",
+    "constructor_table_rva": "0xb6873d0",
+    "registration_callback_rva": "0x5cd2030",
+    "links": [
+      {
+        "method": "GetRemainingAbilityCooldown",
+        "thunk_rva": "0x5cd4b00",
+        "slot": "0x648",
+        "table_rva": "0xb6873d0",
+        "target_rva": "0x6ba73d0",
+        "slot_sites": [
+          "0x5cd4bc5"
+        ]
+      },
+      {
+        "method": "GetRemainingAbilityCooldownPercent",
+        "thunk_rva": "0x5cd4c30",
+        "slot": "0x658",
+        "table_rva": "0xb6873d0",
+        "target_rva": "0x6ba7540",
+        "slot_sites": [
+          "0x5cd4cf5"
+        ]
+      },
+      {
+        "method": "IsAbilityOnCooldown",
+        "thunk_rva": "0x5cd5300",
+        "slot": "0x668",
+        "table_rva": "0xb6873d0",
+        "target_rva": "0x6bb40c0",
+        "slot_sites": [
+          "0x5cd53c6"
+        ]
+      }
+    ],
+    "percent_upper_clamp_constant": 1.0,
+    "time_helper_fallback_constant": 9115200.0,
+    "limits": [
+      "Class ownership is linked through inspected static registration references and the constructor callback; no process was run.",
+      "The recorded table is the primary table installed by this constructor. Derived classes can override dispatch.",
+      "Time-helper clock maintenance and cooldown record update/expiry/prediction paths remain unreviewed."
+    ]
+  },
+  "asset_values": {
+    "source": "asset-values-v2.jsonl",
+    "confidence": "inferred_schema_asset_candidate",
+    "status": {
+      "inferred_schema_asset_candidate": 653
+    },
+    "classes": {
+      "BehaviorTree": 12,
+      "BlackboardData": 111,
+      "StateTree": 331,
+      "DataTable": 30,
+      "InputAction": 167,
+      "PlayerInputConfig": 1,
+      "AOCInputMappingContext": 1
+    },
+    "consumption": {
+      "exact_consumption": 653
+    },
+    "structural_checks": {
+      "asset_identity_matches_header": 653,
+      "local_header_match": 33275,
+      "external_or_unindexed": 41541
+    },
+    "serialized_properties": 6698,
+    "table_rows": 526357,
+    "object_references": 74816,
+    "parser_warning_lines": 0,
+    "parser_warning_groups": {},
+    "limits": [
+      "Only selected configuration export classes in the existing header inventory were attempted.",
+      "Exact consumption and matching references are structural evidence; schemas and property interpretations remain inferred.",
+      "Nested component/AI-node/input-modifier export payloads are not decoded merely because a reference was decoded.",
+      "Serialized properties can omit inherited/default-zero values.",
+      "Warning and consumption gaps remain distinct statuses; catalog rows include their source candidate status.",
+      "References outside the indexed header set are explicitly unresolved."
+    ]
+  },
+  "atlas": {
+    "sdk_packages": 476,
+    "parent_relationships": 10350,
+    "uniquely_resolved_parent_candidates": 10350,
+    "game_classes": 1404,
+    "diagnostic_source_areas": 65,
+    "game_diagnostic_areas": 13
+  },
+  "module_kinds": {
+    "managed": 640,
+    "native": 104
+  },
+  "packages": [
+    {
+      "package": "GameSystemsPlugin",
+      "types": 4304,
+      "functions": 7767
+    },
+    {
+      "package": "Engine",
+      "types": 2370,
+      "functions": 4565
+    },
+    {
+      "package": "ControlRig",
+      "types": 655,
+      "functions": 391
+    },
+    {
+      "package": "RigVM",
+      "types": 556,
+      "functions": 55
+    },
+    {
+      "package": "PCG",
+      "types": 467,
+      "functions": 383
+    },
+    {
+      "package": "Niagara",
+      "types": 461,
+      "functions": 262
+    },
+    {
+      "package": "GeometryCollectionNodes",
+      "types": 338,
+      "functions": 0
+    },
+    {
+      "package": "MovieScene",
+      "types": 252,
+      "functions": 85
+    },
+    {
+      "package": "MovieSceneTracks",
+      "types": 239,
+      "functions": 64
+    },
+    {
+      "package": "AIModule",
+      "types": 236,
+      "functions": 224
+    },
+    {
+      "package": "CoreUObject",
+      "types": 235,
+      "functions": 1
+    },
+    {
+      "package": "GameplayCameras",
+      "types": 228,
+      "functions": 115
+    },
+    {
+      "package": "MeshModelingTools",
+      "types": 224,
+      "functions": 84
+    },
+    {
+      "package": "GeometryScriptingCore",
+      "types": 181,
+      "functions": 584
+    },
+    {
+      "package": "InteractiveToolsFramework",
+      "types": 180,
+      "functions": 24
+    },
+    {
+      "package": "UMG",
+      "types": 168,
+      "functions": 816
+    },
+    {
+      "package": "MovieRenderPipelineCore",
+      "types": 163,
+      "functions": 401
+    },
+    {
+      "package": "MeshModelingToolsExp",
+      "types": 158,
+      "functions": 59
+    },
+    {
+      "package": "StateTreeModule",
+      "types": 139,
+      "functions": 25
+    },
+    {
+      "package": "IKRig",
+      "types": 124,
+      "functions": 81
+    },
+    {
+      "package": "AnimGraphRuntime",
+      "types": 123,
+      "functions": 110
+    },
+    {
+      "package": "AkAudio",
+      "types": 123,
+      "functions": 167
+    },
+    {
+      "package": "HoudiniEngineRuntime",
+      "types": 117,
+      "functions": 54
+    },
+    {
+      "package": "DataflowCore",
+      "types": 114,
+      "functions": 0
+    },
+    {
+      "package": "TypedElementFramework",
+      "types": 105,
+      "functions": 30
+    },
+    {
+      "package": "ModelingComponents",
+      "types": 92,
+      "functions": 40
+    },
+    {
+      "package": "Landscape",
+      "types": 86,
+      "functions": 26
+    },
+    {
+      "package": "Chooser",
+      "types": 81,
+      "functions": 12
+    },
+    {
+      "package": "Synthesis",
+      "types": 78,
+      "functions": 224
+    },
+    {
+      "package": "InterchangeImport",
+      "types": 78,
+      "functions": 0
+    },
+    {
+      "package": "CommonUI",
+      "types": 75,
+      "functions": 298
+    },
+    {
+      "package": "Water",
+      "types": 66,
+      "functions": 81
+    },
+    {
+      "package": "LiveLinkInterface",
+      "types": 66,
+      "functions": 0
+    },
+    {
+      "package": "SlateCore",
+      "types": 65,
+      "functions": 0
+    },
+    {
+      "package": "CameraCalibrationCore",
+      "types": 63,
+      "functions": 60
+    },
+    {
+      "package": "EnhancedInput",
+      "types": 62,
+      "functions": 97
+    },
+    {
+      "package": "OnlineSubsystemUtils",
+      "types": 60,
+      "functions": 57
+    },
+    {
+      "package": "DatasmithContent",
+      "types": 58,
+      "functions": 5
+    },
+    {
+      "package": "MetasoundFrontend",
+      "types": 56,
+      "functions": 16
+    },
+    {
+      "package": "ChaosVDRuntime",
+      "types": 56,
+      "functions": 0
+    },
+    {
+      "package": "NavigationSystem",
+      "types": 51,
+      "functions": 34
+    },
+    {
+      "package": "InterchangeFactoryNodes",
+      "types": 44,
+      "functions": 567
+    },
+    {
+      "package": "Foliage",
+      "types": 43,
+      "functions": 26
+    },
+    {
+      "package": "AudioWidgets",
+      "types": 43,
+      "functions": 70
+    },
+    {
+      "package": "GeometryCollectionEngine",
+      "types": 41,
+      "functions": 83
+    },
+    {
+      "package": "InterchangeNodes",
+      "types": 40,
+      "functions": 298
+    },
+    {
+      "package": "SequencerScripting",
+      "types": 38,
+      "functions": 361
+    },
+    {
+      "package": "DragonIKPlugin",
+      "types": 38,
+      "functions": 74
+    },
+    {
+      "package": "ScriptableToolsFramework",
+      "types": 37,
+      "functions": 132
+    },
+    {
+      "package": "Paper2D",
+      "types": 36,
+      "functions": 67
+    },
+    {
+      "package": "ALSV4_CPP",
+      "types": 34,
+      "functions": 0
+    },
+    {
+      "package": "MassEntity",
+      "types": 31,
+      "functions": 0
+    },
+    {
+      "package": "GameplayTags",
+      "types": 29,
+      "functions": 40
+    },
+    {
+      "package": "EngineMessages",
+      "types": 29,
+      "functions": 0
+    },
+    {
+      "package": "NetCore",
+      "types": 28,
+      "functions": 0
+    },
+    {
+      "package": "IntrepidNet",
+      "types": 28,
+      "functions": 35
+    },
+    {
+      "package": "FieldSystemEngine",
+      "types": 28,
+      "functions": 30
+    },
+    {
+      "package": "ChaosVehicles",
+      "types": 28,
+      "functions": 75
+    },
+    {
+      "package": "LevelSequence",
+      "types": 27,
+      "functions": 73
+    },
+    {
+      "package": "DataflowEngine",
+      "types": 27,
+      "functions": 10
+    },
+    {
+      "package": "WwiseResourceLoader",
+      "types": 26,
+      "functions": 34
+    },
+    {
+      "package": "MovieSceneCapture",
+      "types": 26,
+      "functions": 30
+    },
+    {
+      "package": "InterchangeEngine",
+      "types": 26,
+      "functions": 48
+    },
+    {
+      "package": "GameUtilsPlugin",
+      "types": 26,
+      "functions": 88
+    },
+    {
+      "package": "ChaosSolverEngine",
+      "types": 26,
+      "functions": 3
+    },
+    {
+      "package": "MetasoundEngine",
+      "types": 25,
+      "functions": 152
+    },
+    {
+      "package": "Slate",
+      "types": 24,
+      "functions": 0
+    },
+    {
+      "package": "MovieRenderPipelineRenderPasses",
+      "types": 24,
+      "functions": 0
+    },
+    {
+      "package": "InterchangeCore",
+      "types": 24,
+      "functions": 149
+    },
+    {
+      "package": "DataflowSimulation",
+      "types": 24,
+      "functions": 2
+    },
+    {
+      "package": "Sentry",
+      "types": 23,
+      "functions": 128
+    },
+    {
+      "package": "IrisStub",
+      "types": 23,
+      "functions": 0
+    },
+    {
+      "package": "ChaosCaching",
+      "types": 23,
+      "functions": 10
+    },
+    {
+      "package": "ControlRigSpline",
+      "types": 22,
+      "functions": 0
+    },
+    {
+      "package": "ComputeFramework",
+      "types": 22,
+      "functions": 3
+    },
+    {
+      "package": "EngineCameras",
+      "types": 21,
+      "functions": 23
+    },
+    {
+      "package": "AudioSynesthesia",
+      "types": 21,
+      "functions": 12
+    },
+    {
+      "package": "AudioExtensions",
+      "types": 21,
+      "functions": 13
+    },
+    {
+      "package": "ReplicationGraph",
+      "types": 20,
+      "functions": 9
+    },
+    {
+      "package": "MediaAssets",
+      "types": 20,
+      "functions": 120
+    },
+    {
+      "package": "GameplayStateTreeModule",
+      "types": 20,
+      "functions": 7
+    },
+    {
+      "package": "AnimationCore",
+      "types": 20,
+      "functions": 0
+    },
+    {
+      "package": "TemplateSequence",
+      "types": 19,
+      "functions": 9
+    },
+    {
+      "package": "AudioMixer",
+      "types": 19,
+      "functions": 117
+    },
+    {
+      "package": "InterchangePipelines",
+      "types": 18,
+      "functions": 20
+    },
+    {
+      "package": "GeometryFlowMeshProcessing",
+      "types": 18,
+      "functions": 0
+    },
+    {
+      "package": "GeometryCache",
+      "types": 18,
+      "functions": 34
+    },
+    {
+      "package": "VariantManagerContent",
+      "types": 17,
+      "functions": 42
+    },
+    {
+      "package": "GameplayDebugger",
+      "types": 17,
+      "functions": 9
+    },
+    {
+      "package": "DesignDataPlugin",
+      "types": 17,
+      "functions": 3
+    },
+    {
+      "package": "Constraints",
+      "types": 17,
+      "functions": 7
+    },
+    {
+      "package": "Agones",
+      "types": 17,
+      "functions": 19
+    },
+    {
+      "package": "PCGGeometryScriptInterop",
+      "types": 16,
+      "functions": 4
+    },
+    {
+      "package": "DataflowNodes",
+      "types": 16,
+      "functions": 0
+    },
+    {
+      "package": "Chaos",
+      "types": 15,
+      "functions": 0
+    },
+    {
+      "package": "Serialization",
+      "types": 14,
+      "functions": 0
+    },
+    {
+      "package": "ClothingSystemRuntimeInterface",
+      "types": 14,
+      "functions": 15
+    },
+    {
+      "package": "CinematicCamera",
+      "types": 14,
+      "functions": 37
+    },
+    {
+      "package": "CommonInput",
+      "types": 13,
+      "functions": 11
+    },
+    {
+      "package": "ApexDestruction",
+      "types": 13,
+      "functions": 4
+    },
+    {
+      "package": "TypedElementRuntime",
+      "types": 12,
+      "functions": 42
+    },
+    {
+      "package": "ClothingSystemRuntimeCommon",
+      "types": 12,
+      "functions": 0
+    },
+    {
+      "package": "AnimationSharing",
+      "types": 12,
+      "functions": 7
+    },
+    {
+      "package": "ProxyTable",
+      "types": 11,
+      "functions": 4
+    },
+    {
+      "package": "GeometryFramework",
+      "types": 11,
+      "functions": 65
+    },
+    {
+      "package": "PropertyBindingUtils",
+      "types": 10,
+      "functions": 0
+    },
+    {
+      "package": "MeshDescription",
+      "types": 10,
+      "functions": 91
+    },
+    {
+      "package": "IntrepidNetCore",
+      "types": 10,
+      "functions": 0
+    },
+    {
+      "package": "EngineSettings",
+      "types": 10,
+      "functions": 3
+    },
+    {
+      "package": "TimeManagement",
+      "types": 9,
+      "functions": 18
+    },
+    {
+      "package": "OpenColorIO",
+      "types": 9,
+      "functions": 9
+    },
+    {
+      "package": "Landmass",
+      "types": 9,
+      "functions": 0
+    },
+    {
+      "package": "GameplayTasks",
+      "types": 9,
+      "functions": 10
+    },
+    {
+      "package": "ChaosClothAssetEngine",
+      "types": 9,
+      "functions": 46
+    },
+    {
+      "package": "PhysicsCore",
+      "types": 8,
+      "functions": 0
+    },
+    {
+      "package": "PBIK",
+      "types": 8,
+      "functions": 0
+    },
+    {
+      "package": "NamingTokens",
+      "types": 8,
+      "functions": 15
+    },
+    {
+      "package": "InterchangeMessages",
+      "types": 8,
+      "functions": 0
+    },
+    {
+      "package": "FullBodyIK",
+      "types": 8,
+      "functions": 0
+    },
+    {
+      "package": "BlendStack",
+      "types": 8,
+      "functions": 17
+    },
+    {
+      "package": "ResonanceAudio",
+      "types": 7,
+      "functions": 13
+    },
+    {
+      "package": "PropertyPath",
+      "types": 7,
+      "functions": 8
+    },
+    {
+      "package": "NiagaraShader",
+      "types": 7,
+      "functions": 0
+    },
+    {
+      "package": "ModelingOperators",
+      "types": 7,
+      "functions": 1
+    },
+    {
+      "package": "MediaCompositing",
+      "types": 7,
+      "functions": 0
+    },
+    {
+      "package": "Intrepid",
+      "types": 7,
+      "functions": 3
+    },
+    {
+      "package": "HeadMountedDisplay",
+      "types": 7,
+      "functions": 12
+    },
+    {
+      "package": "FastGeoStreaming",
+      "types": 7,
+      "functions": 0
+    },
+    {
+      "package": "ACLPlugin",
+      "types": 7,
+      "functions": 2
+    },
+    {
+      "package": "WwiseFileHandler",
+      "types": 6,
+      "functions": 3
+    },
+    {
+      "package": "WorldMetricsCore",
+      "types": 6,
+      "functions": 0
+    },
+    {
+      "package": "NNE",
+      "types": 6,
+      "functions": 0
+    },
+    {
+      "package": "LocalizableMessage",
+      "types": 6,
+      "functions": 0
+    },
+    {
+      "package": "GeometryFlowCore",
+      "types": 6,
+      "functions": 0
+    },
+    {
+      "package": "DeveloperSettings",
+      "types": 6,
+      "functions": 0
+    },
+    {
+      "package": "ColorCorrectRegions",
+      "types": 6,
+      "functions": 21
+    },
+    {
+      "package": "ChaosCloth",
+      "types": 6,
+      "functions": 17
+    },
+    {
+      "package": "BuildPatchServices",
+      "types": 6,
+      "functions": 0
+    },
+    {
+      "package": "AudioCapture",
+      "types": 6,
+      "functions": 7
+    },
+    {
+      "package": "AudioAnalyzer",
+      "types": 6,
+      "functions": 2
+    },
+    {
+      "package": "AnimToTexture",
+      "types": 6,
+      "functions": 15
+    },
+    {
+      "package": "ActorSequence",
+      "types": 6,
+      "functions": 3
+    },
+    {
+      "package": "WwisePackagingRuntime",
+      "types": 5,
+      "functions": 0
+    },
+    {
+      "package": "WaveTable",
+      "types": 5,
+      "functions": 0
+    },
+    {
+      "package": "UniversalObjectLocator",
+      "types": 5,
+      "functions": 0
+    },
+    {
+      "package": "SlateRHIRenderer",
+      "types": 5,
+      "functions": 3
+    },
+    {
+      "package": "SessionMessages",
+      "types": 5,
+      "functions": 0
+    },
+    {
+      "package": "ProceduralMeshComponent",
+      "types": 5,
+      "functions": 21
+    },
+    {
+      "package": "NiagaraSimCaching",
+      "types": 5,
+      "functions": 0
+    },
+    {
+      "package": "MediaPlate",
+      "types": 5,
+      "functions": 32
+    },
+    {
+      "package": "MRMesh",
+      "types": 5,
+      "functions": 20
+    },
+    {
+      "package": "GeometryCollectionTracks",
+      "types": 5,
+      "functions": 0
+    },
+    {
+      "package": "GeometryCacheTracks",
+      "types": 5,
+      "functions": 0
+    },
+    {
+      "package": "ClothingSystemRuntimeNv",
+      "types": 5,
+      "functions": 1
+    },
+    {
+      "package": "ChaosVehiclesCore",
+      "types": 5,
+      "functions": 0
+    },
+    {
+      "package": "Automation",
+      "types": 5,
+      "functions": 0
+    },
+    {
+      "package": "AssetRegistry",
+      "types": 5,
+      "functions": 45
+    },
+    {
+      "package": "WwiseObjectUtils",
+      "types": 4,
+      "functions": 0
+    },
+    {
+      "package": "StateStream",
+      "types": 4,
+      "functions": 0
+    },
+    {
+      "package": "SplineTwistCorrect",
+      "types": 4,
+      "functions": 16
+    },
+    {
+      "package": "Renderer",
+      "types": 4,
+      "functions": 0
+    },
+    {
+      "package": "Overlay",
+      "types": 4,
+      "functions": 0
+    },
+    {
+      "package": "OnlineSubsystem",
+      "types": 4,
+      "functions": 2
+    },
+    {
+      "package": "NiagaraCore",
+      "types": 4,
+      "functions": 0
+    },
+    {
+      "package": "NiagaraAnimNotifies",
+      "types": 4,
+      "functions": 3
+    },
+    {
+      "package": "MovieRenderPipelineSettings",
+      "types": 4,
+      "functions": 6
+    },
+    {
+      "package": "IntrepidEOS",
+      "types": 4,
+      "functions": 0
+    },
+    {
+      "package": "ISMPool",
+      "types": 4,
+      "functions": 1
+    },
+    {
+      "package": "HoudiniNiagara",
+      "types": 4,
+      "functions": 45
+    },
+    {
+      "package": "DataflowEnginePlugin",
+      "types": 4,
+      "functions": 0
+    },
+    {
+      "package": "ChaosNiagara",
+      "types": 4,
+      "functions": 0
+    },
+    {
+      "package": "BinkMediaPlayer",
+      "types": 4,
+      "functions": 31
+    },
+    {
+      "package": "WwiseSimpleExternalSource",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "WebBrowser",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "TakeMovieScene",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "StreamlineBlueprint",
+      "types": 3,
+      "functions": 4
+    },
+    {
+      "package": "SoundUtilities",
+      "types": 3,
+      "functions": 12
+    },
+    {
+      "package": "SkeletalMeshDescription",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "NiagaraUIRenderer",
+      "types": 3,
+      "functions": 9
+    },
+    {
+      "package": "MobilePatchingUtils",
+      "types": 3,
+      "functions": 15
+    },
+    {
+      "package": "MediaUtils",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "MaterialShaderQualitySettings",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "LocationServicesBPLibrary",
+      "types": 3,
+      "functions": 7
+    },
+    {
+      "package": "InterchangeCommonParser",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "ImgMedia",
+      "types": 3,
+      "functions": 6
+    },
+    {
+      "package": "GeometryCollectionDepNodes",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "Gauntlet",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "EyeTracker",
+      "types": 3,
+      "functions": 5
+    },
+    {
+      "package": "DisplayClusterLightCardExtender",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "DLSS",
+      "types": 3,
+      "functions": 0
+    },
+    {
+      "package": "CompositeCore",
+      "types": 3,
+      "functions": 4
+    },
+    {
+      "package": "AppleImageUtils",
+      "types": 3,
+      "functions": 4
+    },
+    {
+      "package": "AnimationBudgetAllocator",
+      "types": 3,
+      "functions": 3
+    },
+    {
+      "package": "WwisePackaging",
+      "types": 2,
+      "functions": 2
+    },
+    {
+      "package": "WwiseAudioLinkRuntime",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "WidgetCarousel",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "WebBrowserWidget",
+      "types": 2,
+      "functions": 5
+    },
+    {
+      "package": "UdpMessaging",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "UObjectPlugin",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "Transient",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "TextureUtilitiesCommon",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "StreamlineRHI",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "StaticMeshDescription",
+      "types": 2,
+      "functions": 4
+    },
+    {
+      "package": "PacketHandler",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "MovieRenderPipelineMP4Encoder",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "JsonUtilities",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "IntrepidWwiseExternalSource",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "InputCore",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "ImageWriteQueue",
+      "types": 2,
+      "functions": 1
+    },
+    {
+      "package": "ImageCore",
+      "types": 2,
+      "functions": 6
+    },
+    {
+      "package": "FieldNotification",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "CustomMeshComponent",
+      "types": 2,
+      "functions": 3
+    },
+    {
+      "package": "CsvMetrics",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "CoreOnline",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "ConsoleVariablesEditorRuntime",
+      "types": 2,
+      "functions": 13
+    },
+    {
+      "package": "CableComponent",
+      "types": 2,
+      "functions": 5
+    },
+    {
+      "package": "ArchVisCharacter",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "AndroidPermission",
+      "types": 2,
+      "functions": 2
+    },
+    {
+      "package": "AdvancedWidgets",
+      "types": 2,
+      "functions": 20
+    },
+    {
+      "package": "ActorLayerUtilities",
+      "types": 2,
+      "functions": 3
+    },
+    {
+      "package": "AOC",
+      "types": 2,
+      "functions": 0
+    },
+    {
+      "package": "ALS_AnimBP_AoC",
+      "types": 2,
+      "functions": 33
+    },
+    {
+      "package": "ABP_Starcrawler_Lobby",
+      "types": 2,
+      "functions": 1
+    },
+    {
+      "package": "ABP_CharacterStable",
+      "types": 2,
+      "functions": 12
+    },
+    {
+      "package": "ABP_CharacterCreator",
+      "types": 2,
+      "functions": 15
+    },
+    {
+      "package": "ABP_AoC_Simple",
+      "types": 2,
+      "functions": 26
+    },
+    {
+      "package": "WwiseNiagara",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "WmfMediaFactory",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "TraceUtilities",
+      "types": 1,
+      "functions": 14
+    },
+    {
+      "package": "TcpMessaging",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "StreamlineReflexBlueprint",
+      "types": 1,
+      "functions": 10
+    },
+    {
+      "package": "StreamlineDeepDVCBlueprint",
+      "types": 1,
+      "functions": 11
+    },
+    {
+      "package": "StreamlineDLSSGBlueprint",
+      "types": 1,
+      "functions": 8
+    },
+    {
+      "package": "SoundFields",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "SignificanceManager",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "PCGNiagaraInterop",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "OodleNetworkHandlerComponent",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "NISBlueprint",
+      "types": 1,
+      "functions": 9
+    },
+    {
+      "package": "MoviePlayer",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "LocalizableMessageBlueprint",
+      "types": 1,
+      "functions": 3
+    },
+    {
+      "package": "InterchangeExport",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "ImgMediaFactory",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "ImgMediaEngine",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "GooglePAD",
+      "types": 1,
+      "functions": 17
+    },
+    {
+      "package": "GeometryDataflowNodes",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "FacialAnimation",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "FSR3MovieRenderPipeline",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "FFXFSR3Settings",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "DialogAudio",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "DLSSMoviePipelineSupport",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "DLSSBlueprint",
+      "types": 1,
+      "functions": 22
+    },
+    {
+      "package": "Cinematic_Character_AnimBP",
+      "types": 1,
+      "functions": 1
+    },
+    {
+      "package": "ChaosVehiclesEngine",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "ChaosVDBlueprint",
+      "types": 1,
+      "functions": 4
+    },
+    {
+      "package": "AvfMediaFactory",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "AutomationUtils",
+      "types": 1,
+      "functions": 1
+    },
+    {
+      "package": "AudioPlatformConfiguration",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "AudioLinkEngine",
+      "types": 1,
+      "functions": 4
+    },
+    {
+      "package": "AudioLinkCore",
+      "types": 1,
+      "functions": 0
+    },
+    {
+      "package": "AssetTags",
+      "types": 1,
+      "functions": 7
+    },
+    {
+      "package": "AndroidFileServer",
+      "types": 1,
+      "functions": 3
+    }
+  ],
+  "limits": [
+    "Inventory and decompilation are not semantic verification.",
+    "No original PDB found in installed file inventory; PE retains an expected PDB name and GUID.",
+    "Native indirect dispatch, omitted leaf code, inlining, stripped identities and type reconstruction remain incomplete.",
+    "Blueprint instruction decoding passed structural checks for the selected function exports; gameplay behavior and other asset properties remain unverified.",
+    "The installed EOS DLL is a local replacement.",
+    "Historical runtime labels are bound to their saved executable hash and capture time."
+  ]
+}

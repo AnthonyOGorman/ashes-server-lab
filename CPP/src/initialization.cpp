@@ -22,11 +22,19 @@ bool owns_udp_port(DWORD pid, unsigned port) {
 void Backend::initialize_clients() {
     Json snapshot;
     DWORD inspected_pid = 0;
-    const std::vector<std::string> steps{
-        "ClientSetHUD", "ClientRestart", "PawnAutonomous", "StatsComponentExport",
-        "GameStateBeginPlay", "StatsGravity", "StatsSpeed", "ActivateMovement"
+    const bool with_winstead_floor = config.value("initialize_winstead_floor", false);
+    std::vector<std::string> steps{
+        "ClientSetHUD", "LoadingInputLock", "LoadingInputLocked", "ClientRestart", "LoadingInputRelock", "LoadingInputRelocked", "ControllerPlayerState", "PawnPlayerState", "PlayerStateVerified", "CharacterInfoExport", "CharacterGuid", "CharacterGuidVerified", "CharacterName", "CharacterNameVerified", "StatsComponentExport", "GameStateBeginPlay"
     };
+    if (with_winstead_floor) {
+        steps.insert(steps.end(), {"NodeLayoutProbe", "NodeLayoutWinsteadFloor"});
+    }
+    steps.insert(steps.end(), {"StatsGravity", "StatsSpeed", "StatsResources", "StatsResourcesVerified", "PrepareMovement"});
+    if (with_winstead_floor) steps.push_back("WinsteadCollisionAdmitted");
+    steps.insert(steps.end(), {"PawnPresentationReady", "ActivateMovement", "PawnAutonomous", "NativeMovementReady", "GameplayPresentationReady", "LoadingInputRelease", "WorldReady"});
     while (!stopping) {
+        bool progressed = false;
+        double attempt_started = mono_time();
         try { synchronize_movement_speed(); } catch(const std::exception& error) { event("speed_sync_waiting",{{"reason",error.what()}}); }
         std::string connection_id, step;
         DWORD pid = 0;
@@ -40,7 +48,7 @@ void Backend::initialize_clients() {
                     if (client.value("running", false) && client.value("world_loaded", false)) {
                         pid = client_process.pid;
                         for (auto& [peer, c] : protocol.connections) {
-                            if (c.phase != "joined" || client.value("world_loaded_at",0.0)<c.handshake_time || c.initialization_failed || c.stages.contains("ActivateMovement")) continue;
+                            if (c.phase != "joined" || client.value("world_loaded_at",0.0)<c.handshake_time || c.initialization_failed || c.stages.contains(steps.back())) continue;
                             auto port = unsigned(std::stoul(peer.substr(peer.find(':') + 1)));
                             if (!owns_udp_port(pid, port)) continue;
                             connection_id = c.id;
@@ -62,23 +70,54 @@ void Backend::initialize_clients() {
             }
             if (!connection_id.empty() && !step.empty()) {
                 double observed = snapshot.is_object() && snapshot.contains("client_proof") ? snapshot["client_proof"].value("observed_at", 0.0) : 0;
+                double full_observed = snapshot.is_object() ? snapshot.value("full_inspection_observed_at", observed) : 0;
                 // Keep inspection off the UDP thread. The stage rechecks current identities, fields and values before dispatch.
-                if (inspected_pid != pid || wall_time() - observed > 8 || step == "ClientSetHUD") {
+                if (step == "bootstrap") {
+                    ProcessReader reader(pid, config.at("client_exe").get<std::string>(), config.at("client_sha256"));
+                    std::lock_guard lock(mutex);
+                    attached = reader.proof();
+                } else if (inspected_pid != pid || wall_time() - full_observed > 8) {
+                    double inspection_started = mono_time();
                     snapshot = inspect_client(pid, config.at("client_exe").get<std::string>(), config.at("client_sha256"));
                     inspected_pid = pid;
                     write_file(root / "data/client-inspection.json", snapshot.dump(2));
                     std::lock_guard lock(mutex);
                     attached = snapshot.at("client_proof");
                     attached["inspection_errors"] = snapshot.at("errors").size();
+                    event("initialization_inspection_completed", {{"connection_id", connection_id}, {"stage", step}, {"duration_ms", (mono_time()-inspection_started)*1000.}, {"bytes_read", snapshot.at("bytes_read")}});
+                }
+                if (step != "bootstrap") {
+                    std::map<std::string,Guid> actors;
+                    {std::lock_guard lock(mutex);for(auto& [peer,c]:protocol.connections)if(c.id==connection_id)actors=c.actors;}
+                    ProcessReader reader(pid, config.at("client_exe").get<std::string>(), config.at("client_sha256"));
+                    try {snapshot=refresh_actor_matches(reader,snapshot,actors);} catch(const std::exception& e){
+                        std::string reason=e.what();
+                        if(reason.find("lifetime changed")!=std::string::npos||reason.find("connection changed")!=std::string::npos||reason.find("GUID cache changed")!=std::string::npos||reason.find("Evidence process identity")!=std::string::npos)inspected_pid=0;
+                        throw;
+                    }
+                    write_file(root/"data/client-inspection.json",snapshot.dump(2));
+                    std::lock_guard lock(mutex);attached=snapshot.at("client_proof");attached["inspection_errors"]=snapshot.at("errors").size();
                 }
                 if (stopping) break;
-                stage({{"connection_id", connection_id}, {"stage", step}});
+                if (step == "WinsteadCollisionAdmitted") {
+                    control({{"action", "admit_winstead_collision"}, {"connection_id", connection_id},
+                             {"pid", pid}, {"created_filetime", snapshot.at("client_proof").at("process_created_filetime")}});
+                } else {
+                    stage({{"connection_id", connection_id}, {"stage", step}});
+                }
+                progressed = true;
                 std::lock_guard lock(mutex);
                 for (auto& [peer, c] : protocol.connections) if (c.id == connection_id) {
                     c.initialization_error.clear();
-                    if (step == "ActivateMovement") {
-                        c.initialization_status = "Character initialized; native possession, HUD, BeginPlay and stats verified";
+                    event("initialization_step_completed", {{"connection_id", c.id}, {"stage", step}, {"duration_ms", (mono_time()-attempt_started)*1000.}, {"since_initialization_ms", (mono_time()-c.initialization_started)*1000.}});
+                    if (step == "PrepareMovement") {
+                        c.initialization_status = "Character initialized; selected name, PlayerState, possession, HUD, BeginPlay and stats verified";
                         event("character_initialized", {{"service", "world"}, {"connection_id", c.id}, {"pid", pid}, {"movement_verified", false}});
+                    }
+                    if (step == "WorldReady") {
+                        c.initialization_status = "Character and world initialized";
+                        event("world_initialized", {{"service", "world"}, {"connection_id", c.id}, {"pid", pid},
+                                                    {"winstead_floor_loaded_and_collision_admitted", with_winstead_floor}, {"native_input_release_verified", true}, {"movement_verified", false}});
                     }
                 }
             }
@@ -89,7 +128,8 @@ void Backend::initialize_clients() {
                 c.initialization_error = error.what();
             }
         }
-        for (int i = 0; i < 5 && !stopping; ++i) std::this_thread::sleep_for(std::chrono::milliseconds(50));
+        // Advance immediately after successful work; only unmet native prerequisites need polling.
+        if (!progressed) std::this_thread::sleep_for(std::chrono::milliseconds(connection_id.empty() ? 100 : 25));
     }
 }
 }

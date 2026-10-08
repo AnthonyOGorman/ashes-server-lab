@@ -19,7 +19,6 @@ Log.Logger=new LoggerConfiguration().MinimumLevel.Information().WriteTo.Sink(new
 if(args.Length<2)throw new ArgumentException("Paks path and output directory required");
 var directory=args[0];var output=args[1];
 var game=Enum.GetNames<EGame>().Contains("GAME_UE5_6")?Enum.Parse<EGame>("GAME_UE5_6"):EGame.GAME_UE5_5;
-if(args.Length<2)throw new ArgumentException("Usage: TerrainCollision <Paks> <inventory-directory> [--scan|--mesh-scan|--collision-metadata|--other-worlds]");
 var oodle=Environment.GetEnvironmentVariable("ASHES_OODLE_LIBRARY") ?? throw new ArgumentException("Set ASHES_OODLE_LIBRARY to your own Oodle DLL");
 OodleHelper.Initialize(Path.GetFullPath(oodle));
 using var provider=new DefaultFileProvider(directory,SearchOption.TopDirectoryOnly,new VersionContainer(game),StringComparer.OrdinalIgnoreCase);
@@ -37,12 +36,15 @@ var assets=registry.PreallocatedAssetDataBuffers.Select(a=>new{package=a.Package
 var terrain=assets.Where(a=>a.cls.Contains("Landscape") || (a.cls=="World"&&a.package.Contains("Verra"))).ToArray();
 File.WriteAllText(Path.Combine(output,"terrain-assets.json"),JsonSerializer.Serialize(terrain));
 Console.WriteLine(JsonSerializer.Serialize(new{registry_assets=assets.Length,terrain_assets=terrain.Length,classes=terrain.GroupBy(a=>a.cls).ToDictionary(g=>g.Key,g=>g.Count())}));
-if(args.Length>2&&args[2]=="--collision-metadata") {
+if(args.Length>2&&(args[2]=="--collision-metadata"||args[2]=="--collision-metadata-package")) {
  ObjectTypeRegistry.RegisterClass("LandscapeHeightfieldCollisionComponent",typeof(TerrainCollisionComponent));
  ObjectTypeRegistry.RegisterClass("LandscapeMeshCollisionComponent",typeof(TerrainCollisionComponent));
  var records=new List<object>();var failures=new List<object>();int scanned=0;
  var packages=new HashSet<string>();
- foreach(string folder in new[]{"cooked","cooked-mesh"}) {
+ if(args[2]=="--collision-metadata-package") {
+  if(args.Length!=4||!args[3].StartsWith("/Game/",StringComparison.Ordinal)||args[3].Contains(".."))throw new ArgumentException("One exact /Game/ package is required");
+  packages.Add(args[3]);
+ } else foreach(string folder in new[]{"cooked","cooked-mesh"}) {
   using var source=JsonDocument.Parse(File.ReadAllText(Path.GetFullPath(Path.Combine(output,"../"+folder+"/manifest.json"))));
   foreach(var tile in source.RootElement.GetProperty("tiles").EnumerateArray())packages.Add(tile.GetProperty("package").GetString()!);
  }

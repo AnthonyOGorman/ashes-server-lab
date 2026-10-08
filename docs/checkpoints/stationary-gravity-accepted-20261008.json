@@ -1,0 +1,460 @@
+{
+  "status": "stationary_gravity_fix_accepted_native_and_full_server_trace",
+  "observed_at": 1791428671.9570243,
+  "scope": "stationary one-count no-hold jump on current accepted profile; moving/slope/sprint parity not yet verified",
+  "client_proof": {
+    "pid": 658928,
+    "exe": "E:\\Games\\Steam Library\\steamapps\\common\\Ashes of Creation\\Game\\AOC\\Binaries\\Win64\\AOCClient-Win64-Shipping.exe",
+    "process_created_filetime": 134359014322564314,
+    "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+    "observed_at": 1791428181.113245
+  },
+  "backend_proof": {
+    "pid": 633760,
+    "process_created_filetime": 134359013996695814,
+    "exe": "E:\\Ashes Of Creation GPT\\CPP\\build\\msvc\\Release\\ashes_lab.exe"
+  },
+  "backend_sha256": "8a657da7c3fa57fbb4659291c931fb51c4090b44e95046551f9f6510161a7364",
+  "connection": "d5c8ce7da986b381834b6b63",
+  "before": {
+    "connection_id": "69fd7994c2817b9439dddb46",
+    "moves": 58,
+    "new_moves": 56,
+    "discarded_intervals": 0,
+    "resolution_moves": 0,
+    "responses": {
+      "ack": 52,
+      "correction": 4,
+      "deferred": 0
+    },
+    "max_prediction_error_cm": 19.96533663795708,
+    "errors_above_10cm": 4,
+    "moving_new_moves": 0,
+    "simulation_ms": {
+      "p50": 0.4585001152008772,
+      "p95": 0.6526000797748566,
+      "max": 1.035700086504221
+    },
+    "packet_lock_wait_ms": {
+      "p50": 0.00100000761449337,
+      "p95": 0.0014998950064182281,
+      "max": 0.001600012183189392
+    },
+    "packet_processing_elapsed_ms": {
+      "p50": 1.390600111335516,
+      "p95": 2.165100071579218,
+      "max": 4.607500042766333
+    }
+  },
+  "after": {
+    "connection_id": "d5c8ce7da986b381834b6b63",
+    "moves": 58,
+    "new_moves": 55,
+    "discarded_intervals": 0,
+    "resolution_moves": 0,
+    "responses": {
+      "ack": 55,
+      "correction": 0,
+      "deferred": 0
+    },
+    "max_prediction_error_cm": 0.0062487985069310525,
+    "errors_above_10cm": 0,
+    "moving_new_moves": 0,
+    "simulation_ms": {
+      "p50": 0.38439990021288395,
+      "p95": 0.5980001296848059,
+      "max": 0.6506000645458698
+    },
+    "packet_lock_wait_ms": {
+      "p50": 0.00100000761449337,
+      "p95": 0.001400010660290718,
+      "max": 1.824100036174059
+    },
+    "packet_processing_elapsed_ms": {
+      "p50": 1.2562999036163092,
+      "p95": 2.1081999875605106,
+      "max": 2.2938998881727457
+    }
+  },
+  "verified_falling_profile": {
+    "air_control": 0.20000000298023224,
+    "air_control_boost": 2.0,
+    "air_control_boost_threshold": 25.0,
+    "animation_modifiers": 0,
+    "braking_fall": 3000.0,
+    "character_gravity_scale": 0.5,
+    "effective_gravity": -1225.0,
+    "falling_friction": 0.0,
+    "jump_velocity": 900.0,
+    "movement_gravity_scale": 2.5,
+    "slow_falling": false,
+    "source": "current native getter bindings, reflected settings and accepted stat cache",
+    "world_gravity": -980.0
+  },
+  "native_observed_apex_rise_cm": 329.05273613287136,
+  "native_final": {
+    "source": "native_reflection_read_only",
+    "client_proof": {
+      "pid": 658928,
+      "exe": "E:\\Games\\Steam Library\\steamapps\\common\\Ashes of Creation\\Game\\AOC\\Binaries\\Win64\\AOCClient-Win64-Shipping.exe",
+      "process_created_filetime": 134359014322564314,
+      "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+      "observed_at": 1791428187.0657234
+    },
+    "started_at": 1791428187.004156,
+    "observed_at": 1791428187.0657234,
+    "local_player": {
+      "address": "0x24a1beeb410",
+      "object_index": 50662,
+      "name": "LocalPlayer_2147482446",
+      "class": "LocalPlayer",
+      "ancestors": [
+        "LocalPlayer",
+        "Player",
+        "Object"
+      ],
+      "outer_address": "0x247a1df89e0",
+      "serial": 2084
+    },
+    "controller": {
+      "address": "0x247229ac010",
+      "object_index": 277953,
+      "name": "AoCPlayerControllerBP_C_2147479149",
+      "class": "AoCPlayerControllerBP_C",
+      "ancestors": [
+        "AoCPlayerControllerBP_C",
+        "AoCPlayerController",
+        "PlayerController",
+        "Controller",
+        "Actor",
+        "Object"
+      ],
+      "outer_address": "0x24aa15fd260",
+      "serial": 57661
+    },
+    "pawn": {
+      "address": "0x247ce798020",
+      "object_index": 277994,
+      "name": "PlayerPawn_C_2147479138",
+      "class": "PlayerPawn_C",
+      "ancestors": [
+        "PlayerPawn_C",
+        "PlayerCharacter",
+        "BaseCharacter",
+        "Character",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "outer_address": "0x24aa15fd260",
+      "serial": 57730
+    },
+    "root": {
+      "address": "0x24b121eca90",
+      "object_index": 277995,
+      "name": "CollisionCylinder",
+      "class": "CapsuleComponent",
+      "ancestors": [
+        "CapsuleComponent",
+        "ShapeComponent",
+        "PrimitiveComponent",
+        "SceneComponent",
+        "ActorComponent",
+        "Object"
+      ],
+      "outer_address": "0x247ce798020",
+      "serial": 57729
+    },
+    "position_cm": [
+      -680500.0,
+      406500.0,
+      12503.14636971262
+    ],
+    "movement": {
+      "Velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Acceleration": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "MovementMode": 1,
+      "CustomMovementMode": 0,
+      "MaxWalkSpeed": 220.0,
+      "MaxRunSpeed": 600.0,
+      "MaxSprintSpeed": 750.0,
+      "GravityScale": 2.5,
+      "bUseMovementSpeedStat": false,
+      "bPredictMovement": true,
+      "bDeferServerMoves": true
+    },
+    "floor": {
+      "status": "read",
+      "source": "reflected CurrentFloor cached native result",
+      "fields": {
+        "bBlockingHit": true,
+        "bWalkableFloor": true,
+        "bLineTrace": false,
+        "FloorDist": 2.1508569717407227,
+        "LineDist": 0.0
+      },
+      "hit": {
+        "bBlockingHit": true,
+        "bStartPenetrating": false,
+        "ImpactPoint": [
+          -680500.0,
+          406500.2734375,
+          12405.0078125
+        ],
+        "ImpactNormal": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "component": {
+        "address": "0x247ab2bd210",
+        "object_index": 318937,
+        "name": "LandscapeHeightfieldCollisionComponent_10186",
+        "class": "LandscapeHeightfieldCollisionComponent",
+        "ancestors": [
+          "LandscapeHeightfieldCollisionComponent",
+          "PrimitiveComponent",
+          "SceneComponent",
+          "ActorComponent",
+          "Object"
+        ],
+        "outer_address": "0x24b2a76d740",
+        "serial": 61360
+      },
+      "outer_chain": [
+        {
+          "address": "0x24b2a76d740",
+          "object_index": 318929,
+          "name": "LandscapeStreamingProxy_F031I1MYMUUQ78ZGOAN3J2L1U_1_13_23_0",
+          "class": "LandscapeStreamingProxy",
+          "ancestors": [
+            "LandscapeStreamingProxy",
+            "LandscapeProxy",
+            "PartitionActor",
+            "Actor",
+            "Object"
+          ],
+          "outer_address": "0x24b2a7564e0",
+          "serial": 61362
+        },
+        {
+          "address": "0x24b2a7564e0",
+          "object_index": 318927,
+          "name": "PersistentLevel",
+          "class": "Level",
+          "ancestors": [
+            "Level",
+            "Object"
+          ],
+          "outer_address": "0x247a6d10b80",
+          "serial": 61342
+        },
+        {
+          "address": "0x247a6d10b80",
+          "object_index": 318925,
+          "name": "Verra_World_Master",
+          "class": "World",
+          "ancestors": [
+            "World",
+            "Object"
+          ],
+          "outer_address": "0x24aa2436750",
+          "serial": 61313
+        },
+        {
+          "address": "0x24aa2436750",
+          "object_index": 318924,
+          "name": "/Game/Levels/Verra_World_Master/Verra_World_Master/_Generated_/9IPZ4B6AWH5W1MNH1APM62C2J",
+          "class": "Package",
+          "ancestors": [
+            "Package",
+            "Object"
+          ],
+          "outer_address": "0x0",
+          "serial": null,
+          "identity_check": "GObjects pointer/index/class/name; package weak serial may be unallocated"
+        }
+      ],
+      "claim": "cached floor contact at the current pawn location; does not prove route coverage",
+      "snapshot_atomic": false,
+      "functions_invoked": false,
+      "memory_written": false
+    },
+    "movement_component": {
+      "address": "0x2472426ba40",
+      "object_index": 277996,
+      "name": "CharMoveComp",
+      "class": "AoCCharacterMovement",
+      "ancestors": [
+        "AoCCharacterMovement",
+        "CharacterMovementComponent",
+        "PawnMovementComponent",
+        "NavMovementComponent",
+        "MovementComponent",
+        "ActorComponent",
+        "Object"
+      ],
+      "outer_address": "0x247ce798020",
+      "serial": 57731
+    },
+    "pawn_state": {
+      "Role": 2,
+      "RemoteRole": 4,
+      "CustomTimeDilation": 1.0
+    },
+    "player_state": {
+      "address": "0x24ba0330e30",
+      "object_index": 278257,
+      "name": "AoCPlayerStateBP_C_2147479112",
+      "class": "AoCPlayerStateBP_C",
+      "ancestors": [
+        "AoCPlayerStateBP_C",
+        "AoCPlayerState",
+        "PlayerState",
+        "Info",
+        "Actor",
+        "Object"
+      ],
+      "outer_address": "0x24aa15fd260",
+      "serial": 57812
+    },
+    "player_name": "",
+    "player_name_source": "PlayerState.PlayerNamePrivate; displayed character name may come from CharacterInfo",
+    "pawn_player_state": {
+      "address": "0x24ba0330e30",
+      "object_index": 278257,
+      "name": "AoCPlayerStateBP_C_2147479112",
+      "class": "AoCPlayerStateBP_C",
+      "ancestors": [
+        "AoCPlayerStateBP_C",
+        "AoCPlayerState",
+        "PlayerState",
+        "Info",
+        "Actor",
+        "Object"
+      ],
+      "outer_address": "0x24aa15fd260"
+    },
+    "world": {
+      "identity": {
+        "address": "0x24b14c53440",
+        "object_index": 85920,
+        "name": "Verra_World_Master",
+        "class": "World",
+        "ancestors": [
+          "World",
+          "Object"
+        ],
+        "outer_address": "0x24722890c50",
+        "serial": 16099
+      },
+      "level": {
+        "address": "0x24aa15fd260",
+        "object_index": 85915,
+        "name": "PersistentLevel",
+        "class": "Level",
+        "ancestors": [
+          "Level",
+          "Object"
+        ],
+        "outer_address": "0x24b14c53440",
+        "serial": 56231
+      },
+      "fields": {
+        "bBegunPlay": {
+          "unavailable": "not_reflected",
+          "error": null
+        },
+        "bActorsInitialized": {
+          "unavailable": "not_reflected",
+          "error": null
+        },
+        "StreamingLevels": {
+          "count": 571,
+          "capacity": 584
+        }
+      },
+      "all_streaming_cells_visible": "not_measured"
+    },
+    "resources": {
+      "health": "not_mapped",
+      "mana": "not_mapped",
+      "stamina": "not_mapped"
+    },
+    "bytes_read": 242545,
+    "snapshot_atomic": false,
+    "functions_invoked": false,
+    "memory_written": false
+  },
+  "key_edges": [
+    {
+      "vk": 32,
+      "down": true,
+      "request_at": 1791428181.7499666,
+      "acknowledged_at": 1791428181.750471,
+      "held": 1
+    },
+    {
+      "vk": 32,
+      "down": false,
+      "request_at": 1791428181.8590772,
+      "acknowledged_at": 1791428181.866086,
+      "held": 0
+    }
+  ],
+  "controls_released": {
+    "magic": 1095713609,
+    "status": 0,
+    "pid": 658928,
+    "active": 0,
+    "hooks": 23,
+    "held": 0,
+    "cursor_x": 640,
+    "cursor_y": 336,
+    "hwnd": 92082996,
+    "foreground_pid": 528944,
+    "build_id": 204647746
+  },
+  "desktop_cursor_preservation_certified": false,
+  "remaining_checks": [
+    "moving jumps",
+    "air control",
+    "slopes",
+    "Shift sprint comparison"
+  ],
+  "artifacts": [
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\stationary-space-a97d384191364d45bcc83e6d70fa86c4.json",
+      "sha256": "1aeea728b103ff642b02227d873b67d2e91ce79833127ce9faacda7755c741ba"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\stationary-space-39003a4a34ce40418dc68ebb0f959aa4.json",
+      "sha256": "dd37dc92c5926e55807768ab4dab131d326a7c45325932b6518815966f726880"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\postfix-space-review-6878ffa2701e4a26b5ca2de9c5658b7c.json",
+      "sha256": "a880a96d38439c98ce9859574f82556bdb663b1310c5efe4184c2aee06f32932"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\CPP\\runs\\gravity-repeat-20261008\\stationary-comparison.json",
+      "sha256": "a933fdfce6fea979185c47cd62fd86a142ea2ecc663f0b82fb1b1215f69ffac5"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\CPP\\runs\\character-movement-followup-20261007\\stationary-space-gravity-before.json",
+      "sha256": "2cb01e588bddcabeca85786fef88727334201511ae355219b365d822eb5811ef"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\CPP\\runs\\character-movement-followup-20261007\\stationary-space-gravity-after.json",
+      "sha256": "8ca25482a2693fc0b28d8247253c29773cdc095de32e446d72a04afcbb363d75"
+    }
+  ]
+}

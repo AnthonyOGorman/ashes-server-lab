@@ -219,6 +219,3622 @@
       }
     }
   ],
+  "movement": [
+    {
+      "move": {
+        "timestamp": 0.0,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.0,
+      "result": null
+    },
+    {
+      "move": {
+        "timestamp": 0.02,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.02,
+      "result": {
+        "timestamp": 0.02,
+        "server_position": [
+          -680496.7232,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          163.84,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          3.276799999992363,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.04,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.04,
+      "result": {
+        "timestamp": 0.04,
+        "server_position": [
+          -680492.3232,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.06,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.06,
+      "result": {
+        "timestamp": 0.06,
+        "server_position": [
+          -680487.9232,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.08,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.08,
+      "result": {
+        "timestamp": 0.08,
+        "server_position": [
+          -680483.5231999999,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.1,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.1,
+      "result": {
+        "timestamp": 0.1,
+        "server_position": [
+          -680479.1231999999,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.12,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.12,
+      "result": {
+        "timestamp": 0.12,
+        "server_position": [
+          -680474.7231999999,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.14,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.14,
+      "result": {
+        "timestamp": 0.14,
+        "server_position": [
+          -680470.3231999999,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.16,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.16,
+      "result": {
+        "timestamp": 0.16,
+        "server_position": [
+          -680465.9231999998,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.18,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.18,
+      "result": {
+        "timestamp": 0.18,
+        "server_position": [
+          -680461.5231999998,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.2,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.2,
+      "result": {
+        "timestamp": 0.2,
+        "server_position": [
+          -680457.1231999998,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.22,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.22,
+      "result": {
+        "timestamp": 0.22,
+        "server_position": [
+          -680452.7231999998,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.24,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.24,
+      "result": {
+        "timestamp": 0.24,
+        "server_position": [
+          -680448.3231999998,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.26,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.26,
+      "result": {
+        "timestamp": 0.26,
+        "server_position": [
+          -680443.9231999997,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.28,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.28,
+      "result": {
+        "timestamp": 0.28,
+        "server_position": [
+          -680439.5231999997,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.3,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.3,
+      "result": {
+        "timestamp": 0.3,
+        "server_position": [
+          -680435.1231999997,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.32,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.32,
+      "result": {
+        "timestamp": 0.32,
+        "server_position": [
+          -680430.7231999997,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.34,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.34,
+      "result": {
+        "timestamp": 0.34,
+        "server_position": [
+          -680426.3231999996,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.36,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.36,
+      "result": {
+        "timestamp": 0.36,
+        "server_position": [
+          -680421.9231999996,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.38,
+        "acceleration": [
+          8192,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.38,
+      "result": {
+        "timestamp": 0.38,
+        "server_position": [
+          -680417.5231999996,
+          406500.0,
+          12501.01446828034
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.4,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 1,
+        "kind": "new"
+      },
+      "now": 100.4,
+      "result": {
+        "timestamp": 0.4,
+        "server_position": [
+          -680413.1231999996,
+          406500.0,
+          12518.52446828034
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          851.0
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          17.51000000000022
+        ],
+        "jump_started": true,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.42,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 1,
+        "kind": "new"
+      },
+      "now": 100.42,
+      "result": {
+        "timestamp": 0.42,
+        "server_position": [
+          -680408.7231999995,
+          406500.0,
+          12535.054468280341
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          802.0000000000001
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          16.530000000000655
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.44,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 1,
+        "kind": "new"
+      },
+      "now": 100.44,
+      "result": {
+        "timestamp": 0.44,
+        "server_position": [
+          -680404.3231999995,
+          406500.0,
+          12550.604468280342
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          753.0000000000001
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          15.550000000001091
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.46,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.46,
+      "result": {
+        "timestamp": 0.46,
+        "server_position": [
+          -680399.9231999995,
+          406500.0,
+          12565.174468280342
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          704.0000000000001
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          14.569999999999709
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.48,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.48,
+      "result": {
+        "timestamp": 0.48,
+        "server_position": [
+          -680395.5231999995,
+          406500.0,
+          12578.764468280342
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          655.0000000000002
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          13.590000000000146
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.5,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.5,
+      "result": {
+        "timestamp": 0.5,
+        "server_position": [
+          -680391.1231999994,
+          406500.0,
+          12591.374468280343
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          606.0000000000002
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          12.610000000000582
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.52,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.52,
+      "result": {
+        "timestamp": 0.52,
+        "server_position": [
+          -680386.7231999994,
+          406500.0,
+          12603.004468280344
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          557.0000000000002
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          11.630000000001019
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.54,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.54,
+      "result": {
+        "timestamp": 0.54,
+        "server_position": [
+          -680382.3231999994,
+          406500.0,
+          12613.654468280343
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          508.00000000000017
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          10.649999999999636
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.56,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.56,
+      "result": {
+        "timestamp": 0.56,
+        "server_position": [
+          -680377.9231999994,
+          406500.0,
+          12623.324468280343
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          459.0000000000001
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          9.670000000000073
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.58,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.58,
+      "result": {
+        "timestamp": 0.58,
+        "server_position": [
+          -680373.5231999994,
+          406500.0,
+          12632.014468280344
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          410.00000000000034
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          8.69000000000051
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.6,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.6,
+      "result": {
+        "timestamp": 0.6,
+        "server_position": [
+          -680369.1231999993,
+          406500.0,
+          12639.724468280345
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          361.0000000000003
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          7.710000000000946
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.62,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.62,
+      "result": {
+        "timestamp": 0.62,
+        "server_position": [
+          -680364.7231999993,
+          406500.0,
+          12646.454468280344
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          312.0000000000002
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          6.729999999999563
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.64,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.64,
+      "result": {
+        "timestamp": 0.64,
+        "server_position": [
+          -680360.3231999993,
+          406500.0,
+          12652.204468280344
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          263.00000000000017
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          5.75
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.66,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.66,
+      "result": {
+        "timestamp": 0.66,
+        "server_position": [
+          -680355.9231999993,
+          406500.0,
+          12656.974468280345
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          214.0000000000001
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          4.770000000000437
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.68,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.68,
+      "result": {
+        "timestamp": 0.68,
+        "server_position": [
+          -680351.5231999992,
+          406500.0,
+          12660.764468280346
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          165.00000000000006
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          3.790000000000873
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.7000000000000001,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.7,
+      "result": {
+        "timestamp": 0.7000000000000001,
+        "server_position": [
+          -680347.1231999992,
+          406500.0,
+          12663.574468280345
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          116.00000000000001
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          2.8099999999994907
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.72,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.72,
+      "result": {
+        "timestamp": 0.72,
+        "server_position": [
+          -680342.7231999992,
+          406500.0,
+          12665.404468280345
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          67.00000000000024
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          1.8299999999999272
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.74,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.74,
+      "result": {
+        "timestamp": 0.74,
+        "server_position": [
+          -680338.3231999992,
+          406500.0,
+          12666.254468280345
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          18.0000000000002
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          0.8500000000003638
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.76,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.76,
+      "result": {
+        "timestamp": 0.76,
+        "server_position": [
+          -680333.9231999991,
+          406500.0,
+          12666.124468280346
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -30.999999999999844
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -0.12999999999919964
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.78,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.78,
+      "result": {
+        "timestamp": 0.78,
+        "server_position": [
+          -680329.5231999991,
+          406500.0,
+          12665.014468280346
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -79.99999999999989
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -1.110000000000582
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.8,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.8,
+      "result": {
+        "timestamp": 0.8,
+        "server_position": [
+          -680325.1231999991,
+          406500.0,
+          12662.924468280346
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -128.99999999999994
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -2.0900000000001455
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.8200000000000001,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.82,
+      "result": {
+        "timestamp": 0.8200000000000001,
+        "server_position": [
+          -680320.7231999991,
+          406500.0,
+          12659.854468280346
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -178.0
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -3.069999999999709
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.84,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.84,
+      "result": {
+        "timestamp": 0.84,
+        "server_position": [
+          -680316.323199999,
+          406500.0,
+          12655.804468280347
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -226.99999999999977
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -4.049999999999272
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.86,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.86,
+      "result": {
+        "timestamp": 0.86,
+        "server_position": [
+          -680311.923199999,
+          406500.0,
+          12650.774468280346
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -275.99999999999983
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -5.030000000000655
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.88,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.88,
+      "result": {
+        "timestamp": 0.88,
+        "server_position": [
+          -680307.523199999,
+          406500.0,
+          12644.764468280346
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -324.9999999999999
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -6.010000000000218
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.9,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.9,
+      "result": {
+        "timestamp": 0.9,
+        "server_position": [
+          -680303.123199999,
+          406500.0,
+          12637.774468280346
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -373.99999999999994
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -6.989999999999782
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.92,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.92,
+      "result": {
+        "timestamp": 0.92,
+        "server_position": [
+          -680298.723199999,
+          406500.0,
+          12629.804468280347
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -423.0
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -7.969999999999345
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.9400000000000001,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.94,
+      "result": {
+        "timestamp": 0.9400000000000001,
+        "server_position": [
+          -680294.3231999989,
+          406500.0,
+          12620.854468280348
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -472.00000000000006
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -8.949999999998909
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.96,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.96,
+      "result": {
+        "timestamp": 0.96,
+        "server_position": [
+          -680289.9231999989,
+          406500.0,
+          12610.924468280347
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -520.9999999999998
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -9.930000000000291
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 0.98,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 100.98,
+      "result": {
+        "timestamp": 0.98,
+        "server_position": [
+          -680285.5231999989,
+          406500.0,
+          12600.014468280348
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -569.9999999999998
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -10.909999999999854
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.0,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.0,
+      "result": {
+        "timestamp": 1.0,
+        "server_position": [
+          -680281.1231999989,
+          406500.0,
+          12588.124468280348
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -618.9999999999998
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -11.889999999999418
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.02,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.02,
+      "result": {
+        "timestamp": 1.02,
+        "server_position": [
+          -680276.7231999988,
+          406500.0,
+          12575.25446828035
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -667.9999999999998
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -12.869999999998981
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.04,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.04,
+      "result": {
+        "timestamp": 1.04,
+        "server_position": [
+          -680272.3231999988,
+          406500.0,
+          12561.404468280349
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -716.9999999999998
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -13.850000000000364
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.06,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.06,
+      "result": {
+        "timestamp": 1.06,
+        "server_position": [
+          -680267.9231999988,
+          406500.0,
+          12546.574468280349
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -765.9999999999998
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -14.829999999999927
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.08,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.08,
+      "result": {
+        "timestamp": 1.08,
+        "server_position": [
+          -680263.5231999988,
+          406500.0,
+          12530.76446828035
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -814.9999999999998
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -15.80999999999949
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.1,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.1,
+      "result": {
+        "timestamp": 1.1,
+        "server_position": [
+          -680259.1231999988,
+          406500.0,
+          12513.97446828035
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          -863.9999999999998
+        ],
+        "movement_mode": 3,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -16.789999999999054
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.12,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.12,
+      "result": {
+        "timestamp": 1.12,
+        "server_position": [
+          -680254.7231999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          220.00000000000003,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          4.400000000023283,
+          0.0,
+          -14.06451476311122
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.1400000000000001,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.14,
+      "result": {
+        "timestamp": 1.1400000000000001,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          56.1599999999999,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          1.12320000003092,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.16,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.16,
+      "result": {
+        "timestamp": 1.16,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.18,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.18,
+      "result": {
+        "timestamp": 1.18,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.2,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.2,
+      "result": {
+        "timestamp": 1.2,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.22,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.22,
+      "result": {
+        "timestamp": 1.22,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.24,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.24,
+      "result": {
+        "timestamp": 1.24,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.26,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.26,
+      "result": {
+        "timestamp": 1.26,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.28,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.28,
+      "result": {
+        "timestamp": 1.28,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.3,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.3,
+      "result": {
+        "timestamp": 1.3,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.32,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.32,
+      "result": {
+        "timestamp": 1.32,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.34,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.34,
+      "result": {
+        "timestamp": 1.34,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.36,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.36,
+      "result": {
+        "timestamp": 1.36,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.3800000000000001,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.38,
+      "result": {
+        "timestamp": 1.3800000000000001,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.4000000000000001,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.4,
+      "result": {
+        "timestamp": 1.4000000000000001,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.42,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.42,
+      "result": {
+        "timestamp": 1.42,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.44,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.44,
+      "result": {
+        "timestamp": 1.44,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.46,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.46,
+      "result": {
+        "timestamp": 1.46,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.48,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.48,
+      "result": {
+        "timestamp": 1.48,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.5,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.5,
+      "result": {
+        "timestamp": 1.5,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.52,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.52,
+      "result": {
+        "timestamp": 1.52,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.54,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.54,
+      "result": {
+        "timestamp": 1.54,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.56,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.56,
+      "result": {
+        "timestamp": 1.56,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.58,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.58,
+      "result": {
+        "timestamp": 1.58,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.6,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.6,
+      "result": {
+        "timestamp": 1.6,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.62,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.62,
+      "result": {
+        "timestamp": 1.62,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.6400000000000001,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.64,
+      "result": {
+        "timestamp": 1.6400000000000001,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.6600000000000001,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.66,
+      "result": {
+        "timestamp": 1.6600000000000001,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.68,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.68,
+      "result": {
+        "timestamp": 1.68,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.7,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.7,
+      "result": {
+        "timestamp": 1.7,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.72,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.72,
+      "result": {
+        "timestamp": 1.72,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.74,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.74,
+      "result": {
+        "timestamp": 1.74,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.76,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.76,
+      "result": {
+        "timestamp": 1.76,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.78,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.78,
+      "result": {
+        "timestamp": 1.78,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.8,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.8,
+      "result": {
+        "timestamp": 1.8,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.82,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.82,
+      "result": {
+        "timestamp": 1.82,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.84,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.84,
+      "result": {
+        "timestamp": 1.84,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.86,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.86,
+      "result": {
+        "timestamp": 1.86,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.8800000000000001,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.88,
+      "result": {
+        "timestamp": 1.8800000000000001,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.9000000000000001,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.9,
+      "result": {
+        "timestamp": 1.9000000000000001,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.92,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.92,
+      "result": {
+        "timestamp": 1.92,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.94,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.94,
+      "result": {
+        "timestamp": 1.94,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.96,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.96,
+      "result": {
+        "timestamp": 1.96,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 1.98,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 101.98,
+      "result": {
+        "timestamp": 1.98,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    },
+    {
+      "move": {
+        "timestamp": 2.0,
+        "acceleration": [
+          0,
+          0,
+          0
+        ],
+        "compressed_flags": 0,
+        "kind": "new"
+      },
+      "now": 102.0,
+      "result": {
+        "timestamp": 2.0,
+        "server_position": [
+          -680253.5999999987,
+          406500.0,
+          12499.909953517239
+        ],
+        "server_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "movement_mode": 1,
+        "delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "jump_started": false,
+        "timestamp_reset": false,
+        "collision_hits": [],
+        "scope": "landscape and exported convex mesh capsule sweep/walk/jump; other mesh shapes remain unsupported"
+      }
+    }
+  ],
   "guid": {
     "object_id": "0x1234567890abcdee",
     "server_id": 1,

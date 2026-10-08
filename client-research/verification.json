@@ -1,0 +1,160 @@
+{
+  "verified_at": "2026-10-07T12:54:58.165410+00:00",
+  "passed": true,
+  "checks": {
+    "input_executable_hash": {
+      "passed": true,
+      "details": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43"
+    },
+    "sqlite_integrity": {
+      "passed": true,
+      "details": [
+        "ok"
+      ]
+    },
+    "exception_directory_matches_pe": {
+      "passed": true,
+      "details": {
+        "pe_records": 570754,
+        "indexed": 570754
+      }
+    },
+    "registration_table_bytes": {
+      "passed": true,
+      "details": {
+        "wrong_pairs": 0
+      }
+    },
+    "selected_header_functions_have_scripts": {
+      "passed": true,
+      "details": {
+        "headers": 9380,
+        "scripts": 9380
+      }
+    },
+    "static_blueprint_branch_boundaries": {
+      "passed": true,
+      "details": {
+        "non_statement_targets": 0
+      }
+    },
+    "class_function_map_matches_headers": {
+      "passed": true,
+      "details": {
+        "unmatched_function_names": 0
+      }
+    },
+    "class_terminal_metadata": {
+      "passed": true,
+      "details": {
+        "incomplete_counted_candidates": 0
+      }
+    },
+    "inferred_schema_structural_references": {
+      "passed": true,
+      "details": {
+        "mismatches": {},
+        "functions": 9380,
+        "header_functions": 9380,
+        "unindexed_references": 0,
+        "confidence": "inferred schemas; payload consumption and semantics remain unverified"
+      }
+    },
+    "inferred_schema_file_hashes": {
+      "passed": true,
+      "details": {
+        "structs": "3f1cb9364dee463cc6bd916566dd2c1e4a8fa481b86be6f6d3bb3517a6cd36f5",
+        "enums": "8ced1c79ea33c0c0979ebde072a92cde102a2e915bc8b9001055c7bbe2037d1a"
+      }
+    },
+    "configuration_schema_file_hashes": {
+      "passed": true,
+      "details": {
+        "structs": "f99b84bc7301ffbf19a2e839ae7c6989ce98e14e5da8ab0a248fdcb21e98e299",
+        "enums": "8ced1c79ea33c0c0979ebde072a92cde102a2e915bc8b9001055c7bbe2037d1a"
+      }
+    },
+    "inferred_class_payload_consumption": {
+      "passed": true,
+      "details": {
+        "classes": 7440,
+        "consumption": {
+          "exact_consumption": 7440
+        }
+      }
+    },
+    "default_candidate_consumption_gate": {
+      "passed": true,
+      "details": {
+        "counted_candidates_with_wrong_consumption": 0,
+        "limits": "Explicit failures and consumption gaps are preserved; these checks do not verify property meanings."
+      }
+    },
+    "asset_value_structural_gates": {
+      "passed": true,
+      "details": {
+        "miscounted_candidates": 0,
+        "structural_checks": {
+          "asset_identity_matches_header": 653,
+          "local_header_match": 33275,
+          "external_or_unindexed": 41541
+        },
+        "limits": "External/unindexed references and separately recorded consumption gaps remain unresolved."
+      }
+    },
+    "constructor_virtual_table_bytes": {
+      "passed": true,
+      "details": {
+        "inspected_slots": 625,
+        "mismatches": 0,
+        "limits": "Constructor-table ownership follows saved static evidence; subclasses may override dispatch."
+      }
+    },
+    "cooldown_dispatch_links": {
+      "passed": true,
+      "details": {
+        "mismatches": 0,
+        "constructor": "0x6b8cd00",
+        "table": "0xb6873d0"
+      }
+    },
+    "managed_module_method_totals": {
+      "passed": true,
+      "details": {
+        "module_totals": [
+          486776,
+          450597
+        ],
+        "method_rows": [
+          486776,
+          450597
+        ]
+      }
+    },
+    "managed_il_body_readability": {
+      "passed": true,
+      "details": {
+        "errors": 0
+      }
+    },
+    "unwind_chains": {
+      "passed": true,
+      "details": {
+        "review_required": 0
+      }
+    },
+    "sprint_setter_instruction_bytes": {
+      "passed": true,
+      "details": "8891d0110000c3"
+    },
+    "native_output_hash_binding": {
+      "passed": true,
+      "details": {
+        "outputs": 29291,
+        "missing_hash": 0,
+        "explicit_decompiler_failures": 13
+      }
+    }
+  },
+  "limitation": "These checks validate evidence consistency and selected byte interpretations, not complete semantic correctness or gameplay behavior."
+}

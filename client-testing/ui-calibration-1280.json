@@ -1,0 +1,86 @@
+{
+  "steps": [
+    {
+      "sha256": "ee6d736378ba935c8e67a39ea46da14944ba548dd815e783d93a90b2bc2068aa",
+      "name": "Warning continue",
+      "action": {
+        "key": "enter"
+      },
+      "source_png": "screen-0a36f441c44042809a38ecc2f8a66238.png",
+      "bbox": [
+        531,
+        147,
+        747,
+        177
+      ]
+    },
+    {
+      "sha256": "5baf6c7909c44354fdcb3d873a6420762b9da7749afb7450895e52bcbabd43da",
+      "name": "Title open realms",
+      "action": {
+        "key": "enter"
+      },
+      "source_png": "screen-83b0ee0af67a48e8931a867c32627cea.png",
+      "bbox": [
+        620,
+        336,
+        658,
+        360
+      ]
+    },
+    {
+      "sha256": "46eac01df5ee4f7b032797c44d0578a3d9a68a9074cf89ef334b7e63322962de",
+      "name": "Select visible Ashes C++ Lab",
+      "action": {
+        "x": 932,
+        "y": 467
+      },
+      "source_png": "screen-46992e1c41a94f698f364d16f82bf962.png",
+      "bbox": [
+        892,
+        455,
+        973,
+        479
+      ]
+    },
+    {
+      "sha256": "500654606cae8a1a101dc2f221cdadb578a293623c4fa35ce7381138511de9a6",
+      "name": "LabExplorer character",
+      "action": {
+        "x": 1084,
+        "y": 275
+      },
+      "source_png": "screen-86e4e33fe804478aaa340b3e020b692c.png",
+      "bbox": [
+        1045,
+        263,
+        1136,
+        297
+      ]
+    },
+    {
+      "sha256": "500654606cae8a1a101dc2f221cdadb578a293623c4fa35ce7381138511de9a6",
+      "name": "Play",
+      "action": {
+        "x": 640,
+        "y": 693
+      },
+      "source_png": "screen-86e4e33fe804478aaa340b3e020b692c.png",
+      "bbox": [
+        576,
+        682,
+        704,
+        705
+      ]
+    }
+  ],
+  "scope": "Existing DLL local entry; only visible local Ashes C++ Lab realm selected",
+  "verified_process": {
+    "process_created_filetime": 134358613459926377,
+    "pid": 151740
+  },
+  "client_size": [
+    1280,
+    729
+  ]
+}

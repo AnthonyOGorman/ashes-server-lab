@@ -6,6 +6,13 @@
 
 namespace ashes {
 namespace {
+double log_timestamp(const std::string& line){
+    SYSTEMTIME stamp{};int year,month,day,hour,minute;double seconds;
+    if(std::sscanf(line.c_str(),"{\"timestamp\":\"%d-%d-%dT%d:%d:%lf",&year,&month,&day,&hour,&minute,&seconds)!=6||!std::isfinite(seconds)||seconds<0||seconds>=60)return 0;
+    stamp.wYear=WORD(year);stamp.wMonth=WORD(month);stamp.wDay=WORD(day);stamp.wHour=WORD(hour);stamp.wMinute=WORD(minute);stamp.wSecond=WORD(seconds);stamp.wMilliseconds=WORD(std::min(int((seconds-std::floor(seconds))*1000+.5),999));FILETIME file;
+    if(!SystemTimeToFileTime(&stamp,&file))return 0;
+    return double((uint64_t(file.dwHighDateTime)<<32)|file.dwLowDateTime)/10000000.-11644473600.;
+}
 struct Handle {
     HANDLE value;
     explicit Handle(HANDLE h) : value(h) {}
@@ -117,12 +124,12 @@ Json ClientProcess::start(const fs::path& root, const Json& config) {
     process = child.hProcess;
     pid = child.dwProcessId;
     log_offset = 0;
-    world_loaded_at = 0;
+    world_loaded_at = gameplay_visible_at = 0;
     log_pending.clear();
-    authenticated = lobby_ready = welcomed = world_loaded = false;
+    authenticated = lobby_ready = welcomed = world_loaded = gameplay_visible = false;
     launch["pid"] = pid;
     write_file(run / "launch.json", launch.dump(2));
-    return {{"ok", true}, {"pid", pid}, {"message", "Client started with the local connection. Select Ashes C++ Lab, choose your character, and press Play."}};
+    return {{"ok", true}, {"pid", pid}, {"message", "Client started with the local connection."}};
 }
 
 Json ClientProcess::state() {
@@ -146,19 +153,21 @@ Json ClientProcess::state() {
             log_pending.erase(0, newline + 1);
             if (line.find("XClient_AsyncSessionReplySink") != std::string::npos && line.find("IcsStatusCodeSuccess") != std::string::npos && line.find("Missing") == std::string::npos) authenticated = true;
             if (line.find("XClient_AsyncGetCharactersReplySink") != std::string::npos && line.find("IcsStatusCodeSuccess") != std::string::npos) lobby_ready = true;
-            if (line.find("Welcomed by server") != std::string::npos) { welcomed = true; world_loaded = false; world_loaded_at = 0; }
-            if (line.find("Load map complete") != std::string::npos && line.find("Verra_World_Master") != std::string::npos) { world_loaded = true; SYSTEMTIME stamp{}; int year,month,day,hour,minute,millisecond; double seconds;
-                if(std::sscanf(line.c_str(),"{\"timestamp\":\"%d-%d-%dT%d:%d:%lf",&year,&month,&day,&hour,&minute,&seconds)==6){
-                    millisecond=int((seconds-std::floor(seconds))*1000+.5);stamp.wYear=WORD(year);stamp.wMonth=WORD(month);stamp.wDay=WORD(day);stamp.wHour=WORD(hour);stamp.wMinute=WORD(minute);stamp.wSecond=WORD(seconds);stamp.wMilliseconds=WORD(std::min(millisecond,999));FILETIME file;
-                    if(SystemTimeToFileTime(&stamp,&file))world_loaded_at=double((uint64_t(file.dwHighDateTime)<<32)|file.dwLowDateTime)/10000000.-11644473600.;
-                }
+            if (line.find("Welcomed by server") != std::string::npos) { welcomed = true; world_loaded = gameplay_visible = false; world_loaded_at = gameplay_visible_at = 0; }
+            if (line.find("Load map complete") != std::string::npos && line.find("Verra_World_Master") != std::string::npos) {
+                world_loaded = true;world_loaded_at=log_timestamp(line);gameplay_visible=false;gameplay_visible_at=0;
+            }
+            // The final visibility log follows HideLoadingScreen and its garbage collection;
+            // a title-screen hide or a prior travel epoch must never unlock gameplay.
+            if(welcomed&&world_loaded&&world_loaded_at>0&&line.find("\"category\":\"LogLoadingScreen\"")!=std::string::npos&&line.find("\"message\":\"Visible for ")!=std::string::npos){
+                double hidden_at=log_timestamp(line);if(hidden_at>=world_loaded_at){gameplay_visible=true;gameplay_visible_at=hidden_at;}
             }
         }
         if (log_pending.size() > 65536) log_pending.clear();
     }
     bool running = code == STILL_ACTIVE;
-    std::string status = !running ? "Client closed" : welcomed ? "World connection accepted" : lobby_ready ? "Connected to local lobby; choose your character and press Play" : authenticated ? "Local login accepted; select Ashes C++ Lab" : "Client running; connecting to local lobby";
+    std::string status = !running ? "Client closed" : welcomed ? "World connection accepted" : lobby_ready ? "Connected to local lobby" : authenticated ? "Local login accepted" : "Client running; connecting to local lobby";
     return {{"running", running}, {"pid", pid}, {"status", status}, {"authenticated", authenticated}, {"lobby_ready", lobby_ready},
-        {"welcomed", welcomed}, {"world_loaded", world_loaded}, {"world_loaded_at", world_loaded_at}, {"exit_code", running ? Json() : Json(code)}, {"launch", launch}};
+        {"welcomed", welcomed}, {"world_loaded", world_loaded}, {"world_loaded_at", world_loaded_at}, {"gameplay_visible",gameplay_visible},{"gameplay_visible_at",gameplay_visible_at}, {"exit_code", running ? Json() : Json(code)}, {"launch", launch}};
 }
 }

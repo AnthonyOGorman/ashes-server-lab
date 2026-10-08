@@ -1,0 +1,103 @@
+{
+  "source_capture_frames": [
+    3797,
+    3809
+  ],
+  "source_component": "StatsComponent",
+  "field_index": 6,
+  "field_maximum": 23,
+  "array_key": 27,
+  "base_key": 0,
+  "payload_bits": 1537,
+  "payload_hex": "3700000000000000000000001600000028000000f0acacb93ec600000080068906000000f2ac24ba3ec60000008006892a000000f0ac8a909ac60000008012890c000000f2acda909ac600000080128910000000f2ac3481afc60000c2f5a87f14000000a0adecfce4c600000000007f18000000c4adeefce4c600000000007f1c0000001c035eac80cf53a8000040822c000000f4ac3481afc600000000000022000000f200368728cb53a80000007f2600000030007ec8d0cb53a80000007e00",
+  "items": [
+    {
+      "start_bit": 55882,
+      "replication_id": 20,
+      "record": "0x631f5cd65678",
+      "name": "Health",
+      "value_bits": "0x44834000",
+      "conditional_base_equipment": false
+    },
+    {
+      "start_bit": 56010,
+      "replication_id": 3,
+      "record": "0x631f5d125679",
+      "name": "MaxHealth",
+      "value_bits": "0x44834000",
+      "conditional_base_equipment": false
+    },
+    {
+      "start_bit": 56138,
+      "replication_id": 21,
+      "record": "0x634d48455678",
+      "name": "Mana",
+      "value_bits": "0x44894000",
+      "conditional_base_equipment": false
+    },
+    {
+      "start_bit": 56266,
+      "replication_id": 6,
+      "record": "0x634d486d5679",
+      "name": "MaxMana",
+      "value_bits": "0x44894000",
+      "conditional_base_equipment": false
+    },
+    {
+      "start_bit": 56394,
+      "replication_id": 8,
+      "record": "0x6357c09a5679",
+      "name": "MoveSpeedMult",
+      "value_bits": "0x3fd47ae1",
+      "conditional_base_equipment": false
+    },
+    {
+      "start_bit": 56522,
+      "replication_id": 10,
+      "record": "0x63727e7656d0",
+      "name": "PhysicalPenetration",
+      "value_bits": "0x3f800000",
+      "conditional_base_equipment": false
+    },
+    {
+      "start_bit": 56650,
+      "replication_id": 12,
+      "record": "0x63727e7756e2",
+      "name": "MagicalPenetration",
+      "value_bits": "0x3f800000",
+      "conditional_base_equipment": false
+    },
+    {
+      "start_bit": 56778,
+      "replication_id": 14,
+      "record": "0x5429e7c0562f018e",
+      "name": "StealthLevel",
+      "value_bits": "0x41200000",
+      "conditional_base_equipment": false
+    },
+    {
+      "start_bit": 56906,
+      "replication_id": 22,
+      "record": "0x6357c09a567a",
+      "name": "Corruption",
+      "value_bits": "0x0",
+      "conditional_base_equipment": false
+    },
+    {
+      "start_bit": 57034,
+      "replication_id": 17,
+      "record": "0x5429e594439b0079",
+      "name": "CharacterType",
+      "value_bits": "0x3f800000",
+      "conditional_base_equipment": false
+    },
+    {
+      "start_bit": 57162,
+      "replication_id": 19,
+      "record": "0x5429e5e8643f0018",
+      "name": "GravityScale",
+      "value_bits": "0x3f000000",
+      "conditional_base_equipment": false
+    }
+  ]
+}

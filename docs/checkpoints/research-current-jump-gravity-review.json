@@ -1,0 +1,349 @@
+{
+  "status": "saved_current_gravity_profile_and_native_sources_verified",
+  "client_proof": {
+    "pid": 723352,
+    "exe": "E:\\Games\\Steam Library\\steamapps\\common\\Ashes of Creation\\Game\\AOC\\Binaries\\Win64\\AOCClient-Win64-Shipping.exe",
+    "process_created_filetime": 134358967749612155,
+    "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+    "observed_at": 1791424144.2888317
+  },
+  "sources": [
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\jump-gravity-live-723352-134358967749612155-1791424144290339300.json",
+      "sha256": "3cf6c255c44914f8d5c598a38c36c6f1d794a82ecfb4b5cbfb96eb871bab207e"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\loading-restart-reset\\function_5ea4b00.c",
+      "sha256": "d593f0c26638905ac525e220a5aa109c01f0ab892d5eb45c4d8d0822d4aa63bb"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\jump-gravity-getters\\function_3ddfcb0.c",
+      "sha256": "586afb118ab062e71aec3fe5489a52b5605bbdc4ce69ca1d184b89bc1ca94dcb"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\jump-gravity-getters\\function_6b411a0.c",
+      "sha256": "a9d64bd2f9ad7e16b3e7b1c52a15bb8920fdad5c3367cbc31c1fa278c30add34"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\jump-gravity-final-getters\\function_3e43260.c",
+      "sha256": "4487f62f33942e5cbdd34740c3e042297669af831b2dd041f78b3cd2a1104188"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\jump-gravity-final-getters\\function_60accf0.c",
+      "sha256": "68987109cab258573d473e1d51cb17d7f07c6d6d45395252856f727fcbd6a3de"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\falling-gravity-parity\\function_441e300.c",
+      "sha256": "89b9ef157ae6d34b5f3d3537fe7a38c39d24986d80f9936fc34155d1b4be73dd"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\falling-gravity-parity\\function_60f2950.c",
+      "sha256": "4e37040e1803cde4eece8acff72f7d80b90ad0850f169ab5d2836ba608d3dccf"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\falling-gravity-parity\\function_61286d0.c",
+      "sha256": "e90ff01f36a27be319fb70d4c0356c1aa25c615aff01928410f03dbaf5ac34d6"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\falling-gravity-parity\\function_5eb6250.c",
+      "sha256": "93d41aa2809146189f64ec55cd775902d76864b298f6fab1baa5cbd9f4f30029"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-targets.json",
+      "sha256": "19ab991010221f175c2feec117a807a5e45a4ec195b58f305c75a027e5b626f9"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-441e300-441e300.json",
+      "sha256": "0451769fb996b4701db87e201a04bf2a6c9404ca0ce1c3cd1a0a4004af1ec443"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-441e300-441e300.bin",
+      "sha256": "ee9fbb72eb50e413a5eaa5866e57505ddfde7aa3f5d15852314e045f63dfcf9e"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-5eb6250-5eb6250.json",
+      "sha256": "56b57774f1cb8311bfc02821ad32cbf51f95d1e01a996afa5f65a30a438da4df"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-5eb6250-5eb6250.bin",
+      "sha256": "49a32c870b1a0e45a208adba8618e6abdfdd028ed61093a748516c522fc4cdb3"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-60f2950-60f2950.json",
+      "sha256": "8f9240cd6a0673e75954471f65fa14c643b58c96a686abfe2ad0c16c6edad254"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-60f2950-60f2950.bin",
+      "sha256": "3ab338f13239144ff25e81e6646e4f9c17e724d8baaac79dfa2922f1d25f5344"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-60f2950-60f29a7.json",
+      "sha256": "eb148945240fe00eacfcd7600381ffda293526a21e3d069db60994d3120ccf12"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-60f2950-60f29a7.bin",
+      "sha256": "e735a78a332de4c12fed36bb9d8888a45faedb42c9b17b49f191326c51136d44"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-60f2950-60f2a10.json",
+      "sha256": "45d49bb482ff373f31a2664f6775c41b639acb2cd440a7fef312f644412cbdb5"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-60f2950-60f2a10.bin",
+      "sha256": "d361dbd06447e80c22f1e7bd9aa55e01938eb24c60b28c8b858be8841be1db54"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-60f2950-60f2af3.json",
+      "sha256": "5b654ba2318ed200afe29aab1020f38ed6e6b8b945c793c98334264fe3966784"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-60f2950-60f2af3.bin",
+      "sha256": "abd18d16177be44fdc6a8c04dada56348755fe6799129b69fa6b5f9d64e82d48"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-60f2950-60f2b7b.json",
+      "sha256": "bd19666b1a30b5e79f94db34c4a46cdcde05b14bffc53d17e36853ba50c34cb8"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-60f2950-60f2b7b.bin",
+      "sha256": "f4486aa6add073ec5e3877cb0bb3a803b20cd93e456622ad3554b8f2fd14c9a7"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-61286d0-61286d0.json",
+      "sha256": "6ae9e433df329ae61ed7491caa36fc5cb9d79085b23f1d9647f456d790d32b14"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-61286d0-61286d0.bin",
+      "sha256": "c5e53e100456a902d18a74bdc4de871fb7735b33d9bf5c7f4e09064bf1e27aa4"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-61286d0-612871b.json",
+      "sha256": "38087315b5c778719d8a20c3aecfd86a8169cf657d12caca8bf46f89f8b7f49b"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-61286d0-612871b.bin",
+      "sha256": "e15f0e26f26fd72b05e5c48b312a65d119e67d60b161c23c3fbcedadb13e2e5a"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-61286d0-6128754.json",
+      "sha256": "f4837ca831c4315d2a5927b6647ebcb53507818a9d02878aed237b405150ad8b"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-gravity-parity-61286d0-6128754.bin",
+      "sha256": "b58d3d5b8fc73236b9a70ef1d05d4d67e669555f8f8519c3a420186c5bd82009"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\gravity-definition-live-723352-134358967749612155-1791424907151261000.json",
+      "sha256": "7a78859c3addac5bcd57789b5fbf8d342c961ee0cc0ced60cd423f2403d311b7"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-targets.json",
+      "sha256": "4243ae91fe1fe70ce1e5bdf932f33a587b73c371428ceaa46c3b01dccc51a573"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\falling-air-control\\function_3ddfa30.c",
+      "sha256": "03e43af483dd751e372ecc7150beef6fdaeda7160a8bc25be4f4df979d2ddee7"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3ddfa30-3ddfa30.json",
+      "sha256": "e9e14160a44b6cbbbf9b8e99f067d99ff12187eb59a1728e4de0afee040c35f5"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3ddfa30-3ddfa30.bin",
+      "sha256": "c1dfdbb0703b522418be7a220cafc0ff112db027cafe512a64b7683b2afab6e7"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\falling-air-control\\function_3de88b0.c",
+      "sha256": "c4e7908e553be0ba90d4bbc9db7fdf368aa0c3ec7fe7fb6a477d3ffbc30931a4"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de88b0.json",
+      "sha256": "0eb656fd5b2c499e2386123528684400f6d3ac2190ea7e809f7a71f6110e7dc7"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de88b0.bin",
+      "sha256": "2f09e9ad75382c99d6a953cd0977856dd9bd7ce3f079e7b8ebbc3b940b62a946"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de88f0.json",
+      "sha256": "66d5e3e5971eabbe8b26382b96deb6b4987324197f862a6f7a1820bf24107d8f"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de88f0.bin",
+      "sha256": "b16cee3df2fefb7b045a1152a1d4788d9bc4c04177d444078485a1e8b2b273d0"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de89ab.json",
+      "sha256": "516d54b0f2fcad9efa41f12755f5ba9997222276d4d920a327a1b8aec3377be6"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de89ab.bin",
+      "sha256": "ae48154fda9780ca3ec16f09417315ee36ed25b48737567c78641a75515660ac"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de8ae8.json",
+      "sha256": "3c83cca66cc6af3e522ae548afc1590eed2e2eb515b2fabf5e4584c82a1a310e"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de8ae8.bin",
+      "sha256": "0539143e4196cc5c5f5f938b21658b35a161e2b9e63ee5268d3b6f9c4065cfd8"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de8b10.json",
+      "sha256": "c1ad3c6815bb4c7e8cc1de7011e34ca5868030651d8920eb801c87ed370a5b73"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de8b10.bin",
+      "sha256": "0b974002e99bc95d3e0703ef6cbde9f3faca10611d3ca23bc3ff0f023795a059"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de8b15.json",
+      "sha256": "519353e0b1a77b968638dc4de6ae70afbc7ee0733a5022422ace08739d5a9367"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3de88b0-3de8b15.bin",
+      "sha256": "9cdc97335565b4c9767d2ef12a673c2a1e153d8fc36203667c7fb36289f205c6"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\falling-air-control\\function_3e04fb0.c",
+      "sha256": "64fac908ad0e16a4b41ef1b897e945181dd13f3b4bbafd317facb7daa28c6018"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3e04fb0-3e04fb0.json",
+      "sha256": "8e7ec1782ade4a7e34eff7e730219c70e69966b959fa75da3fb210f67a30b646"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-3e04fb0-3e04fb0.bin",
+      "sha256": "f82dae84bc4e4c0ccd78731b1318c3bb758375275aa511d8c7d3e60a5957906a"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\falling-air-control\\function_5ea5370.c",
+      "sha256": "ca857e990c3a2c42c514109e341b8d3ad725a097c75fb65f8095c530113ef7c9"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-5ea5370-5ea5370.json",
+      "sha256": "daab259cd7fdcfcf5cf6cb1897d4c115c4bd2e3d8b180b6d589c837830b1b323"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-5ea5370-5ea5370.bin",
+      "sha256": "5cc50588bc3f59ac4c1ab40b0b2f603b199632f52c1cb135e6ae1a1c24bf2afd"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-5ea5370-5ea538f.json",
+      "sha256": "5d0f5c52dfe5e0b2da8709b7a9f3b202318ecfdd50086a46cb29a99e9cffbc83"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-5ea5370-5ea538f.bin",
+      "sha256": "2f1f6a96bea5658896a1f9f42ff018dd20de7ec97412588d92b049c13d96cd31"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-5ea5370-5ea5486.json",
+      "sha256": "beb3ac604d8bb21b68a7556c30998cd351faaf1df5c95f9983ac0ab3c19f3356"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-control-5ea5370-5ea5486.bin",
+      "sha256": "cb6a2b144f409d59e76069062593ac1e18992f2869aba61f7fd65e0066bc004f"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-coefficient-targets.json",
+      "sha256": "429f7ea788b9630523912eea23a93f30a8f1e5d905e263e50cd42b33bc547076"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-coefficient-3ddc2f0-3ddc2f0.json",
+      "sha256": "97d2587593fff81784ae752b862302eec9814fb6ddac391bf31f5f9dc48845c1"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-air-coefficient-3ddc2f0-3ddc2f0.bin",
+      "sha256": "42bebceb020056983d52c1257d57c8be52a2b590b6ccb364eeb6c1e4e9f75bd6"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\decompiled\\falling-air-coefficient\\function_3ddc2f0.c",
+      "sha256": "b8d4fe71714001dd682c288dcd24c580ddac3adc5756c3eefd0442a2fe89b790"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-helper-leaves.json",
+      "sha256": "1abc2393b4fe191313c0b60cbe05e16fe30d4a115fa0f2950c99718dbe2c3fe4"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-helper-prefix-5ea51c0.json",
+      "sha256": "ada25fffbe8076ba5ff54aaf23f30fc42366bad818a49fc14a55eb4a3e08c756"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-helper-prefix-5ea51c0.bin",
+      "sha256": "c0fded2be93f33c31656f66fb8091a4966e41f232805e51238e64619798f423d"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-helper-prefix-5ea51d0.json",
+      "sha256": "997be8660d3321c4eae1f64e3d412d8e8e6a3b6fd0bba4e131a36e73b4a0423c"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-helper-prefix-5ea51d0.bin",
+      "sha256": "e9d95dbefd695da8fffdab5e2608f5c6c7c7342b0552fb24cf173e56e9888483"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-helper-prefix-3de2380.json",
+      "sha256": "38e13f2a4115cb9503849634736989cf43a6e659bd476458eb8e9be9b621e9b6"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-research\\proofs\\falling-helper-prefix-3de2380.bin",
+      "sha256": "f7463267f8cf93161f30f1a88f88c8e0a2cabeaf9128254df08e8c1c76342831"
+    }
+  ],
+  "saved_exception_fragments": 10,
+  "gravity_definition": {
+    "replication": 7,
+    "base_equipment_buckets": 0,
+    "raw246_248": "0700",
+    "limits": "Definition/cache receipt only; does not revalidate expired world pawn after lobby travel"
+  },
+  "falling_helpers": {
+    "outputs": 5,
+    "exception_fragments": 12,
+    "selected_discovery_prefixes": 3,
+    "unresolved_root_ranges": [
+      "0x3de2380",
+      "0x5ea51d0"
+    ],
+    "terminal_clamp": "Along normalized gravity only, preserving perpendicular velocity",
+    "air_control": "Slot888 GetAirControl delegates nonzero coefficient to slot898 boost helper, then scales lateral acceleration; slot898 implementation unresolved",
+    "apex_enable": "On-disk default1 only; runtime not read"
+  },
+  "gravity": {
+    "base_cm_s2": -980.0,
+    "movement_scale": 2.5,
+    "character_multiplier": 0.5,
+    "animation_entries": 0,
+    "slow_fall": false,
+    "effective_cm_s2": -1225.0,
+    "evidence": "Native getter/config-derived ordinary current-profile value; no native getter invocation or falling trajectory measurement"
+  },
+  "jump": {
+    "velocity_cm_s": 900,
+    "max_hold_s": 0.0,
+    "max_count": 1
+  },
+  "terminal_velocity_cm_s": 4000.0,
+  "falling_profile": {
+    "AirControl": 0.20000000298023224,
+    "AirControlBoostMultiplier": 2.0,
+    "AirControlBoostVelocityThreshold": 25.0,
+    "FallingLateralFriction": 0.0,
+    "BrakingDecelerationFalling": 3000.0,
+    "BrakingFrictionFactor": 1.0,
+    "MaxSimulationTimeStep": 0.05000000074505806,
+    "MaxSimulationIterations": 8,
+    "MaxJumpApexAttemptsPerSimulation": 2
+  },
+  "minimal_recommendation": [
+    "Keep jump900; constructor600 is overridden on this current pawn.",
+    "Synchronize server gravity to the same validated base/movement/stat profile; current ordinary derived value-1225.",
+    "Corroborate baseline/changed ascent/apex/descent/landing against native samples and server corrections.",
+    "Apply native falling lateral air-control/braking and apex/landing rules separately; gravity parity does not prove slope parity."
+  ],
+  "limits": [
+    "Saved proof review only; no executable scan or live process access in this review.",
+    "Captured native ranges were build-hash checked by target-preparation scripts; this review rechecks saved fragment consistency.",
+    "SceneComponent volume tail and general WorldSettings dependencies are separate call-chain leads; sampled volume/world/settings associations are preserved.",
+    "Future stat/animation/slow-fall/volume changes and process lifetimes require fresh binding."
+  ]
+}

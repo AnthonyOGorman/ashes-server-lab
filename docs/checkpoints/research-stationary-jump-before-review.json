@@ -1,0 +1,130 @@
+{
+  "status": "saved_stationary_jump_sources_and_runtime_trace_reviewed",
+  "sources": [
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\stationary-space-review-48d8b2c4414d4cdda17322845e7b1b72.json",
+      "sha256": "e013b3280c7f18854460edd62261e3783e59dcf3e0f251b0d1275b7ea2ec6b42"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\client-testing\\runs\\stationary-space-a97d384191364d45bcc83e6d70fa86c4.json",
+      "sha256": "1aeea728b103ff642b02227d873b67d2e91ce79833127ce9faacda7755c741ba"
+    },
+    {
+      "path": "E:\\Ashes Of Creation GPT\\CPP\\runs\\character-movement-followup-20261007\\stationary-space-gravity-before.json",
+      "sha256": "2cb01e588bddcabeca85786fef88727334201511ae355219b365d822eb5811ef"
+    }
+  ],
+  "client_proof": {
+    "pid": 723352,
+    "exe": "E:\\Games\\Steam Library\\steamapps\\common\\Ashes of Creation\\Game\\AOC\\Binaries\\Win64\\AOCClient-Win64-Shipping.exe",
+    "process_created_filetime": 134358967749612155,
+    "sha256": "4f1cd43ceeb89190f048734efd4d63152b9f8e11fa31fc41093b0d90f4a1cd43",
+    "observed_at": 1791426096.034081
+  },
+  "backend_proof": {
+    "pid": 722640,
+    "process_created_filetime": 134358967571930830,
+    "exe": "E:\\Ashes Of Creation GPT\\CPP\\build\\msvc\\Release\\ashes_lab.exe"
+  },
+  "backend_sha256": "48f210f907f739ff27eb1d0f8a46d6d993d18da76b4de563655ff80257faa941",
+  "connection": "69fd7994c2817b9439dddb46",
+  "native_samples": 37,
+  "native_falling_samples": 5,
+  "acknowledged_hold_seconds": 0.10494208335876465,
+  "sampled_apex": {
+    "ts": 1791426097.1085415,
+    "rise_cm": 174.12429040916504,
+    "velocity_z": 275.238037109375
+  },
+  "sample_interval_seconds_range": [
+    0.10893464088439941,
+    0.19028496742248535
+  ],
+  "first_falling_at": 1791426096.8567846,
+  "first_landed_after_air_at": 1791426097.5289652,
+  "landed_position_delta_cm": [
+    0.0,
+    0.0,
+    0.001133456005845801
+  ],
+  "server_summary": {
+    "connection_id": "69fd7994c2817b9439dddb46",
+    "moves": 58,
+    "new_moves": 56,
+    "discarded_intervals": 0,
+    "resolution_moves": 0,
+    "responses": {
+      "ack": 52,
+      "correction": 4,
+      "deferred": 0
+    },
+    "max_prediction_error_cm": 19.96533663795708,
+    "errors_above_10cm": 4,
+    "moving_new_moves": 0,
+    "simulation_ms": {
+      "p50": 0.4585001152008772,
+      "p95": 0.6526000797748566,
+      "max": 1.035700086504221
+    },
+    "packet_lock_wait_ms": {
+      "p50": 0.00100000761449337,
+      "p95": 0.0014998950064182281,
+      "max": 0.001600012183189392
+    },
+    "packet_processing_elapsed_ms": {
+      "p50": 1.390600111335516,
+      "p95": 2.165100071579218,
+      "max": 4.607500042766333
+    }
+  },
+  "server_gravity_from_unobstructed_steps": [
+    {
+      "move_id": 201674,
+      "derived_acceleration_cm_s2": -2450.0
+    },
+    {
+      "move_id": 201675,
+      "derived_acceleration_cm_s2": -2450.0
+    },
+    {
+      "move_id": 201676,
+      "derived_acceleration_cm_s2": -2450.0
+    },
+    {
+      "move_id": 201677,
+      "derived_acceleration_cm_s2": -2450.0
+    },
+    {
+      "move_id": 201678,
+      "derived_acceleration_cm_s2": -2450.0
+    },
+    {
+      "move_id": 201679,
+      "derived_acceleration_cm_s2": -2450.0
+    },
+    {
+      "move_id": 201680,
+      "derived_acceleration_cm_s2": -2450.0
+    },
+    {
+      "move_id": 201681,
+      "derived_acceleration_cm_s2": -2450.0
+    },
+    {
+      "move_id": 201682,
+      "derived_acceleration_cm_s2": -2450.0
+    },
+    {
+      "move_id": 201683,
+      "derived_acceleration_cm_s2": -2450.0
+    }
+  ],
+  "median_server_gravity_cm_s2": -2450.0,
+  "controls_released": true,
+  "limits": [
+    "Saved-only review, no live process access/input.",
+    "Sampled rise is not exact continuous apex; corrections alter the native trajectory.",
+    "Native/client HTTP samples are non-atomic; server gravity is derived separately from unobstructed server move rows.",
+    "One stationary jump on this route; no moving-jump, slopes, long fall, sprint or settlement-transition acceptance."
+  ]
+}

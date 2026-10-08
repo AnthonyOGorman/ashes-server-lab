@@ -12,8 +12,9 @@ struct ClientProcess {
     fs::path log_path;
     uint64_t log_offset = 0;
     double world_loaded_at = 0;
+    double gameplay_visible_at = 0;
     std::string log_pending;
-    bool authenticated = false, lobby_ready = false, welcomed = false, world_loaded = false;
+    bool authenticated = false, lobby_ready = false, welcomed = false, world_loaded = false, gameplay_visible = false;
     ~ClientProcess();
     Json start(const fs::path& root, const Json& config);
     Json state();

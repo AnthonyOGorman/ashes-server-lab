@@ -1,0 +1,101 @@
+{
+  "verified_process": {
+    "pid": 145444,
+    "process_created_filetime": 134358596923129243
+  },
+  "client_size": [
+    1928,
+    1113
+  ],
+  "steps": [
+    {
+      "action": {
+        "key": "enter"
+      },
+      "source_png": "screen-44e06424f1444a45b51afc5f68eb40b8.png",
+      "sha256": "610ec05b37c5f6f51bfdeca9c5389f8a25e601e5cc5adde81800448ac3e28951",
+      "name": "Warning continue",
+      "bbox": [
+        820,
+        960,
+        1110,
+        998
+      ]
+    },
+    {
+      "action": {
+        "key": "enter"
+      },
+      "source_png": "screen-d53a32b327704486a46c078dadd3398e.png",
+      "sha256": "81c7584be5e771bcb13960002a0a17cd88154ae2c4e126d38a697de0ca7a2682",
+      "name": "Title open realms",
+      "bbox": [
+        934,
+        514,
+        1002,
+        554
+      ]
+    },
+    {
+      "action": {
+        "x": 530,
+        "y": 466
+      },
+      "source_png": "screen-e028006ad857450cb3b2b0de89373c37.png",
+      "sha256": "b83cfdeb103ed8aa52cf8571a5c0f86295952e866423b63b04c77062c6a52791",
+      "name": "Ashes C++ Lab row",
+      "bbox": [
+        466,
+        453,
+        700,
+        477
+      ]
+    },
+    {
+      "action": {
+        "x": 1410,
+        "y": 713
+      },
+      "source_png": "screen-465594c29e354c7c875c31ad5e4a3508.png",
+      "sha256": "a2786f707ef269bf6a370c70bdfb17cfbecd9498b841a171e0bed06cfbf58c96",
+      "name": "Select Realm",
+      "bbox": [
+        1349,
+        697,
+        1471,
+        732
+      ]
+    },
+    {
+      "action": {
+        "x": 1625,
+        "y": 415
+      },
+      "source_png": "screen-b423948ba33245c4b5d5b394eb4eb942.png",
+      "sha256": "a832769bcbd5fb60d76e33f3d81a47846e45636eadde9a7a85504bee0a86ddd2",
+      "name": "LabExplorer character",
+      "bbox": [
+        1564,
+        400,
+        1704,
+        449
+      ]
+    },
+    {
+      "action": {
+        "x": 963,
+        "y": 1057
+      },
+      "source_png": "screen-47543f6ae9e248239b92fb2080abe599.png",
+      "sha256": "d1b1ace342bda28a912cfb7a5c5c29baa8d2f696a9cd7aeaffe3f2ab41d1ec47",
+      "name": "Play",
+      "bbox": [
+        870,
+        1040,
+        1054,
+        1075
+      ]
+    }
+  ],
+  "scope": "Existing DLL screenshot-calibrated local entry, no credentials or movement"
+}

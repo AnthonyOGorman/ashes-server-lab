@@ -1,0 +1,88 @@
+{
+  "source": "client-research/SETTLEMENT_LOADING.md",
+  "observed_at": 1791395350.6301708,
+  "world": "Verra_World_Master",
+  "node": "Winstead",
+  "record": "62d024b45678",
+  "location_cm": [
+    -644519.105296,
+    376773.237813,
+    12012.231952
+  ],
+  "rotation_degrees": [
+    0,
+    -40.79154,
+    0
+  ],
+  "layout": "Layout_Flat_D",
+  "layout_id": "5429e7362f260000",
+  "platform": "/Game/ENV/Nodes/Nodes_Master/Node_Sublevels/Landscape_Platforms/Layout_Flat_D/Landscape_Flat_D_Master_01",
+  "platform_levels": "0..6",
+  "catalogue_count": 46,
+  "catalogue_nonzero_layouts": 44,
+  "catalogue_is_active_settlement_inventory": false,
+  "live_streaming_and_collision_verified": true,
+  "load_transform_composition_verified": true,
+  "validation_required": [
+    "Fresh exact process/connection and accepted actor weak identity",
+    "Research readback: NodeGuid62d024b45678, initialized1, Items1, exact compoundID and metadata1/0/1",
+    "Exact streamed package loaded/visible with measured origin/yaw matching node; no decoded-array-only acceptance",
+    "CPP confirms matching world-transformed collision admission and grounded server floor support",
+    "Native pawn floor contact/grounded stationary starting state",
+    "Fresh CPP-released sole-input lease with movement scope before bounded traversal; record actual input and native/server results"
+  ],
+  "current_input_mode": "observation",
+  "scope": "Read-only testing checkpoint; source/runtime/server changes remain with their owners",
+  "handoff_source": "client-research/SETTLEMENT_CPP_HANDOFF.md",
+  "handoff_sha256": "da1f5a1f71f4bb69ec3e9cf899d60792be7fb8d8b5303b0b1848e1e8b54f7377",
+  "active_client_pid": 115060,
+  "active_client_filetime": 134358682868627251,
+  "first_floor_lab_profile": {
+    "NodeLevel": 1,
+    "NodeCulture": 0,
+    "NodeSeason": 1,
+    "tags": [],
+    "asset_set_guid": "5429e761b0070000",
+    "OwnerGuid": "62d024b45678",
+    "OwnerArrayIndex": 14,
+    "item_transform": "identity"
+  },
+  "historical_empty_actor_51076": {
+    "object_id": "0x54936b40b6795cfe",
+    "server_id": 1,
+    "randomizer": 471624486,
+    "native_index": 359579,
+    "native_serial": 71479,
+    "source": "CPP and research acceptance; reverify before update"
+  },
+  "current_actor_acceptance": "Fresh115060automatic21stages/Winsteadfloorreceipt/nativeplacement/privatecollisionverified; stationarybasefloorcontactcurrent, prior115896routeaccepted",
+  "live_client_floor_loaded_visible_and_placement_verified": true,
+  "new_platform_contact_verified": false,
+  "server_collision_admitted": true,
+  "base_spawn_cached_contact": "player-3c1d96e12e5c4bfaa6fb863469268206.json",
+  "historical_76232_load_acceptance": {
+    "active_client_pid": 76232,
+    "active_client_filetime": 134358660541395868,
+    "live_client_floor_loaded_visible_and_placement_verified": true,
+    "load_placement_receipt": "client-testing\\runs\\floor-loading-receipt-97b0d1772e514d1aab87bf43fb7a0e24.json",
+    "load_transform_composition_verified": true
+  },
+  "live_client_server_floor_contact_verified": false,
+  "gap_crossing_verified": false,
+  "crossing_trace_review": "Not repeated oncurrent115060; historical115896route reviewpassed",
+  "historical_115896_route": {
+    "certificate": "client-testing\\runs\\seam-crossing-aeed6a67e0944113b13f3616f1967729.json",
+    "gap_crossing_verified": true,
+    "new_platform_contact_verified": true,
+    "trace_review": "passed",
+    "native_grounded_samples": 43,
+    "server_ACK": 106,
+    "corrections": 0
+  },
+  "automatic_setup_verified": true,
+  "automatic_initialization_stages": 21,
+  "route_retested_this_lifetime": false,
+  "final_automatic_evidence": "client-testing\\runs\\automatic-final-d219824ad54d4520891cf78613eeca36.json",
+  "historical_115896_floor_acceptance_evidence": "client-testing\\runs\\floor-acceptance-c7076663cfe5459696503cfcde047713.json",
+  "floor_acceptance_evidence": "client-testing\\runs\\automatic-final-d219824ad54d4520891cf78613eeca36.json"
+}
